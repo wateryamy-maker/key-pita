@@ -1,0 +1,6 @@
+{
+  "name": "カラオケ音域検索",
+  "description": "自分の音域に合わせて歌えるカラオケ曲を瞬時に検索・キー調整シミュレーションできるサポートアプリ",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
