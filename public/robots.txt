@@ -5,5 +5,4 @@ User-agent: *
 Allow: /
 
 # サイトマップの指定
-# ※独自ドメイン等を適用された場合は、以下のURLをご自身のドメインに変更してください。
-Sitemap: https://ais-pre-4tlqcgiybhplutpaihgkol-528262820713.asia-northeast1.run.app/sitemap.xml
+Sitemap: https://key-pita.saiennavi.com/sitemap.xml

@@ -2,10 +2,10 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- 
     Google 登録用サイトマップ (sitemap.xml)
-    ※ 本番ドメインや独自ドメインを割り当てた場合は、以下の loc タグ内の URL をご自身のドメインに書き換えてください。
+    ※ 本番独自ドメイン用に最適化されています。
   -->
   <url>
-    <loc>https://ais-pre-4tlqcgiybhplutpaihgkol-528262820713.asia-northeast1.run.app/</loc>
+    <loc>https://key-pita.saiennavi.com/</loc>
     <lastmod>2026-06-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
