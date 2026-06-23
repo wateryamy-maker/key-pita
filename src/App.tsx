@@ -44,8 +44,8 @@ import { usePitchDetection } from './hooks/usePitchDetection';
 import { useSyncSongs } from './hooks/useSyncSongs';
 
 // Supabase configuration
-const supabaseUrl = (import.meta as any).env.VITE_SUPABASE_URL || "";
-const supabaseAnonKey = (import.meta as any).env.VITE_SUPABASE_ANON_KEY || "";
+const supabaseUrl = (import.meta as any).env.VITE_SUPABASE_URL || (import.meta as any).env.VITE_SUPABASE_URI || (typeof process !== 'undefined' ? process.env.NEXT_PUBLIC_SUPABASE_URL : '') || '';
+const supabaseAnonKey = (import.meta as any).env.VITE_SUPABASE_ANON_KEY || (typeof process !== 'undefined' ? process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY : '') || '';
 
 export const supabase = (supabaseUrl && supabaseAnonKey) 
   ? createClient(supabaseUrl, supabaseAnonKey) 
@@ -1501,14 +1501,6 @@ export default function App() {
                 )}
               </span>
               <div className="flex items-center gap-2">
-                <button
-                  onClick={handleOpenAdminPortal}
-                  className="inline-flex items-center gap-1 text-[10px] sm:text-xs font-bold text-amber-400 bg-amber-500/10 hover:bg-amber-500/25 px-2 py-0.5 rounded-full border border-amber-500/20 shadow-md transition-all active:scale-95 cursor-pointer"
-                  title="楽曲データベース管理ツールを開きます"
-                >
-                  <Shield className="w-3 h-3 text-amber-400" />
-                  <span>データベース管理</span>
-                </button>
                 {isDev ? (
                   <>
                     {dbStatus === 'connected' && (
