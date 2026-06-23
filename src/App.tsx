@@ -44,8 +44,8 @@ import { usePitchDetection } from './hooks/usePitchDetection';
 import { useSyncSongs } from './hooks/useSyncSongs';
 
 // Supabase configuration
-const supabaseUrl = (import.meta as any).env.VITE_SUPABASE_URL || (import.meta as any).env.VITE_SUPABASE_URI || (typeof process !== 'undefined' ? process.env.NEXT_PUBLIC_SUPABASE_URL : '') || '';
-const supabaseAnonKey = (import.meta as any).env.VITE_SUPABASE_ANON_KEY || (typeof process !== 'undefined' ? process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY : '') || '';
+const supabaseUrl = import.meta.env.VITE_SUPABASE_URL || import.meta.env.VITE_SUPABASE_URI || '';
+const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY || '';
 
 export const supabase = (supabaseUrl && supabaseAnonKey) 
   ? createClient(supabaseUrl, supabaseAnonKey) 
@@ -56,7 +56,7 @@ export const supabase = (supabaseUrl && supabaseAnonKey)
 // ==========================================
 
 export default function App() {
-  const isDev = !(import.meta as any).env.PROD && typeof window !== 'undefined' && !window.location.hostname.includes('ais-pre-');
+  const isDev = !import.meta.env.PROD && typeof window !== 'undefined' && !window.location.hostname.includes('ais-pre-');
 
   // --- States ---
   const [userMin, setUserMin] = useState<number>(48); // default Average Male low (mid1C)
