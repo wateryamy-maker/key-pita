@@ -16,7 +16,7 @@ export const INITIAL_SONG_DATABASE: Song[] = [
   {
     id: '2',
     title: 'Lemon',
-    artist: '米津星師',
+    artist: '米津玄師',
     min: 48, // mid1C
     max: 71, // mid2B
     gender: 'male',
@@ -179,7 +179,7 @@ export const INITIAL_SONG_DATABASE: Song[] = [
     originalKey: 'Aメジャー',
     genre: 'バラード',
     tags: ['涙腺崩壊バラード', '美メロ', 'ロングセラー'],
-    description: 'サビ前の溜めと、最高音mid2Bの美しいロングトーンが見見場の感動的ラブソング。',
+    description: 'サビ前の溜めと、最高音mid2Bの美しいロングトーンが見せ場の感動的ラブソング。',
   },
   {
     id: '16',

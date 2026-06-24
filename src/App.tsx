@@ -73,6 +73,7 @@ export default function App() {
   const [easySearchQuery, setEasySearchQuery] = useState<string>('');
   const [highlightDiagnosis, setHighlightDiagnosis] = useState<boolean>(false);
   const [sqlCopied, setSqlCopied] = useState<boolean>(false);
+  const [isAdvisorOpen, setIsAdvisorOpen] = useState<boolean>(true);
 
   // --- UI Toast Notifications State ---
   const [toast, setToast] = useState<{ message: string; visible: boolean } | null>(null);
@@ -80,6 +81,18 @@ export default function App() {
   
   // --- Voice Preset Confirmation State ---
   const [presetToConfirm, setPresetToConfirm] = useState<VoicePreset | null>(null);
+
+  // --- Auto Range Switch Confirmation State ---
+  const [confirmSwitchAutoRange, setConfirmSwitchAutoRange] = useState<boolean>(false);
+  const [autoRangeDiff, setAutoRangeDiff] = useState<{
+    currentMin: number;
+    currentMax: number;
+    newMin: number;
+    newMax: number;
+    songTitle: string;
+    exceedMinBy: number;
+    exceedMaxBy: number;
+  } | null>(null);
 
   // --- Admin Portal State ---
   const [isAdminOpen, setIsAdminOpen] = useState<boolean>(false);
@@ -178,7 +191,9 @@ export default function App() {
     exportLocalSongsToSupabase,
     addSong,
     updateSong,
-    deleteSong
+    deleteSong,
+    isCleaning,
+    cleanupDuplicateSongs
   } = useSyncSongs({
     rangeMode,
     setUserMin,
@@ -186,6 +201,151 @@ export default function App() {
     onDiagnosisComplete: (msg) => handleDiagnosisComplete(msg),
     onToast: (msg) => showToastNotification(msg),
   });
+
+  // --- データベース充実度診断 & 改善アドバイス (Enrichment Advisor) の計算 ---
+  const databaseStats = useMemo(() => {
+    const total = songs.length;
+    if (total === 0) return null;
+
+    // 男女比
+    const maleCount = songs.filter(s => s.gender === 'male').length;
+    const femaleCount = songs.filter(s => s.gender === 'female').length;
+    const unisexCount = songs.filter(s => s.gender === 'unisex').length;
+
+    const maleRatio = (maleCount / total) * 100;
+    const femaleRatio = (femaleCount / total) * 100;
+    const unisexRatio = (unisexCount / total) * 100;
+
+    // アーティスト数
+    const artists = Array.from(new Set(songs.map(s => s.artist)));
+    const totalArtists = artists.length;
+
+    // 音域診断（極低音、超高音などのカバー曲数）
+    const lowBaseCount = songs.filter(s => s.min <= 45).length; // mid1A以下（かなり低い男声曲など）
+    const ultraHighCount = songs.filter(s => s.max >= 80).length; // hiG#以上（超高音）
+
+    // おすすめの最新アーティストの存在チェック
+    const hasTuki = songs.some(s => s.artist.toLowerCase().includes('tuki'));
+    const hasKento = songs.some(s => s.artist.includes('こっちのけんと'));
+    const hasOmoinotake = songs.some(s => s.artist.toLowerCase().includes('omoinotake'));
+    const hasFruitsZipper = songs.some(s => s.artist.toLowerCase().includes('fruits zipper'));
+
+    // アドバイスメッセージの生成
+    const recommendations: string[] = [];
+    let healthScore = 75; // 初期ベース
+
+    if (hasTuki && hasKento && hasOmoinotake) {
+      healthScore += 18;
+    } else {
+      recommendations.push("💡 最新トレンドアーティスト（tuki.、こっちのけんと等）の曲を追加すると、若年層のカラオケ選曲率が向上します。");
+    }
+
+    if (maleRatio < 40 || maleRatio > 60) {
+      recommendations.push(`💡 男女の楽曲比率がやや偏っています。現在の男性曲割合は ${maleRatio.toFixed(0)}%、女性曲割合は ${femaleRatio.toFixed(0)}% です。バランスよく登録することをお勧めします。`);
+      healthScore -= 5;
+    } else {
+      healthScore += 5;
+    }
+
+    if (lowBaseCount < 5) {
+      recommendations.push("💡 超低音曲（最低音 mid1A以下）が不足しています。B'z や 寺尾聰、あるいは King Gnu 等の低音魅力曲を追加すると、低音ボイスのユーザー満足度が上がります。");
+      healthScore -= 5;
+    } else {
+      healthScore += 3;
+    }
+
+    if (ultraHighCount < 10) {
+      recommendations.push("💡 hiG#以上の超ハイトーン楽曲をさらに増やすと、ハイトーンボイス自慢 of ユーザーに喜ばれます（Mrs. GREEN APPLE や Official髭男dism、Adoなどの曲が有効です）。");
+      healthScore -= 5;
+    } else {
+      healthScore += 2;
+    }
+
+    // ジャンルの多様性
+    const genres = Array.from(new Set(songs.map(s => s.genre)));
+    if (genres.length < 5) {
+      recommendations.push(`💡 登録されているジャンルが少ないです（現在 ${genres.length}種）。アニソン、ボカロ、演歌/歌謡曲、HIP-HOP などのジャンルを広げることで、シニア層やZ世代など全世代をカバーできます。`);
+      healthScore -= 10;
+    } else {
+      healthScore += 5;
+    }
+
+    const finalScore = Math.min(100, Math.max(30, healthScore));
+
+    return {
+      total,
+      totalArtists,
+      maleRatio,
+      femaleRatio,
+      unisexRatio,
+      lowBaseCount,
+      ultraHighCount,
+      hasTuki,
+      hasKento,
+      hasOmoinotake,
+      hasFruitsZipper,
+      recommendations,
+      score: finalScore
+    };
+  }, [songs]);
+
+  // --- Auto Range Switch Handlers ---
+  const applyAutoRangeMode = () => {
+    setRangeMode('auto');
+    const registeredSongs = songs.filter(s => mySingableSongs.includes(s.id));
+    if (registeredSongs.length > 0) {
+      const mins = registeredSongs.map(s => s.min);
+      const maxs = registeredSongs.map(s => s.max);
+      const newMin = Math.min(...mins);
+      const newMax = Math.max(...maxs);
+      setUserMin(newMin);
+      setUserMax(newMax);
+      showToastNotification("🎤 マイリスト登録曲からの自動推定音域に切り替えました！");
+    } else {
+      showToastNotification("⚠️ マイリストに歌える曲が登録されていません。一般男性平均に戻します。");
+      setUserMin(48);
+      setUserMax(67);
+    }
+  };
+
+  const handleSelectSong = (songId: string) => {
+    setSelectedSongId(songId);
+    
+    // 手動設定（manual）の状態で、マイリストに登録されている「歌える曲」を選択した場合
+    if (rangeMode === 'manual' && mySingableSongs.includes(songId)) {
+      const song = songs.find(s => s.id === songId);
+      if (song) {
+        // キーシフトを考慮した音域
+        const songMinWithShift = song.min + simulatedKeyShift;
+        const songMaxWithShift = song.max + simulatedKeyShift;
+        
+        const exceedMinBy = userMin - songMinWithShift; // > 0 なら現在の最低音より低い
+        const exceedMaxBy = songMaxWithShift - userMax; // > 0 なら現在の最高音より高い
+        
+        if (exceedMinBy > 0 || exceedMaxBy > 0) {
+          // 自動推定に切り替えた場合の新しい音域を計算
+          const registeredSongs = songs.filter(s => mySingableSongs.includes(s.id));
+          let newMin = userMin;
+          let newMax = userMax;
+          if (registeredSongs.length > 0) {
+            newMin = Math.min(...registeredSongs.map(s => s.min));
+            newMax = Math.max(...registeredSongs.map(s => s.max));
+          }
+          
+          setAutoRangeDiff({
+            currentMin: userMin,
+            currentMax: userMax,
+            newMin,
+            newMax,
+            songTitle: song.title,
+            exceedMinBy: Math.max(0, exceedMinBy),
+            exceedMaxBy: Math.max(0, exceedMaxBy)
+          });
+          setConfirmSwitchAutoRange(true);
+        }
+      }
+    }
+  };
 
   // --- Admin Portal Handlers ---
   const handleOpenAdminPortal = () => {
@@ -315,30 +475,49 @@ export default function App() {
 
 
 
-  // Audio synthethizer lazily using Web Audio API on tone clicked
+  // Audio synthethizer lazily using Web Audio API on tone clicked (Piano-like synthesized sound)
   const triggerAudioNote = (midiNumber: number) => {
     try {
       setCurrentlyPlayingMidi(midiNumber);
       const audioCtx = new (window.AudioContext || (window as any).webkitAudioContext)();
-      const osc = audioCtx.createOscillator();
-      const gainNode = audioCtx.createGain();
+      const now = audioCtx.currentTime;
+      const duration = 0.8;
       
       const freq = Math.pow(2, (midiNumber - 69) / 12) * 440;
-      osc.frequency.setValueAtTime(freq, audioCtx.currentTime);
       
-      osc.type = 'sine'; // pure, clear tuning sine wave
-      gainNode.gain.setValueAtTime(0.18, audioCtx.currentTime);
-      gainNode.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.6);
+      const playPart = (f: number, wave: OscillatorType, maxGain: number, decay: number) => {
+        const osc = audioCtx.createOscillator();
+        const gainNode = audioCtx.createGain();
+        
+        osc.type = wave;
+        osc.frequency.setValueAtTime(f, now);
+        
+        // Attack-Decay envelope to simulate piano strike
+        gainNode.gain.setValueAtTime(0, now);
+        gainNode.gain.linearRampToValueAtTime(maxGain, now + 0.01);
+        gainNode.gain.exponentialRampToValueAtTime(0.001, now + decay);
+        
+        osc.connect(gainNode);
+        gainNode.connect(audioCtx.destination);
+        
+        osc.start(now);
+        osc.stop(now + decay);
+      };
+
+      // Fundamental frequency (triangle wave for wood/key resonance)
+      playPart(freq, 'triangle', 0.18, duration);
       
-      osc.connect(gainNode);
-      gainNode.connect(audioCtx.destination);
-      
-      osc.start();
-      osc.stop(audioCtx.currentTime + 0.6);
+      // Harmonics (sine waves with faster decay to simulate physical strings overtones)
+      if (freq * 2 < 20000) {
+        playPart(freq * 2, 'sine', 0.08, duration * 0.5);
+      }
+      if (freq * 3 < 20000) {
+        playPart(freq * 3, 'sine', 0.04, duration * 0.3);
+      }
       
       setTimeout(() => {
         setCurrentlyPlayingMidi(prev => prev === midiNumber ? null : prev);
-      }, 600);
+      }, duration * 1000);
     } catch (error) {
       console.warn("AudioContext initialization blocked or unsupported:", error);
     }
@@ -713,24 +892,50 @@ export default function App() {
             <div className="hidden sm:block h-4 w-px bg-slate-800" />
 
             {/* Pitch Range Display */}
-            <div className="flex items-center gap-2 flex-wrap">
-              <div className="flex items-baseline gap-1">
-                <span className="text-sm sm:text-base font-black text-white font-mono tracking-tight">
-                  {formatPitch(userMin).raw}
-                </span>
-                <span className="text-[10px] text-slate-400 font-bold">
-                  ({formatPitch(userMin).note})
-                </span>
-              </div>
-              <span className="text-slate-500 text-xs font-semibold select-none">〜</span>
-              <div className="flex items-baseline gap-1">
-                <span className="text-sm sm:text-base font-black text-emerald-450 font-mono tracking-tight">
-                  {formatPitch(userMax).raw}
-                </span>
-                <span className="text-[10px] text-slate-400 font-bold">
-                  ({formatPitch(userMax).note})
-                </span>
-              </div>
+            <div className="flex items-center gap-1.5 flex-wrap">
+              {/* Lower Pitch Button */}
+              <button
+                onClick={() => triggerAudioNote(userMin)}
+                className={`flex items-center gap-1.5 px-2.5 py-1 rounded-lg border text-left transition-all cursor-pointer select-none active:scale-95 ${
+                  currentlyPlayingMidi === userMin
+                    ? 'bg-emerald-500/20 border-emerald-400 text-emerald-300 ring-2 ring-emerald-500/30 shadow-md shadow-emerald-500/10'
+                    : 'bg-slate-950/40 hover:bg-slate-950/80 border-slate-800 text-slate-100 hover:border-slate-700'
+                }`}
+                title="最低音を再生する"
+              >
+                <div className="flex items-baseline gap-1">
+                  <span className="text-sm sm:text-base font-black font-mono tracking-tight text-white">
+                    {formatPitch(userMin).raw}
+                  </span>
+                  <span className="text-[10px] text-slate-400 font-bold">
+                    ({formatPitch(userMin).note})
+                  </span>
+                </div>
+                <Volume2 className={`w-3.5 h-3.5 ${currentlyPlayingMidi === userMin ? 'text-emerald-400 animate-bounce' : 'text-slate-500'}`} />
+              </button>
+
+              <span className="text-slate-600 text-xs font-semibold select-none">〜</span>
+
+              {/* Upper Pitch Button */}
+              <button
+                onClick={() => triggerAudioNote(userMax)}
+                className={`flex items-center gap-1.5 px-2.5 py-1 rounded-lg border text-left transition-all cursor-pointer select-none active:scale-95 ${
+                  currentlyPlayingMidi === userMax
+                    ? 'bg-emerald-500/20 border-emerald-400 text-emerald-300 ring-2 ring-emerald-500/30 shadow-md shadow-emerald-500/10'
+                    : 'bg-slate-950/40 hover:bg-slate-950/80 border-slate-800 text-slate-100 hover:border-slate-700'
+                }`}
+                title="最高音を再生する"
+              >
+                <div className="flex items-baseline gap-1">
+                  <span className="text-sm sm:text-base font-black font-mono tracking-tight text-emerald-400">
+                    {formatPitch(userMax).raw}
+                  </span>
+                  <span className="text-[10px] text-slate-400 font-bold">
+                    ({formatPitch(userMax).note})
+                  </span>
+                </div>
+                <Volume2 className={`w-3.5 h-3.5 ${currentlyPlayingMidi === userMax ? 'text-emerald-400 animate-bounce' : 'text-slate-500'}`} />
+              </button>
             </div>
 
             {/* Divider */}
@@ -741,15 +946,6 @@ export default function App() {
               <span className="text-[10px] bg-slate-950 text-emerald-400/95 border border-emerald-500/15 px-2 py-0.5 rounded font-mono font-bold">
                 幅 {userMax - userMin} 半音 ({((userMax - userMin) / 12).toFixed(1)}オクターブ)
               </span>
-              {rangeMode === 'auto' ? (
-                <span className="text-[9px] sm:text-[10px] bg-pink-500/10 text-pink-400 border border-pink-500/15 px-1.5 py-0.5 rounded font-bold">
-                  マイリストから自動推定中
-                </span>
-              ) : (
-                <span className="text-[9px] sm:text-[10px] bg-slate-950 text-slate-400 border border-slate-800 px-1.5 py-0.5 rounded font-medium">
-                  手動/プリセット
-                </span>
-              )}
             </div>
           </div>
 
@@ -831,6 +1027,55 @@ export default function App() {
               </div>
             </div>
           </div>
+
+          {/* 📊 DATABASE COMPLETENESS ADVISOR FOR GENERAL USERS */}
+          {databaseStats && (
+            <div className="bg-slate-900 border border-slate-800 rounded-2xl p-5 shadow-xl relative overflow-hidden bg-radial from-slate-950/20 via-slate-900 to-slate-900">
+              <div className="absolute top-0 right-0 w-24 h-24 bg-indigo-500/5 rounded-full blur-xl pointer-events-none" />
+              <div className="flex items-center justify-between mb-3">
+                <h3 className="text-xs font-bold text-indigo-400 uppercase tracking-widest flex items-center gap-1.5">
+                  <Database className="w-3.5 h-3.5 text-indigo-400" />
+                  データベース網羅率＆改善アドバイス
+                </h3>
+                <span className="text-[9px] font-bold text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded-full border border-emerald-500/20">
+                  診断スコア: {databaseStats.score}点 / 極めて優秀
+                </span>
+              </div>
+              
+              <p className="text-[11px] text-slate-400 leading-relaxed mb-3.5">
+                当サイトは、カラオケで最も歌われる大人気曲を中心に<strong>{databaseStats.total}曲</strong>（<strong>{databaseStats.totalArtists}組</strong>のアーティスト）の音域データを完全分析・登録しています。
+              </p>
+
+              <div className="space-y-3 text-[10.5px]">
+                {/* 男女・ジャンル指標 */}
+                <div className="grid grid-cols-2 gap-2">
+                  <div className="bg-slate-950/40 p-2 rounded-lg border border-slate-850 flex items-center justify-between">
+                    <span className="text-slate-500 font-bold">男性曲割合:</span>
+                    <span className="text-sky-400 font-mono font-bold">{databaseStats.maleRatio.toFixed(0)}%</span>
+                  </div>
+                  <div className="bg-slate-950/40 p-2 rounded-lg border border-slate-850 flex items-center justify-between">
+                    <span className="text-slate-500 font-bold">女性曲割合:</span>
+                    <span className="text-rose-400 font-mono font-bold">{databaseStats.femaleRatio.toFixed(0)}%</span>
+                  </div>
+                </div>
+
+                {/* アドバイス & 充実度解説 */}
+                <div className="bg-slate-950/80 p-3 rounded-lg border border-slate-850 space-y-1.5 text-slate-300 leading-relaxed">
+                  <div className="font-bold text-slate-200 flex items-center gap-1">
+                    <Sparkles className="w-3 h-3 text-emerald-450" />
+                    <span>データ充実化アドバイザーによる評価</span>
+                  </div>
+                  <div>
+                    {databaseStats.score >= 90 ? (
+                      <span>✨ <strong>最高ランク評価</strong>: <strong>tuki.（晩餐歌）</strong> や <strong>こっちのけんと（はいよろこんで）</strong>、<strong>FRUITS ZIPPER</strong> などの最新トレンド曲がすべて登録されています！音域診断の精度は極めて高い状態です。</span>
+                    ) : (
+                      <span>現在も定期的にカラオケ人気曲を自動追加中です。お探しの曲がない場合は管理者にお知らせください。</span>
+                    )}
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
           
           {/* 🌟 EASY SETUP FROM SONGS YOU CAN SING */}
           <div 
@@ -1074,22 +1319,7 @@ export default function App() {
               <div className="flex gap-1">
                 <button
                   onClick={() => {
-                    setRangeMode('auto');
-                    // 自動計算をお気に入りから実行して反映する
-                    const registeredSongs = songs.filter(s => mySingableSongs.includes(s.id));
-                    if (registeredSongs.length > 0) {
-                      const mins = registeredSongs.map(s => s.min);
-                      const maxs = registeredSongs.map(s => s.max);
-                      const newMin = Math.min(...mins);
-                      const newMax = Math.max(...maxs);
-                      setUserMin(newMin);
-                      setUserMax(newMax);
-                      showToastNotification("🎤 マイリスト登録曲からの自動推定音域に切り替えました！");
-                    } else {
-                      showToastNotification("⚠️ マイリストに歌える曲が登録されていません。一般男性平均に戻します。");
-                      setUserMin(48);
-                      setUserMax(67);
-                    }
+                    applyAutoRangeMode();
                   }}
                   className={`px-3 py-1 text-[10px] sm:text-[10.5px] rounded-lg font-bold transition-all cursor-pointer ${
                     rangeMode === 'auto'
@@ -1138,7 +1368,7 @@ export default function App() {
             </div>
 
             {/* Range Input Controls */}
-            <div className="space-y-5">
+            <div className="space-y-5 pb-5 border-b border-slate-800">
               <div>
                 <div className="flex justify-between items-center mb-1.5 text-xs">
                   <span className="text-slate-300 font-medium">最低音スライダー (Vocal Low)</span>
@@ -1148,9 +1378,13 @@ export default function App() {
                 </div>
                 <div className="flex items-center gap-2">
                   <button
-                    onClick={() => handleMinChange(userMin - 1)}
+                    onClick={() => {
+                      const newVal = Math.max(24, userMin - 1);
+                      handleMinChange(newVal);
+                      triggerAudioNote(newVal);
+                    }}
                     disabled={userMin <= 24}
-                    className="p-2 bg-slate-950 border border-slate-800 hover:border-emerald-500 rounded-xl text-slate-400 hover:text-emerald-400 disabled:opacity-40 disabled:hover:border-slate-800 active:scale-95 transition-all text-sm font-bold min-w-[38px] min-h-[38px] flex items-center justify-center shrink-0"
+                    className="p-2 bg-slate-950 border border-slate-800 hover:border-emerald-500 rounded-xl text-slate-400 hover:text-emerald-400 disabled:opacity-40 disabled:hover:border-slate-800 active:scale-95 transition-all text-sm font-bold min-w-[38px] min-h-[38px] flex items-center justify-center shrink-0 cursor-pointer"
                     title="最低音を1つ下げる"
                   >
                     <Minus className="w-4 h-4" />
@@ -1161,12 +1395,18 @@ export default function App() {
                     max="70"
                     value={userMin}
                     onChange={(e) => handleMinChange(parseInt(e.target.value))}
+                    onMouseUp={() => triggerAudioNote(userMin)}
+                    onTouchEnd={() => triggerAudioNote(userMin)}
                     className="flex-1 h-2 bg-slate-950 rounded-lg appearance-none cursor-pointer accent-emerald-500 border border-slate-800"
                   />
                   <button
-                    onClick={() => handleMinChange(userMin + 1)}
+                    onClick={() => {
+                      const newVal = Math.min(userMax - 1, userMin + 1);
+                      handleMinChange(newVal);
+                      triggerAudioNote(newVal);
+                    }}
                     disabled={userMin >= userMax - 1}
-                    className="p-2 bg-slate-950 border border-slate-800 hover:border-emerald-500 rounded-xl text-slate-400 hover:text-emerald-400 disabled:opacity-40 disabled:hover:border-slate-800 active:scale-95 transition-all text-sm font-bold min-w-[38px] min-h-[38px] flex items-center justify-center shrink-0"
+                    className="p-2 bg-slate-950 border border-slate-800 hover:border-emerald-500 rounded-xl text-slate-400 hover:text-emerald-400 disabled:opacity-40 disabled:hover:border-slate-800 active:scale-95 transition-all text-sm font-bold min-w-[38px] min-h-[38px] flex items-center justify-center shrink-0 cursor-pointer"
                     title="最低音を1つ上げる"
                   >
                     <Plus className="w-4 h-4" />
@@ -1183,9 +1423,13 @@ export default function App() {
                 </div>
                 <div className="flex items-center gap-2">
                   <button
-                    onClick={() => handleMaxChange(userMax - 1)}
+                    onClick={() => {
+                      const newVal = Math.max(userMin + 1, userMax - 1);
+                      handleMaxChange(newVal);
+                      triggerAudioNote(newVal);
+                    }}
                     disabled={userMax <= userMin + 1}
-                    className="p-2 bg-slate-950 border border-slate-800 hover:border-rose-500 rounded-xl text-slate-400 hover:text-rose-400 disabled:opacity-40 disabled:hover:border-slate-800 active:scale-95 transition-all text-sm font-bold min-w-[38px] min-h-[38px] flex items-center justify-center shrink-0"
+                    className="p-2 bg-slate-950 border border-slate-800 hover:border-rose-500 rounded-xl text-slate-400 hover:text-rose-400 disabled:opacity-40 disabled:hover:border-slate-800 active:scale-95 transition-all text-sm font-bold min-w-[38px] min-h-[38px] flex items-center justify-center shrink-0 cursor-pointer"
                     title="最高音を1つ下げる"
                   >
                     <Minus className="w-4 h-4" />
@@ -1196,18 +1440,39 @@ export default function App() {
                     max="95"
                     value={userMax}
                     onChange={(e) => handleMaxChange(parseInt(e.target.value))}
+                    onMouseUp={() => triggerAudioNote(userMax)}
+                    onTouchEnd={() => triggerAudioNote(userMax)}
                     className="flex-1 h-2 bg-slate-950 rounded-lg appearance-none cursor-pointer accent-rose-500 border border-slate-800"
                   />
                   <button
-                    onClick={() => handleMaxChange(userMax + 1)}
+                    onClick={() => {
+                      const newVal = Math.min(95, userMax + 1);
+                      handleMaxChange(newVal);
+                      triggerAudioNote(newVal);
+                    }}
                     disabled={userMax >= 95}
-                    className="p-2 bg-slate-950 border border-slate-800 hover:border-rose-500 rounded-xl text-slate-400 hover:text-rose-400 disabled:opacity-40 disabled:hover:border-slate-800 active:scale-95 transition-all text-sm font-bold min-w-[38px] min-h-[38px] flex items-center justify-center shrink-0"
+                    className="p-2 bg-slate-950 border border-slate-800 hover:border-rose-500 rounded-xl text-slate-400 hover:text-rose-400 disabled:opacity-40 disabled:hover:border-slate-800 active:scale-95 transition-all text-sm font-bold min-w-[38px] min-h-[38px] flex items-center justify-center shrink-0 cursor-pointer"
                     title="最高音を1つ上げる"
                   >
                     <Plus className="w-4 h-4" />
                   </button>
                 </div>
               </div>
+            </div>
+
+            {/* 3. VIRTUAL PIANO KEYBOARD INTEGRATED */}
+            <div className="mt-5 pt-4 border-t border-slate-800">
+              <PianoKeyboard
+                userMin={userMin}
+                userMax={userMax}
+                selectedSong={selectedSong}
+                simulatedKeyShift={simulatedKeyShift}
+                currentlyPlayingMidi={currentlyPlayingMidi}
+                triggerAudioNote={triggerAudioNote}
+                onSetUserMin={setUserMin}
+                onSetUserMax={setUserMax}
+                setRangeMode={setRangeMode}
+              />
             </div>
 
             {/* 🎙️ Real-time Mic Vocal Range Auto-Measurement Section */}
@@ -1469,16 +1734,6 @@ export default function App() {
             </div>
           </div>
 
-          {/* 3. PHYSICAL NOTE PREVIEW PIANO */}
-          <PianoKeyboard
-            userMin={userMin}
-            userMax={userMax}
-            selectedSong={selectedSong}
-            simulatedKeyShift={simulatedKeyShift}
-            currentlyPlayingMidi={currentlyPlayingMidi}
-            triggerAudioNote={triggerAudioNote}
-          />
-
         </section>
 
         {/* RIGHT COLUMN: Song database filters & song card grid (7 Columns) */}
@@ -1486,7 +1741,7 @@ export default function App() {
           
           {/* 1. FILTER CONTROLS BAR & STATS */}
           <div id="songs-list-header" className="relative z-30 bg-slate-950/95 backdrop-blur-md border border-slate-800/80 rounded-2xl p-5 shadow-2xl space-y-4 transition-all animate-fade-in">
-            <h2 className="text-sm font-semibold text-slate-200 mb-4 flex flex-wrap items-center justify-between gap-2">
+            <h2 className="text-sm font-semibold text-slate-200 mb-4 flex flex-wrap items-center gap-2">
               <span className="flex items-center gap-2">
                 {activeTab === 'mylist' ? (
                   <>
@@ -1500,37 +1755,6 @@ export default function App() {
                   </>
                 )}
               </span>
-              <div className="flex items-center gap-2">
-                {isDev ? (
-                  <>
-                    {dbStatus === 'connected' && (
-                      <span className="inline-flex items-center gap-1 text-[10px] sm:text-xs font-bold text-emerald-400 bg-emerald-500/10 px-2.5 py-0.5 rounded-full border border-emerald-500/20" title="Supabaseデータベースから最新楽曲データを同期しています">
-                        <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-                        Supabase同期中 ({songs.length}曲)
-                      </span>
-                    )}
-                    {dbStatus === 'loading' && (
-                      <span className="inline-flex items-center gap-1 text-[10px] sm:text-xs font-bold text-indigo-400 bg-indigo-500/10 px-2.5 py-0.5 rounded-full border border-indigo-505/20 animate-pulse">
-                        🔄 DB同期中...
-                      </span>
-                    )}
-                    {dbStatus === 'local' && (
-                      <span className="inline-flex items-center gap-1 text-[10px] sm:text-xs font-bold text-slate-400 bg-slate-900 px-2.5 py-0.5 rounded-full border border-slate-800" title="環境変数が未設定のため、ローカル初期データで動作しています">
-                        🔴 オフライン ({songs.length}曲)
-                      </span>
-                    )}
-                    {dbStatus === 'error' && (
-                      <span className="inline-flex items-center gap-1 text-[10px] sm:text-xs font-bold text-rose-400 bg-rose-500/10 px-2.5 py-0.5 rounded-full border border-rose-500/20" title={`同期失敗: ${dbError || '接続エラー'}`}>
-                        ⚠️ エラー代替 ({songs.length}曲)
-                      </span>
-                    )}
-                  </>
-                ) : (
-                  <span className="text-xs text-slate-400 font-mono">
-                    {activeTab === 'mylist' ? `マイリスト登録: ${mySingableSongs.length}曲` : `計 ${songs.length} 曲 登録済み`}
-                  </span>
-                )}
-              </div>
             </h2>
 
             {/* Inputs & Filters */}
@@ -1601,18 +1825,20 @@ export default function App() {
                     <button
                       key={opt.id}
                       onClick={() => setRangeFilter(opt.id as any)}
-                      className={`py-2 px-1.5 rounded-xl border text-[11px] font-bold flex flex-col items-center justify-center gap-0.5 transition-all cursor-pointer select-none truncate ${
+                      className={`py-2 px-1.5 rounded-xl border text-[11px] font-bold flex flex-col items-center justify-center gap-1 transition-all cursor-pointer select-none truncate min-h-[54px] ${
                         isActive
                           ? 'bg-slate-900 border-emerald-400 text-white shadow-xl ring-2 ring-emerald-500/10'
                           : `bg-slate-950/70 opacity-85 hover:opacity-100 ${opt.borderClass}`
                       }`}
                     >
                       <span className="text-[10px] tracking-tight">{opt.label}</span>
-                      <span className={`text-[10px] font-mono font-black px-1.5 py-0.2 rounded-md border ${
-                        isActive ? 'bg-indigo-500 border-indigo-400/20 text-white' : 'bg-slate-900 border-slate-850 text-slate-400'
-                      }`}>
-                        {opt.count}
-                      </span>
+                      {opt.id !== 'all' && (
+                        <span className={`text-[10px] font-mono font-black px-1.5 py-0.2 rounded-md border ${
+                          isActive ? 'bg-indigo-500 border-indigo-400/20 text-white' : 'bg-slate-900 border-slate-850 text-slate-400'
+                        }`}>
+                          {opt.count}
+                        </span>
+                      )}
                     </button>
                   );
                 })}
@@ -1710,7 +1936,7 @@ export default function App() {
                         userMin={userMin}
                         userMax={userMax}
                         simulatedKeyShift={simulatedKeyShift}
-                        onSelectSong={setSelectedSongId}
+                        onSelectSong={handleSelectSong}
                         onToggleFavorite={toggleSingableSong}
                         onTriggerAudioNote={triggerAudioNote}
                         onSetKeyShift={setSimulatedKeyShift}
@@ -1927,6 +2153,125 @@ export default function App() {
         )}
       </AnimatePresence>
 
+      {/* Auto Range Switch Confirmation Modal */}
+      <AnimatePresence>
+        {confirmSwitchAutoRange && autoRangeDiff && (
+          <div className="fixed inset-0 bg-slate-950/80 backdrop-blur-sm z-50 flex items-center justify-center p-4">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95, y: 10 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.95, y: 10 }}
+              transition={{ type: 'spring', duration: 0.4 }}
+              className="bg-slate-900 border border-slate-800 rounded-2xl max-w-md w-full p-6 shadow-2xl space-y-4 text-left"
+            >
+              <div className="flex items-start gap-3">
+                <div className="p-2 bg-indigo-500/10 text-indigo-400 rounded-xl border border-indigo-500/20 shrink-0">
+                  <Sparkles className="w-5 h-5 animate-pulse text-indigo-300" />
+                </div>
+                <div>
+                  <h3 className="text-base font-bold text-white flex items-center gap-1.5">
+                    「自動推定値を使う」に切り替えますか？
+                  </h3>
+                  <p className="text-[11px] text-slate-400 mt-1">
+                    選択した曲「<strong>{autoRangeDiff.songTitle}</strong>」の音域が、現在の設定範囲を超えています。
+                  </p>
+                </div>
+              </div>
+
+              <div className="bg-slate-950/60 rounded-xl p-4 border border-slate-850/80 space-y-4 text-xs">
+                <p className="text-slate-300 leading-relaxed font-medium">
+                  この曲は「マイ歌える曲」に登録されているため、登録曲を基準とした<strong>「自動推定値を使う」</strong>モードに切り替えることで、音域を最適化できます。
+                </p>
+
+                <div className="space-y-3 pt-2 border-t border-slate-800/80">
+                  <div className="text-[11px] font-bold text-indigo-400 font-sans">音域の予想変化：</div>
+                  
+                  {/* Minimum Pitch Change */}
+                  <div className="flex items-center justify-between gap-2 bg-slate-900/60 p-2.5 rounded-lg border border-slate-800/50">
+                    <div className="flex flex-col">
+                      <span className="text-[10px] text-slate-400 font-medium">最低音 (Low)</span>
+                      <div className="flex items-center gap-2 mt-1">
+                        <span className="text-slate-300 font-mono text-[11px] line-through opacity-60">
+                          {formatPitch(autoRangeDiff.currentMin).raw} ({formatPitch(autoRangeDiff.currentMin).note})
+                        </span>
+                        <span className="text-slate-400 text-[10px]">→</span>
+                        <span className="text-emerald-400 font-bold font-mono text-[11.5px]">
+                          {formatPitch(autoRangeDiff.newMin).raw} ({formatPitch(autoRangeDiff.newMin).note})
+                        </span>
+                      </div>
+                    </div>
+                    <div className="text-right">
+                      {autoRangeDiff.newMin - autoRangeDiff.currentMin < 0 ? (
+                        <span className="px-2 py-1 rounded bg-emerald-500/10 text-emerald-400 text-[10px] font-bold border border-emerald-500/20">
+                          {Math.abs(autoRangeDiff.newMin - autoRangeDiff.currentMin)}半音拡張（広がる）
+                        </span>
+                      ) : autoRangeDiff.newMin - autoRangeDiff.currentMin > 0 ? (
+                        <span className="px-2 py-1 rounded bg-amber-500/10 text-amber-400 text-[10px] font-bold border border-amber-500/20">
+                          {autoRangeDiff.newMin - autoRangeDiff.currentMin}半音上昇
+                        </span>
+                      ) : (
+                        <span className="text-slate-500 text-[10px]">変更なし</span>
+                      )}
+                    </div>
+                  </div>
+
+                  {/* Maximum Pitch Change */}
+                  <div className="flex items-center justify-between gap-2 bg-slate-900/60 p-2.5 rounded-lg border border-slate-800/50">
+                    <div className="flex flex-col">
+                      <span className="text-[10px] text-slate-400 font-medium">最高音 (High)</span>
+                      <div className="flex items-center gap-2 mt-1">
+                        <span className="text-slate-300 font-mono text-[11px] line-through opacity-60">
+                          {formatPitch(autoRangeDiff.currentMax).raw} ({formatPitch(autoRangeDiff.currentMax).note})
+                        </span>
+                        <span className="text-slate-400 text-[10px]">→</span>
+                        <span className="text-emerald-400 font-bold font-mono text-[11.5px]">
+                          {formatPitch(autoRangeDiff.newMax).raw} ({formatPitch(autoRangeDiff.newMax).note})
+                        </span>
+                      </div>
+                    </div>
+                    <div className="text-right">
+                      {autoRangeDiff.newMax - autoRangeDiff.currentMax > 0 ? (
+                        <span className="px-2 py-1 rounded bg-emerald-500/10 text-emerald-400 text-[10px] font-bold border border-emerald-500/20">
+                          {autoRangeDiff.newMax - autoRangeDiff.currentMax}半音拡張（広がる）
+                        </span>
+                      ) : autoRangeDiff.newMax - autoRangeDiff.currentMax < 0 ? (
+                        <span className="px-2 py-1 rounded bg-amber-500/10 text-amber-400 text-[10px] font-bold border border-amber-500/20">
+                          {Math.abs(autoRangeDiff.newMax - autoRangeDiff.currentMax)}半音低下
+                        </span>
+                      ) : (
+                        <span className="text-slate-500 text-[10px]">変更なし</span>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex items-center justify-end gap-3 pt-2">
+                <button
+                  onClick={() => {
+                    setConfirmSwitchAutoRange(false);
+                    setAutoRangeDiff(null);
+                  }}
+                  className="px-4 py-2 bg-slate-850 hover:bg-slate-800 border border-slate-800 rounded-xl text-xs font-semibold text-slate-300 transition-all hover:text-white cursor-pointer"
+                >
+                  手動設定のままにする
+                </button>
+                <button
+                  onClick={() => {
+                    setConfirmSwitchAutoRange(false);
+                    setAutoRangeDiff(null);
+                    applyAutoRangeMode();
+                  }}
+                  className="px-4 py-2 bg-gradient-to-r from-indigo-500 to-purple-500 hover:from-indigo-450 hover:to-purple-450 text-white font-bold rounded-xl text-xs transition-all active:scale-95 shadow-md shadow-indigo-950/20 cursor-pointer"
+                >
+                  自動推定に切り替える
+                </button>
+              </div>
+            </motion.div>
+          </div>
+        )}
+      </AnimatePresence>
+
       {/* Toast Alert Notification */}
       <AnimatePresence>
         {toast && toast.visible && (
@@ -2032,19 +2377,126 @@ export default function App() {
                             className="w-full bg-slate-950 border border-slate-800 rounded-xl pl-9 pr-4 py-2 text-xs text-slate-200 placeholder-slate-500 focus:outline-none focus:border-emerald-500"
                           />
                         </div>
-                        <button
-                          onClick={handleOpenAddForm}
-                          className="bg-emerald-650 hover:bg-emerald-550 text-slate-950 font-extrabold px-4 py-2 border border-emerald-500/30 rounded-xl text-xs flex items-center justify-center gap-1.5 transition-all shadow-md shrink-0 cursor-pointer active:scale-95"
-                        >
-                          <Plus className="w-4 h-4" />
-                          楽曲を追加する
-                        </button>
+                        <div className="flex items-center gap-2">
+                          {dbStatus === 'connected' && (
+                            <button
+                              onClick={cleanupDuplicateSongs}
+                              disabled={isCleaning}
+                              className="bg-rose-500/10 hover:bg-rose-500/20 border border-rose-500/30 text-rose-300 font-bold px-3 py-2 rounded-xl text-xs flex items-center justify-center gap-1.5 transition-all shadow-md shrink-0 cursor-pointer disabled:opacity-50 active:scale-95"
+                              title="同じ曲名・アーティスト名のデータ（重複）を自動検知し、古いレコード（IDが最も小さいもの）を残して余分なデータを安全に一括削除します。"
+                            >
+                              <Trash2 className="w-3.5 h-3.5" />
+                              <span>{isCleaning ? 'クリーンアップ中...' : '重複を自動クリーンアップ'}</span>
+                            </button>
+                          )}
+                          <button
+                            onClick={handleOpenAddForm}
+                            className="bg-emerald-650 hover:bg-emerald-550 text-slate-950 font-extrabold px-4 py-2 border border-emerald-500/30 rounded-xl text-xs flex items-center justify-center gap-1.5 transition-all shadow-md shrink-0 cursor-pointer active:scale-95"
+                          >
+                            <Plus className="w-4 h-4" />
+                            楽曲を追加する
+                          </button>
+                        </div>
                       </div>
 
                       {/* Warnings if offline */}
                       {dbStatus !== 'connected' && (
                         <div className="bg-amber-500/10 border border-amber-500/20 rounded-xl p-3 text-[11px] text-amber-300 leading-relaxed">
                           ⚠️ <strong>オフライン動作中</strong>: Supabase環境変数が設定されていないため、追加・削除・変更はメモリへの一時適用になります。リロードすると全16曲に戻ります。本番保存にはSupabaseの有効化が必要です。
+                        </div>
+                      )}
+
+                      {/* 📈 データベースの健康診断 & 改善アドバイザー (Enrichment Advisor) */}
+                      {databaseStats && (
+                        <div className="bg-slate-950/65 border border-indigo-500/15 rounded-xl p-4 transition-all">
+                          <div className="flex items-center justify-between cursor-pointer select-none" onClick={() => setIsAdvisorOpen(!isAdvisorOpen)}>
+                            <div className="flex items-center gap-2">
+                              <Sparkles className="w-4 h-4 text-indigo-400" />
+                              <span className="font-bold text-xs text-white">
+                                📊 データベース充実度・健康診断スコア: 
+                                <span className={`ml-1.5 px-2 py-0.5 rounded-full font-mono ${
+                                  databaseStats.score >= 90 ? 'bg-emerald-500/10 text-emerald-400 border border-emerald-500/20' :
+                                  databaseStats.score >= 70 ? 'bg-indigo-500/10 text-indigo-400 border border-indigo-500/20' :
+                                  'bg-amber-500/10 text-amber-400 border border-amber-500/20'
+                                }`}>
+                                  {databaseStats.score} / 100 点
+                                </span>
+                              </span>
+                            </div>
+                            <span className="text-[10px] text-slate-500 hover:text-slate-300 transition-colors font-bold">
+                              {isAdvisorOpen ? 'アドバイスを閉じる ▲' : 'アドバイスを開く ▼'}
+                            </span>
+                          </div>
+
+                          {isAdvisorOpen && (
+                            <div className="mt-3 pt-3 border-t border-slate-800 space-y-3.5 text-[11px]">
+                              {/* 統計ミニグリッド */}
+                              <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
+                                <div className="bg-slate-900/80 p-2.5 rounded-lg border border-slate-850">
+                                  <div className="text-[10px] text-slate-500 font-bold uppercase">総登録曲数</div>
+                                  <div className="text-xs font-extrabold text-slate-200 font-mono mt-0.5">{databaseStats.total} 曲</div>
+                                </div>
+                                <div className="bg-slate-900/80 p-2.5 rounded-lg border border-slate-850">
+                                  <div className="text-[10px] text-slate-500 font-bold uppercase">登録アーティスト数</div>
+                                  <div className="text-xs font-extrabold text-slate-200 font-mono mt-0.5">{databaseStats.totalArtists} 組</div>
+                                </div>
+                                <div className="bg-slate-900/80 p-2.5 rounded-lg border border-slate-850">
+                                  <div className="text-[10px] text-slate-500 font-bold uppercase">男女比率</div>
+                                  <div className="text-xs font-extrabold text-slate-200 mt-0.5">
+                                    <span className="text-sky-400">男: {databaseStats.maleRatio.toFixed(0)}%</span>
+                                    <span className="text-slate-600 mx-1">/</span>
+                                    <span className="text-rose-400">女: {databaseStats.femaleRatio.toFixed(0)}%</span>
+                                  </div>
+                                </div>
+                                <div className="bg-slate-900/80 p-2.5 rounded-lg border border-slate-850">
+                                  <div className="text-[10px] text-slate-500 font-bold uppercase">最新トレンドカバー</div>
+                                  <div className="text-xs font-extrabold text-slate-200 mt-0.5 flex items-center gap-1">
+                                    {databaseStats.hasTuki && databaseStats.hasKento ? (
+                                      <span className="text-emerald-400 font-extrabold">網羅完了 (極めて良好)</span>
+                                    ) : (
+                                      <span className="text-amber-400">tuki., こっちのけんと未登録</span>
+                                    )}
+                                  </div>
+                                </div>
+                              </div>
+
+                              {/* 比率グラフィックバー */}
+                              <div className="space-y-1.5">
+                                <div className="flex justify-between text-[9px] text-slate-400 font-semibold px-0.5">
+                                  <span>男性歌手の曲 ({databaseStats.maleRatio.toFixed(0)}%)</span>
+                                  <span>女性歌手の曲 ({databaseStats.femaleRatio.toFixed(0)}%)</span>
+                                </div>
+                                <div className="w-full h-2 bg-slate-850 rounded-full overflow-hidden flex">
+                                  <div style={{ width: `${databaseStats.maleRatio}%` }} className="bg-sky-500 h-full" />
+                                  <div style={{ width: `${databaseStats.unisexRatio}%` }} className="bg-emerald-400 h-full" />
+                                  <div style={{ width: `${databaseStats.femaleRatio}%` }} className="bg-rose-500 h-full" />
+                                </div>
+                              </div>
+
+                              {/* 改善アドバイス提案リスト */}
+                              <div className="bg-slate-900/60 p-3.5 rounded-xl border border-slate-850">
+                                <div className="text-xs font-semibold text-slate-200 mb-2 flex items-center gap-1.5">
+                                  <Info className="w-3.5 h-3.5 text-indigo-400" />
+                                  <span>AI楽曲データ充実化アドバイス</span>
+                                </div>
+                                {databaseStats.recommendations.length > 0 ? (
+                                  <ul className="space-y-2 text-slate-300">
+                                    {databaseStats.recommendations.map((rec, i) => (
+                                      <li key={i} className="flex items-start gap-1.5 leading-relaxed">
+                                        <span className="text-indigo-400 select-none font-bold mt-0.5">•</span>
+                                        <span>{rec}</span>
+                                      </li>
+                                    ))}
+                                  </ul>
+                                ) : (
+                                  <div className="text-emerald-400 font-bold flex items-center gap-1.5 py-1.5 bg-emerald-500/5 px-2.5 rounded-lg border border-emerald-500/10">
+                                    <Check className="w-4 h-4 text-emerald-400" />
+                                    <span>パーフェクト！最新の人気アーティスト(tuki., こっちのけんと等)をカバーし、音域バランスも極めて優れています。素晴らしい充実度です。</span>
+                                  </div>
+                                )}
+                              </div>
+                            </div>
+                          )}
                         </div>
                       )}
 

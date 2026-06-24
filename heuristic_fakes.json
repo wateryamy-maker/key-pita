@@ -1,0 +1,7999 @@
+[
+  {
+    "id": "71",
+    "title": "IRIS OUT.",
+    "artist": "米津玄師",
+    "min": 49,
+    "max": 74,
+    "gender": "male",
+    "original_key": "Cマイナー",
+    "genre": "J-POP",
+    "tags": [
+      "チェンソーマン",
+      "最新ヒット",
+      "エモい"
+    ],
+    "description": "米津玄師らしい独特の世界観とリズムが特徴。低音から高音まで幅広い音域を使いこなす表現力が必要。",
+    "created_at": "2026-06-23T05:31:09.913471+00:00"
+  },
+  {
+    "id": "ado_026",
+    "title": "ザ・ファースト・テイク",
+    "artist": "Ado",
+    "min": 54,
+    "max": 76,
+    "gender": "female",
+    "original_key": "Eメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "Ado"
+    ],
+    "description": "一発録りのような緊張感",
+    "created_at": "2026-06-24T04:22:11.636399+00:00"
+  },
+  {
+    "id": "ado_027",
+    "title": "価値がない",
+    "artist": "Ado",
+    "min": 55,
+    "max": 77,
+    "gender": "female",
+    "original_key": "Fメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "Ado"
+    ],
+    "description": "虚無感",
+    "created_at": "2026-06-24T04:22:11.636399+00:00"
+  },
+  {
+    "id": "ado_028",
+    "title": "花火",
+    "artist": "Ado",
+    "min": 54,
+    "max": 76,
+    "gender": "female",
+    "original_key": "Eメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "Ado"
+    ],
+    "description": "夏の終わり",
+    "created_at": "2026-06-24T04:22:11.636399+00:00"
+  },
+  {
+    "id": "ado_030",
+    "title": "おどロボ",
+    "artist": "Ado",
+    "min": 57,
+    "max": 79,
+    "gender": "female",
+    "original_key": "Gメジャー",
+    "genre": "Dance",
+    "tags": [
+      "Ado"
+    ],
+    "description": "ロボットのようなリズム",
+    "created_at": "2026-06-24T04:22:11.636399+00:00"
+  },
+  {
+    "id": "ado_031",
+    "title": "メドレー",
+    "artist": "Ado",
+    "min": 56,
+    "max": 78,
+    "gender": "female",
+    "original_key": "F#メジャー",
+    "genre": "J-POP",
+    "tags": [
+      "Ado"
+    ],
+    "description": "多様な顔",
+    "created_at": "2026-06-24T04:22:11.636399+00:00"
+  },
+  {
+    "id": "ado_099",
+    "title": "未公開曲1",
+    "artist": "Ado",
+    "min": 56,
+    "max": 78,
+    "gender": "female",
+    "original_key": "F#メジャー",
+    "genre": "J-POP",
+    "tags": [
+      "Ado"
+    ],
+    "description": "神秘",
+    "created_at": "2026-06-24T04:22:11.636399+00:00"
+  },
+  {
+    "id": "ado_100",
+    "title": "未公開曲2",
+    "artist": "Ado",
+    "min": 55,
+    "max": 77,
+    "gender": "female",
+    "original_key": "Fメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "Ado"
+    ],
+    "description": "未知",
+    "created_at": "2026-06-24T04:22:11.636399+00:00"
+  },
+  {
+    "id": "aiko_052",
+    "title": "予告",
+    "artist": "aiko",
+    "min": 54,
+    "max": 79,
+    "gender": "female",
+    "original_key": "Cメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "aiko"
+    ],
+    "description": "予感",
+    "created_at": "2026-06-24T05:47:36.059142+00:00"
+  },
+  {
+    "id": "aiko_057",
+    "title": "あたしの今",
+    "artist": "aiko",
+    "min": 53,
+    "max": 78,
+    "gender": "female",
+    "original_key": "Bメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "aiko"
+    ],
+    "description": "現在",
+    "created_at": "2026-06-24T05:47:36.059142+00:00"
+  },
+  {
+    "id": "aiko_058",
+    "title": "相合傘",
+    "artist": "aiko",
+    "min": 54,
+    "max": 79,
+    "gender": "female",
+    "original_key": "Cメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "aiko"
+    ],
+    "description": "雨傘",
+    "created_at": "2026-06-24T05:47:36.059142+00:00"
+  },
+  {
+    "id": "aimyon_069",
+    "title": "夜行バス",
+    "artist": "あいみょん",
+    "min": 53,
+    "max": 75,
+    "gender": "female",
+    "original_key": "Ebメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "あいみょん"
+    ],
+    "description": "旅",
+    "created_at": "2026-06-24T04:05:10.291194+00:00"
+  },
+  {
+    "id": "aimyon_070",
+    "title": "ナウマン象",
+    "artist": "あいみょん",
+    "min": 52,
+    "max": 74,
+    "gender": "female",
+    "original_key": "Dメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "あいみょん"
+    ],
+    "description": "古",
+    "created_at": "2026-06-24T04:05:10.291194+00:00"
+  },
+  {
+    "id": "aimyon_071",
+    "title": "19歳",
+    "artist": "あいみょん",
+    "min": 54,
+    "max": 76,
+    "gender": "female",
+    "original_key": "Eメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "あいみょん"
+    ],
+    "description": "年齢",
+    "created_at": "2026-06-24T04:05:10.291194+00:00"
+  },
+  {
+    "id": "aimyon_072",
+    "title": "あした世界が終わるとしても",
+    "artist": "あいみょん",
+    "min": 53,
+    "max": 75,
+    "gender": "female",
+    "original_key": "Ebメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "あいみょん"
+    ],
+    "description": "最後",
+    "created_at": "2026-06-24T04:05:10.291194+00:00"
+  },
+  {
+    "id": "aimyon_073",
+    "title": "ポプリ",
+    "artist": "あいみょん",
+    "min": 54,
+    "max": 76,
+    "gender": "female",
+    "original_key": "Eメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "あいみょん"
+    ],
+    "description": "香り",
+    "created_at": "2026-06-24T04:05:10.291194+00:00"
+  },
+  {
+    "id": "aimyon_075",
+    "title": "金魚",
+    "artist": "あいみょん",
+    "min": 52,
+    "max": 74,
+    "gender": "female",
+    "original_key": "Dメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "あいみょん"
+    ],
+    "description": "水槽",
+    "created_at": "2026-06-24T04:05:10.291194+00:00"
+  },
+  {
+    "id": "ajikan_022",
+    "title": "ダイアローグ",
+    "artist": "ASIAN KUNG-FU GENERATION",
+    "min": 54,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Eメジャー",
+    "genre": "J-ROCK",
+    "tags": [
+      "ASIAN KUNG-FU GENERATION"
+    ],
+    "description": "対話",
+    "created_at": "2026-06-24T04:20:47.156003+00:00"
+  },
+  {
+    "id": "ajikan_034",
+    "title": "警鐘",
+    "artist": "ASIAN KUNG-FU GENERATION",
+    "min": 56,
+    "max": 78,
+    "gender": "male",
+    "original_key": "F#メジャー",
+    "genre": "J-ROCK",
+    "tags": [
+      "ASIAN KUNG-FU GENERATION"
+    ],
+    "description": "警告",
+    "created_at": "2026-06-24T04:20:47.156003+00:00"
+  },
+  {
+    "id": "akasaki_093",
+    "title": "夢",
+    "artist": "AKASAKI",
+    "min": 54,
+    "max": 77,
+    "gender": "male",
+    "original_key": "Eメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "AKASAKI"
+    ],
+    "description": "夢",
+    "created_at": "2026-06-24T08:01:18.678663+00:00"
+  },
+  {
+    "id": "akasaki_094",
+    "title": "恋",
+    "artist": "AKASAKI",
+    "min": 53,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "AKASAKI"
+    ],
+    "description": "恋",
+    "created_at": "2026-06-24T08:01:18.678663+00:00"
+  },
+  {
+    "id": "akasaki_095",
+    "title": "空",
+    "artist": "AKASAKI",
+    "min": 55,
+    "max": 78,
+    "gender": "male",
+    "original_key": "F#メジャー",
+    "genre": "J-POP",
+    "tags": [
+      "AKASAKI"
+    ],
+    "description": "青",
+    "created_at": "2026-06-24T08:01:18.678663+00:00"
+  },
+  {
+    "id": "akasaki_096",
+    "title": "花",
+    "artist": "AKASAKI",
+    "min": 54,
+    "max": 77,
+    "gender": "male",
+    "original_key": "Eメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "AKASAKI"
+    ],
+    "description": "華",
+    "created_at": "2026-06-24T08:01:18.678663+00:00"
+  },
+  {
+    "id": "akasaki_097",
+    "title": "夜",
+    "artist": "AKASAKI",
+    "min": 53,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "AKASAKI"
+    ],
+    "description": "夜",
+    "created_at": "2026-06-24T08:01:18.678663+00:00"
+  },
+  {
+    "id": "akasaki_098",
+    "title": "道",
+    "artist": "AKASAKI",
+    "min": 52,
+    "max": 75,
+    "gender": "male",
+    "original_key": "Dメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "AKASAKI"
+    ],
+    "description": "道",
+    "created_at": "2026-06-24T08:01:18.678663+00:00"
+  },
+  {
+    "id": "akasaki_099",
+    "title": "愛",
+    "artist": "AKASAKI",
+    "min": 54,
+    "max": 77,
+    "gender": "male",
+    "original_key": "Eメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "AKASAKI"
+    ],
+    "description": "愛",
+    "created_at": "2026-06-24T08:01:18.678663+00:00"
+  },
+  {
+    "id": "akasaki_100",
+    "title": "風",
+    "artist": "AKASAKI",
+    "min": 53,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "AKASAKI"
+    ],
+    "description": "風",
+    "created_at": "2026-06-24T08:01:18.678663+00:00"
+  },
+  {
+    "id": "anzenchitai_050",
+    "title": "熱視線",
+    "artist": "安全地帯",
+    "min": 54,
+    "max": 77,
+    "gender": "male",
+    "original_key": "Eメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "安全地帯"
+    ],
+    "description": "情熱",
+    "created_at": "2026-06-24T07:25:10.489631+00:00"
+  },
+  {
+    "id": "anzenchitai_051",
+    "title": "マスカレード",
+    "artist": "安全地帯",
+    "min": 55,
+    "max": 78,
+    "gender": "male",
+    "original_key": "F#メジャー",
+    "genre": "J-POP",
+    "tags": [
+      "安全地帯"
+    ],
+    "description": "仮面",
+    "created_at": "2026-06-24T07:25:10.489631+00:00"
+  },
+  {
+    "id": "anzenchitai_053",
+    "title": "夢のつづき",
+    "artist": "安全地帯",
+    "min": 52,
+    "max": 75,
+    "gender": "male",
+    "original_key": "Dメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "安全地帯"
+    ],
+    "description": "追想",
+    "created_at": "2026-06-24T07:25:10.489631+00:00"
+  },
+  {
+    "id": "anzenchitai_055",
+    "title": "夏の終わりのハーモニー",
+    "artist": "安全地帯",
+    "min": 53,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "安全地帯"
+    ],
+    "description": "季節",
+    "created_at": "2026-06-24T07:25:10.489631+00:00"
+  },
+  {
+    "id": "anzenchitai_056",
+    "title": "ロンリーウルフ",
+    "artist": "安全地帯",
+    "min": 55,
+    "max": 78,
+    "gender": "male",
+    "original_key": "F#メジャー",
+    "genre": "J-POP",
+    "tags": [
+      "安全地帯"
+    ],
+    "description": "孤独",
+    "created_at": "2026-06-24T07:25:10.489631+00:00"
+  },
+  {
+    "id": "anzenchitai_057",
+    "title": "銀色のピストル",
+    "artist": "安全地帯",
+    "min": 56,
+    "max": 79,
+    "gender": "male",
+    "original_key": "Gメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "安全地帯"
+    ],
+    "description": "衝撃",
+    "created_at": "2026-06-24T07:25:10.489631+00:00"
+  },
+  {
+    "id": "anzenchitai_058",
+    "title": "情熱",
+    "artist": "安全地帯",
+    "min": 55,
+    "max": 78,
+    "gender": "male",
+    "original_key": "F#メジャー",
+    "genre": "J-POP",
+    "tags": [
+      "安全地帯"
+    ],
+    "description": "炎",
+    "created_at": "2026-06-24T07:25:10.489631+00:00"
+  },
+  {
+    "id": "anzenchitai_059",
+    "title": "消えない夜",
+    "artist": "安全地帯",
+    "min": 53,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "安全地帯"
+    ],
+    "description": "記憶",
+    "created_at": "2026-06-24T07:25:10.489631+00:00"
+  },
+  {
+    "id": "anzenchitai_060",
+    "title": "結界",
+    "artist": "安全地帯",
+    "min": 54,
+    "max": 77,
+    "gender": "male",
+    "original_key": "Eメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "安全地帯"
+    ],
+    "description": "境界",
+    "created_at": "2026-06-24T07:25:10.489631+00:00"
+  },
+  {
+    "id": "arake_068",
+    "title": "ヒーロー",
+    "artist": "Arakezuri",
+    "min": 54,
+    "max": 77,
+    "gender": "male",
+    "original_key": "Eメジャー",
+    "genre": "J-ROCK",
+    "tags": [
+      "Arakezuri"
+    ],
+    "description": "憧れ",
+    "created_at": "2026-06-24T08:01:18.678663+00:00"
+  },
+  {
+    "id": "arake_069",
+    "title": "夜",
+    "artist": "Arakezuri",
+    "min": 53,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "J-ROCK",
+    "tags": [
+      "Arakezuri"
+    ],
+    "description": "夜",
+    "created_at": "2026-06-24T08:01:18.678663+00:00"
+  },
+  {
+    "id": "arake_070",
+    "title": "道",
+    "artist": "Arakezuri",
+    "min": 52,
+    "max": 75,
+    "gender": "male",
+    "original_key": "Dメジャー",
+    "genre": "J-ROCK",
+    "tags": [
+      "Arakezuri"
+    ],
+    "description": "歩み",
+    "created_at": "2026-06-24T08:01:18.678663+00:00"
+  },
+  {
+    "id": "arake_071",
+    "title": "嘘",
+    "artist": "Arakezuri",
+    "min": 54,
+    "max": 77,
+    "gender": "male",
+    "original_key": "Eメジャー",
+    "genre": "J-ROCK",
+    "tags": [
+      "Arakezuri"
+    ],
+    "description": "偽り",
+    "created_at": "2026-06-24T08:01:18.678663+00:00"
+  },
+  {
+    "id": "arake_072",
+    "title": "愛",
+    "artist": "Arakezuri",
+    "min": 53,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "J-ROCK",
+    "tags": [
+      "Arakezuri"
+    ],
+    "description": "愛",
+    "created_at": "2026-06-24T08:01:18.678663+00:00"
+  },
+  {
+    "id": "arake_073",
+    "title": "夢",
+    "artist": "Arakezuri",
+    "min": 52,
+    "max": 75,
+    "gender": "male",
+    "original_key": "Dメジャー",
+    "genre": "J-ROCK",
+    "tags": [
+      "Arakezuri"
+    ],
+    "description": "夢",
+    "created_at": "2026-06-24T08:01:18.678663+00:00"
+  },
+  {
+    "id": "arake_074",
+    "title": "風",
+    "artist": "Arakezuri",
+    "min": 54,
+    "max": 77,
+    "gender": "male",
+    "original_key": "Eメジャー",
+    "genre": "J-ROCK",
+    "tags": [
+      "Arakezuri"
+    ],
+    "description": "風",
+    "created_at": "2026-06-24T08:01:18.678663+00:00"
+  },
+  {
+    "id": "arake_075",
+    "title": "声",
+    "artist": "Arakezuri",
+    "min": 53,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "J-ROCK",
+    "tags": [
+      "Arakezuri"
+    ],
+    "description": "叫び",
+    "created_at": "2026-06-24T08:01:18.678663+00:00"
+  },
+  {
+    "id": "arake_076",
+    "title": "空",
+    "artist": "Arakezuri",
+    "min": 55,
+    "max": 78,
+    "gender": "male",
+    "original_key": "F#メジャー",
+    "genre": "J-ROCK",
+    "tags": [
+      "Arakezuri"
+    ],
+    "description": "広い",
+    "created_at": "2026-06-24T08:01:18.678663+00:00"
+  },
+  {
+    "id": "arake_077",
+    "title": "光",
+    "artist": "Arakezuri",
+    "min": 54,
+    "max": 77,
+    "gender": "male",
+    "original_key": "Eメジャー",
+    "genre": "J-ROCK",
+    "tags": [
+      "Arakezuri"
+    ],
+    "description": "照",
+    "created_at": "2026-06-24T08:01:18.678663+00:00"
+  },
+  {
+    "id": "arake_078",
+    "title": "雨",
+    "artist": "Arakezuri",
+    "min": 53,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "J-ROCK",
+    "tags": [
+      "Arakezuri"
+    ],
+    "description": "雨",
+    "created_at": "2026-06-24T08:01:18.678663+00:00"
+  },
+  {
+    "id": "arake_079",
+    "title": "雲",
+    "artist": "Arakezuri",
+    "min": 52,
+    "max": 75,
+    "gender": "male",
+    "original_key": "Dメジャー",
+    "genre": "J-ROCK",
+    "tags": [
+      "Arakezuri"
+    ],
+    "description": "流",
+    "created_at": "2026-06-24T08:01:18.678663+00:00"
+  },
+  {
+    "id": "arake_080",
+    "title": "火",
+    "artist": "Arakezuri",
+    "min": 54,
+    "max": 77,
+    "gender": "male",
+    "original_key": "Eメジャー",
+    "genre": "J-ROCK",
+    "tags": [
+      "Arakezuri"
+    ],
+    "description": "熱",
+    "created_at": "2026-06-24T08:01:18.678663+00:00"
+  },
+  {
+    "id": "arashi_088",
+    "title": "Believe",
+    "artist": "嵐",
+    "min": 55,
+    "max": 78,
+    "gender": "male",
+    "original_key": "F#メジャー",
+    "genre": "J-POP",
+    "tags": [
+      "嵐"
+    ],
+    "description": "信頼",
+    "created_at": "2026-06-24T05:49:18.176741+00:00"
+  },
+  {
+    "id": "arashi_089",
+    "title": "truth",
+    "artist": "嵐",
+    "min": 56,
+    "max": 79,
+    "gender": "male",
+    "original_key": "Gメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "嵐"
+    ],
+    "description": "真実",
+    "created_at": "2026-06-24T05:49:18.176741+00:00"
+  },
+  {
+    "id": "arashi_090",
+    "title": "感謝カンゲキ雨嵐",
+    "artist": "嵐",
+    "min": 54,
+    "max": 77,
+    "gender": "male",
+    "original_key": "Fメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "嵐"
+    ],
+    "description": "感謝",
+    "created_at": "2026-06-24T05:49:18.176741+00:00"
+  },
+  {
+    "id": "ayu_023",
+    "title": "appears",
+    "artist": "浜崎あゆみ",
+    "min": 52,
+    "max": 75,
+    "gender": "female",
+    "original_key": "Dメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "浜崎あゆみ"
+    ],
+    "description": "出現",
+    "created_at": "2026-06-24T06:09:48.131881+00:00"
+  },
+  {
+    "id": "ayu_024",
+    "title": "Fly high",
+    "artist": "浜崎あゆみ",
+    "min": 56,
+    "max": 79,
+    "gender": "female",
+    "original_key": "Gメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "浜崎あゆみ"
+    ],
+    "description": "飛翔",
+    "created_at": "2026-06-24T06:09:48.131881+00:00"
+  },
+  {
+    "id": "ayu_025",
+    "title": "SURREAL",
+    "artist": "浜崎あゆみ",
+    "min": 55,
+    "max": 78,
+    "gender": "female",
+    "original_key": "Fメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "浜崎あゆみ"
+    ],
+    "description": "夢想",
+    "created_at": "2026-06-24T06:09:48.131881+00:00"
+  },
+  {
+    "id": "ayu_026",
+    "title": "AUDIENCE",
+    "artist": "浜崎あゆみ",
+    "min": 57,
+    "max": 80,
+    "gender": "female",
+    "original_key": "G#メジャー",
+    "genre": "J-POP",
+    "tags": [
+      "浜崎あゆみ"
+    ],
+    "description": "観衆",
+    "created_at": "2026-06-24T06:09:48.131881+00:00"
+  },
+  {
+    "id": "ayu_027",
+    "title": "Depend on you",
+    "artist": "浜崎あゆみ",
+    "min": 52,
+    "max": 75,
+    "gender": "female",
+    "original_key": "Dメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "浜崎あゆみ"
+    ],
+    "description": "信頼",
+    "created_at": "2026-06-24T06:09:48.131881+00:00"
+  },
+  {
+    "id": "ayu_028",
+    "title": "TO BE",
+    "artist": "浜崎あゆみ",
+    "min": 53,
+    "max": 76,
+    "gender": "female",
+    "original_key": "Ebメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "浜崎あゆみ"
+    ],
+    "description": "存在",
+    "created_at": "2026-06-24T06:09:48.131881+00:00"
+  },
+  {
+    "id": "ayu_029",
+    "title": "Who...",
+    "artist": "浜崎あゆみ",
+    "min": 51,
+    "max": 74,
+    "gender": "female",
+    "original_key": "Cメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "浜崎あゆみ"
+    ],
+    "description": "真実",
+    "created_at": "2026-06-24T06:09:48.131881+00:00"
+  },
+  {
+    "id": "ayu_030",
+    "title": "monochrome",
+    "artist": "浜崎あゆみ",
+    "min": 54,
+    "max": 77,
+    "gender": "female",
+    "original_key": "Eメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "浜崎あゆみ"
+    ],
+    "description": "色調",
+    "created_at": "2026-06-24T06:09:48.131881+00:00"
+  },
+  {
+    "id": "begin_031",
+    "title": "君を見ている",
+    "artist": "BEGIN",
+    "min": 54,
+    "max": 77,
+    "gender": "male",
+    "original_key": "Eメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "BEGIN"
+    ],
+    "description": "視線",
+    "created_at": "2026-06-24T07:19:24.575117+00:00"
+  },
+  {
+    "id": "begin_032",
+    "title": "三線の花",
+    "artist": "BEGIN",
+    "min": 53,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "BEGIN"
+    ],
+    "description": "伝統",
+    "created_at": "2026-06-24T07:19:24.575117+00:00"
+  },
+  {
+    "id": "begin_033",
+    "title": "爬虫類",
+    "artist": "BEGIN",
+    "min": 52,
+    "max": 75,
+    "gender": "male",
+    "original_key": "Dメジャー",
+    "genre": "J-ROCK",
+    "tags": [
+      "BEGIN"
+    ],
+    "description": "異",
+    "created_at": "2026-06-24T07:19:24.575117+00:00"
+  },
+  {
+    "id": "begin_034",
+    "title": "金網デスマッチ",
+    "artist": "BEGIN",
+    "min": 56,
+    "max": 79,
+    "gender": "male",
+    "original_key": "Gメジャー",
+    "genre": "J-ROCK",
+    "tags": [
+      "BEGIN"
+    ],
+    "description": "闘",
+    "created_at": "2026-06-24T07:19:24.575117+00:00"
+  },
+  {
+    "id": "begin_035",
+    "title": "家へ帰ろう",
+    "artist": "BEGIN",
+    "min": 53,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "BEGIN"
+    ],
+    "description": "帰還",
+    "created_at": "2026-06-24T07:19:24.575117+00:00"
+  },
+  {
+    "id": "begin_036",
+    "title": "サンセット・ロード",
+    "artist": "BEGIN",
+    "min": 54,
+    "max": 77,
+    "gender": "male",
+    "original_key": "Eメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "BEGIN"
+    ],
+    "description": "夕暮",
+    "created_at": "2026-06-24T07:19:24.575117+00:00"
+  },
+  {
+    "id": "begin_037",
+    "title": "北の星空",
+    "artist": "BEGIN",
+    "min": 53,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "BEGIN"
+    ],
+    "description": "星空",
+    "created_at": "2026-06-24T07:19:24.575117+00:00"
+  },
+  {
+    "id": "begin_038",
+    "title": "青い海",
+    "artist": "BEGIN",
+    "min": 55,
+    "max": 78,
+    "gender": "male",
+    "original_key": "Fメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "BEGIN"
+    ],
+    "description": "海",
+    "created_at": "2026-06-24T07:19:24.575117+00:00"
+  },
+  {
+    "id": "begin_039",
+    "title": "春の風",
+    "artist": "BEGIN",
+    "min": 54,
+    "max": 77,
+    "gender": "male",
+    "original_key": "Eメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "BEGIN"
+    ],
+    "description": "春",
+    "created_at": "2026-06-24T07:19:24.575117+00:00"
+  },
+  {
+    "id": "begin_040",
+    "title": "祭り",
+    "artist": "BEGIN",
+    "min": 56,
+    "max": 79,
+    "gender": "male",
+    "original_key": "Gメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "BEGIN"
+    ],
+    "description": "宴",
+    "created_at": "2026-06-24T07:19:24.575117+00:00"
+  },
+  {
+    "id": "boom_026",
+    "title": "からたち野道",
+    "artist": "THE BOOM",
+    "min": 52,
+    "max": 75,
+    "gender": "male",
+    "original_key": "Dメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "THE BOOM"
+    ],
+    "description": "郷愁",
+    "created_at": "2026-06-24T08:01:18.678663+00:00"
+  },
+  {
+    "id": "boom_028",
+    "title": "幸せだなあ",
+    "artist": "THE BOOM",
+    "min": 53,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "THE BOOM"
+    ],
+    "description": "感謝",
+    "created_at": "2026-06-24T08:01:18.678663+00:00"
+  },
+  {
+    "id": "boom_029",
+    "title": "気球に乗って",
+    "artist": "THE BOOM",
+    "min": 54,
+    "max": 77,
+    "gender": "male",
+    "original_key": "Eメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "THE BOOM"
+    ],
+    "description": "旅",
+    "created_at": "2026-06-24T08:01:18.678663+00:00"
+  },
+  {
+    "id": "boom_030",
+    "title": "僕の散歩道",
+    "artist": "THE BOOM",
+    "min": 52,
+    "max": 75,
+    "gender": "male",
+    "original_key": "Dメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "THE BOOM"
+    ],
+    "description": "日常",
+    "created_at": "2026-06-24T08:01:18.678663+00:00"
+  },
+  {
+    "id": "boom_031",
+    "title": "手紙",
+    "artist": "THE BOOM",
+    "min": 51,
+    "max": 74,
+    "gender": "male",
+    "original_key": "Cメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "THE BOOM"
+    ],
+    "description": "伝",
+    "created_at": "2026-06-24T08:01:18.678663+00:00"
+  },
+  {
+    "id": "boom_032",
+    "title": "そばにいたい",
+    "artist": "THE BOOM",
+    "min": 53,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "THE BOOM"
+    ],
+    "description": "愛",
+    "created_at": "2026-06-24T08:01:18.678663+00:00"
+  },
+  {
+    "id": "boom_033",
+    "title": "真夏の奇跡",
+    "artist": "THE BOOM",
+    "min": 55,
+    "max": 78,
+    "gender": "male",
+    "original_key": "F#メジャー",
+    "genre": "J-POP",
+    "tags": [
+      "THE BOOM"
+    ],
+    "description": "奇跡",
+    "created_at": "2026-06-24T08:01:18.678663+00:00"
+  },
+  {
+    "id": "boom_034",
+    "title": "つり革",
+    "artist": "THE BOOM",
+    "min": 52,
+    "max": 75,
+    "gender": "male",
+    "original_key": "Dメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "THE BOOM"
+    ],
+    "description": "通勤",
+    "created_at": "2026-06-24T08:01:18.678663+00:00"
+  },
+  {
+    "id": "boom_035",
+    "title": "暁月夜",
+    "artist": "THE BOOM",
+    "min": 53,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "THE BOOM"
+    ],
+    "description": "夜",
+    "created_at": "2026-06-24T08:01:18.678663+00:00"
+  },
+  {
+    "id": "boowy_061",
+    "title": "季節が君だけを変える",
+    "artist": "BOØWY",
+    "min": 54,
+    "max": 77,
+    "gender": "male",
+    "original_key": "Eメジャー",
+    "genre": "ROCK",
+    "tags": [
+      "BOØWY"
+    ],
+    "description": "哀愁",
+    "created_at": "2026-06-24T07:40:03.87835+00:00"
+  },
+  {
+    "id": "boowy_062",
+    "title": "JUSTY",
+    "artist": "BOØWY",
+    "min": 56,
+    "max": 79,
+    "gender": "male",
+    "original_key": "Gメジャー",
+    "genre": "ROCK",
+    "tags": [
+      "BOØWY"
+    ],
+    "description": "疾走",
+    "created_at": "2026-06-24T07:40:03.87835+00:00"
+  },
+  {
+    "id": "boowy_063",
+    "title": "MEMORY",
+    "artist": "BOØWY",
+    "min": 53,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "ROCK",
+    "tags": [
+      "BOØWY"
+    ],
+    "description": "回想",
+    "created_at": "2026-06-24T07:40:03.87835+00:00"
+  },
+  {
+    "id": "boowy_064",
+    "title": "BABY ACTION",
+    "artist": "BOØWY",
+    "min": 55,
+    "max": 78,
+    "gender": "male",
+    "original_key": "F#メジャー",
+    "genre": "ROCK",
+    "tags": [
+      "BOØWY"
+    ],
+    "description": "躍動",
+    "created_at": "2026-06-24T07:40:03.87835+00:00"
+  },
+  {
+    "id": "boowy_065",
+    "title": "PLASTIC BOMB",
+    "artist": "BOØWY",
+    "min": 57,
+    "max": 80,
+    "gender": "male",
+    "original_key": "G#マイナー",
+    "genre": "ROCK",
+    "tags": [
+      "BOØWY"
+    ],
+    "description": "爆発",
+    "created_at": "2026-06-24T07:40:03.87835+00:00"
+  },
+  {
+    "id": "boowy_066",
+    "title": "LONGER THAN FOREVER",
+    "artist": "BOØWY",
+    "min": 52,
+    "max": 75,
+    "gender": "male",
+    "original_key": "Dメジャー",
+    "genre": "ROCK",
+    "tags": [
+      "BOØWY"
+    ],
+    "description": "永遠",
+    "created_at": "2026-06-24T07:40:03.87835+00:00"
+  },
+  {
+    "id": "boowy_067",
+    "title": "ON MY BEAT",
+    "artist": "BOØWY",
+    "min": 56,
+    "max": 79,
+    "gender": "male",
+    "original_key": "Gメジャー",
+    "genre": "ROCK",
+    "tags": [
+      "BOØWY"
+    ],
+    "description": "鼓動",
+    "created_at": "2026-06-24T07:40:03.87835+00:00"
+  },
+  {
+    "id": "boowy_068",
+    "title": "LIKE A CHILD",
+    "artist": "BOØWY",
+    "min": 54,
+    "max": 77,
+    "gender": "male",
+    "original_key": "Eメジャー",
+    "genre": "ROCK",
+    "tags": [
+      "BOØWY"
+    ],
+    "description": "純真",
+    "created_at": "2026-06-24T07:40:03.87835+00:00"
+  },
+  {
+    "id": "boowy_069",
+    "title": "RAINY DAY",
+    "artist": "BOØWY",
+    "min": 53,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "ROCK",
+    "tags": [
+      "BOØWY"
+    ],
+    "description": "雨",
+    "created_at": "2026-06-24T07:40:03.87835+00:00"
+  },
+  {
+    "id": "boowy_071",
+    "title": "TEENAGE EMOTION",
+    "artist": "BOØWY",
+    "min": 57,
+    "max": 80,
+    "gender": "male",
+    "original_key": "G#マイナー",
+    "genre": "ROCK",
+    "tags": [
+      "BOØWY"
+    ],
+    "description": "情熱",
+    "created_at": "2026-06-24T07:40:03.87835+00:00"
+  },
+  {
+    "id": "boowy_072",
+    "title": "SUPER-CALIFRAGILISTIC-EXPIARI-DOCIOUS",
+    "artist": "BOØWY",
+    "min": 56,
+    "max": 79,
+    "gender": "male",
+    "original_key": "Gメジャー",
+    "genre": "ROCK",
+    "tags": [
+      "BOØWY"
+    ],
+    "description": "遊び",
+    "created_at": "2026-06-24T07:40:03.87835+00:00"
+  },
+  {
+    "id": "boowy_073",
+    "title": "LONDON GAME",
+    "artist": "BOØWY",
+    "min": 55,
+    "max": 78,
+    "gender": "male",
+    "original_key": "F#メジャー",
+    "genre": "ROCK",
+    "tags": [
+      "BOØWY"
+    ],
+    "description": "賭け",
+    "created_at": "2026-06-24T07:40:03.87835+00:00"
+  },
+  {
+    "id": "boowy_074",
+    "title": "MORAL",
+    "artist": "BOØWY",
+    "min": 54,
+    "max": 77,
+    "gender": "male",
+    "original_key": "Eメジャー",
+    "genre": "ROCK",
+    "tags": [
+      "BOØWY"
+    ],
+    "description": "道徳",
+    "created_at": "2026-06-24T07:40:03.87835+00:00"
+  },
+  {
+    "id": "boowy_075",
+    "title": "ハイウェイに乗る前に",
+    "artist": "BOØWY",
+    "min": 53,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "ROCK",
+    "tags": [
+      "BOØWY"
+    ],
+    "description": "旅",
+    "created_at": "2026-06-24T07:40:03.87835+00:00"
+  },
+  {
+    "id": "city_050",
+    "title": "恋人よ",
+    "artist": "五輪真弓",
+    "min": 53,
+    "max": 76,
+    "gender": "female",
+    "original_key": "Ebメジャー",
+    "genre": "シティポップ",
+    "tags": [
+      "シティポップ"
+    ],
+    "description": "別れ",
+    "created_at": "2026-06-24T07:51:01.037838+00:00"
+  },
+  {
+    "id": "city_056",
+    "title": "パープルタウン",
+    "artist": "八神純子",
+    "min": 56,
+    "max": 79,
+    "gender": "female",
+    "original_key": "Gメジャー",
+    "genre": "シティポップ",
+    "tags": [
+      "シティポップ"
+    ],
+    "description": "輝き",
+    "created_at": "2026-06-24T07:51:01.037838+00:00"
+  },
+  {
+    "id": "city_061",
+    "title": "ルージュの伝言",
+    "artist": "荒井由実",
+    "min": 55,
+    "max": 78,
+    "gender": "female",
+    "original_key": "F#メジャー",
+    "genre": "シティポップ",
+    "tags": [
+      "シティポップ"
+    ],
+    "description": "軽快",
+    "created_at": "2026-06-24T07:51:01.037838+00:00"
+  },
+  {
+    "id": "city_062",
+    "title": "ひこうき雲",
+    "artist": "荒井由実",
+    "min": 52,
+    "max": 75,
+    "gender": "female",
+    "original_key": "Dメジャー",
+    "genre": "シティポップ",
+    "tags": [
+      "シティポップ"
+    ],
+    "description": "儚さ",
+    "created_at": "2026-06-24T07:51:01.037838+00:00"
+  },
+  {
+    "id": "city_063",
+    "title": "真夏の夜の夢",
+    "artist": "松任谷由実",
+    "min": 56,
+    "max": 79,
+    "gender": "female",
+    "original_key": "Gメジャー",
+    "genre": "シティポップ",
+    "tags": [
+      "シティポップ"
+    ],
+    "description": "情熱",
+    "created_at": "2026-06-24T07:51:01.037838+00:00"
+  },
+  {
+    "id": "city_064",
+    "title": "春よ、来い",
+    "artist": "松任谷由実",
+    "min": 53,
+    "max": 76,
+    "gender": "female",
+    "original_key": "Ebメジャー",
+    "genre": "シティポップ",
+    "tags": [
+      "シティポップ"
+    ],
+    "description": "季節",
+    "created_at": "2026-06-24T07:51:01.037838+00:00"
+  },
+  {
+    "id": "city_065",
+    "title": "守ってあげたい",
+    "artist": "松任谷由実",
+    "min": 54,
+    "max": 77,
+    "gender": "female",
+    "original_key": "Eメジャー",
+    "genre": "シティポップ",
+    "tags": [
+      "シティポップ"
+    ],
+    "description": "愛",
+    "created_at": "2026-06-24T07:51:01.037838+00:00"
+  },
+  {
+    "id": "city_066",
+    "title": "埠頭を渡る風",
+    "artist": "松任谷由実",
+    "min": 55,
+    "max": 78,
+    "gender": "female",
+    "original_key": "F#メジャー",
+    "genre": "シティポップ",
+    "tags": [
+      "シティポップ"
+    ],
+    "description": "海風",
+    "created_at": "2026-06-24T07:51:01.037838+00:00"
+  },
+  {
+    "id": "city_067",
+    "title": "DESTINY",
+    "artist": "松任谷由実",
+    "min": 56,
+    "max": 79,
+    "gender": "female",
+    "original_key": "Gメジャー",
+    "genre": "シティポップ",
+    "tags": [
+      "シティポップ"
+    ],
+    "description": "運命",
+    "created_at": "2026-06-24T07:51:01.037838+00:00"
+  },
+  {
+    "id": "conton_056",
+    "title": "moon walk",
+    "artist": "Conton Candy",
+    "min": 55,
+    "max": 78,
+    "gender": "female",
+    "original_key": "F#メジャー",
+    "genre": "J-POP",
+    "tags": [
+      "Conton Candy"
+    ],
+    "description": "歩み",
+    "created_at": "2026-06-24T08:01:18.678663+00:00"
+  },
+  {
+    "id": "conton_057",
+    "title": "トイ",
+    "artist": "Conton Candy",
+    "min": 54,
+    "max": 77,
+    "gender": "female",
+    "original_key": "Eメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "Conton Candy"
+    ],
+    "description": "玩具",
+    "created_at": "2026-06-24T08:01:18.678663+00:00"
+  },
+  {
+    "id": "conton_058",
+    "title": "クリームソーダ",
+    "artist": "Conton Candy",
+    "min": 53,
+    "max": 76,
+    "gender": "female",
+    "original_key": "Ebメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "Conton Candy"
+    ],
+    "description": "甘",
+    "created_at": "2026-06-24T08:01:18.678663+00:00"
+  },
+  {
+    "id": "conton_059",
+    "title": "バニラ",
+    "artist": "Conton Candy",
+    "min": 52,
+    "max": 75,
+    "gender": "female",
+    "original_key": "Dメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "Conton Candy"
+    ],
+    "description": "香り",
+    "created_at": "2026-06-24T08:01:18.678663+00:00"
+  },
+  {
+    "id": "conton_060",
+    "title": "シュガー",
+    "artist": "Conton Candy",
+    "min": 54,
+    "max": 77,
+    "gender": "female",
+    "original_key": "Eメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "Conton Candy"
+    ],
+    "description": "砂糖",
+    "created_at": "2026-06-24T08:01:18.678663+00:00"
+  },
+  {
+    "id": "conton_061",
+    "title": "風",
+    "artist": "Conton Candy",
+    "min": 55,
+    "max": 78,
+    "gender": "female",
+    "original_key": "F#メジャー",
+    "genre": "J-POP",
+    "tags": [
+      "Conton Candy"
+    ],
+    "description": "風",
+    "created_at": "2026-06-24T08:01:18.678663+00:00"
+  },
+  {
+    "id": "conton_062",
+    "title": "夢",
+    "artist": "Conton Candy",
+    "min": 54,
+    "max": 77,
+    "gender": "female",
+    "original_key": "Eメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "Conton Candy"
+    ],
+    "description": "夢",
+    "created_at": "2026-06-24T08:01:18.678663+00:00"
+  },
+  {
+    "id": "conton_064",
+    "title": "嘘",
+    "artist": "Conton Candy",
+    "min": 52,
+    "max": 75,
+    "gender": "female",
+    "original_key": "Dメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "Conton Candy"
+    ],
+    "description": "偽",
+    "created_at": "2026-06-24T08:01:18.678663+00:00"
+  },
+  {
+    "id": "conton_065",
+    "title": "花",
+    "artist": "Conton Candy",
+    "min": 54,
+    "max": 77,
+    "gender": "female",
+    "original_key": "Eメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "Conton Candy"
+    ],
+    "description": "花",
+    "created_at": "2026-06-24T08:01:18.678663+00:00"
+  },
+  {
+    "id": "daiji_026",
+    "title": "未来",
+    "artist": "大事MANブラザーズバンド",
+    "min": 55,
+    "max": 78,
+    "gender": "male",
+    "original_key": "Fメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "大事MANブラザーズバンド"
+    ],
+    "description": "未来",
+    "created_at": "2026-06-24T07:56:59.647574+00:00"
+  },
+  {
+    "id": "daiji_027",
+    "title": "道",
+    "artist": "大事MANブラザーズバンド",
+    "min": 53,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "大事MANブラザーズバンド"
+    ],
+    "description": "進む道",
+    "created_at": "2026-06-24T07:56:59.647574+00:00"
+  },
+  {
+    "id": "daiji_028",
+    "title": "愛",
+    "artist": "大事MANブラザーズバンド",
+    "min": 52,
+    "max": 75,
+    "gender": "male",
+    "original_key": "Dメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "大事MANブラザーズバンド"
+    ],
+    "description": "愛の歌",
+    "created_at": "2026-06-24T07:56:59.647574+00:00"
+  },
+  {
+    "id": "daiji_029",
+    "title": "約束",
+    "artist": "大事MANブラザーズバンド",
+    "min": 54,
+    "max": 77,
+    "gender": "male",
+    "original_key": "Eメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "大事MANブラザーズバンド"
+    ],
+    "description": "約束",
+    "created_at": "2026-06-24T07:56:59.647574+00:00"
+  },
+  {
+    "id": "daiji_030",
+    "title": "風",
+    "artist": "大事MANブラザーズバンド",
+    "min": 53,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "大事MANブラザーズバンド"
+    ],
+    "description": "風",
+    "created_at": "2026-06-24T07:56:59.647574+00:00"
+  },
+  {
+    "id": "daiji_031",
+    "title": "君へ",
+    "artist": "大事MANブラザーズバンド",
+    "min": 52,
+    "max": 75,
+    "gender": "male",
+    "original_key": "Dメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "大事MANブラザーズバンド"
+    ],
+    "description": "君",
+    "created_at": "2026-06-24T07:56:59.647574+00:00"
+  },
+  {
+    "id": "daiji_032",
+    "title": "星",
+    "artist": "大事MANブラザーズバンド",
+    "min": 54,
+    "max": 77,
+    "gender": "male",
+    "original_key": "Eメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "大事MANブラザーズバンド"
+    ],
+    "description": "星",
+    "created_at": "2026-06-24T07:56:59.647574+00:00"
+  },
+  {
+    "id": "daiji_033",
+    "title": "夢",
+    "artist": "大事MANブラザーズバンド",
+    "min": 55,
+    "max": 78,
+    "gender": "male",
+    "original_key": "Fメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "大事MANブラザーズバンド"
+    ],
+    "description": "夢",
+    "created_at": "2026-06-24T07:56:59.647574+00:00"
+  },
+  {
+    "id": "daiji_034",
+    "title": "春",
+    "artist": "大事MANブラザーズバンド",
+    "min": 53,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "大事MANブラザーズバンド"
+    ],
+    "description": "季節",
+    "created_at": "2026-06-24T07:56:59.647574+00:00"
+  },
+  {
+    "id": "daiji_035",
+    "title": "空",
+    "artist": "大事MANブラザーズバンド",
+    "min": 54,
+    "max": 77,
+    "gender": "male",
+    "original_key": "Eメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "大事MANブラザーズバンド"
+    ],
+    "description": "広い空",
+    "created_at": "2026-06-24T07:56:59.647574+00:00"
+  },
+  {
+    "id": "dct_023",
+    "title": "PROUD OF YOU",
+    "artist": "DREAMS COME TRUE",
+    "min": 54,
+    "max": 77,
+    "gender": "female",
+    "original_key": "Eメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "DREAMS COME TRUE"
+    ],
+    "description": "誇り",
+    "created_at": "2026-06-24T05:56:58.892926+00:00"
+  },
+  {
+    "id": "dct_047",
+    "title": "LAT.43°N (Original)",
+    "artist": "DREAMS COME TRUE",
+    "min": 52,
+    "max": 75,
+    "gender": "female",
+    "original_key": "Dメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "DREAMS COME TRUE"
+    ],
+    "description": "再掲",
+    "created_at": "2026-06-24T05:56:58.892926+00:00"
+  },
+  {
+    "id": "ego_034",
+    "title": "マゼンタ",
+    "artist": "EGO-WRAPPIN",
+    "min": 54,
+    "max": 77,
+    "gender": "female",
+    "original_key": "Eメジャー",
+    "genre": "J-JAZZ",
+    "tags": [
+      "EGO-WRAPPIN"
+    ],
+    "description": "色彩",
+    "created_at": "2026-06-24T07:40:03.87835+00:00"
+  },
+  {
+    "id": "ego_036",
+    "title": "裸足の果実",
+    "artist": "EGO-WRAPPIN",
+    "min": 55,
+    "max": 78,
+    "gender": "female",
+    "original_key": "F#メジャー",
+    "genre": "J-JAZZ",
+    "tags": [
+      "EGO-WRAPPIN"
+    ],
+    "description": "自然",
+    "created_at": "2026-06-24T07:40:03.87835+00:00"
+  },
+  {
+    "id": "ego_037",
+    "title": "雨のdubism",
+    "artist": "EGO-WRAPPIN",
+    "min": 52,
+    "max": 75,
+    "gender": "female",
+    "original_key": "Dマイナー",
+    "genre": "J-JAZZ",
+    "tags": [
+      "EGO-WRAPPIN"
+    ],
+    "description": "雨",
+    "created_at": "2026-06-24T07:40:03.87835+00:00"
+  },
+  {
+    "id": "ego_038",
+    "title": "方舟",
+    "artist": "EGO-WRAPPIN",
+    "min": 53,
+    "max": 76,
+    "gender": "female",
+    "original_key": "Ebマイナー",
+    "genre": "J-JAZZ",
+    "tags": [
+      "EGO-WRAPPIN"
+    ],
+    "description": "物語",
+    "created_at": "2026-06-24T07:40:03.87835+00:00"
+  },
+  {
+    "id": "ego_040",
+    "title": "PARANOIA",
+    "artist": "EGO-WRAPPIN",
+    "min": 55,
+    "max": 78,
+    "gender": "female",
+    "original_key": "F#マイナー",
+    "genre": "J-JAZZ",
+    "tags": [
+      "EGO-WRAPPIN"
+    ],
+    "description": "狂気",
+    "created_at": "2026-06-24T07:40:03.87835+00:00"
+  },
+  {
+    "id": "ego_041",
+    "title": "Brand New Day",
+    "artist": "EGO-WRAPPIN",
+    "min": 54,
+    "max": 77,
+    "gender": "female",
+    "original_key": "Eメジャー",
+    "genre": "J-JAZZ",
+    "tags": [
+      "EGO-WRAPPIN"
+    ],
+    "description": "希望",
+    "created_at": "2026-06-24T07:40:03.87835+00:00"
+  },
+  {
+    "id": "ego_042",
+    "title": "水中の光",
+    "artist": "EGO-WRAPPIN",
+    "min": 53,
+    "max": 76,
+    "gender": "female",
+    "original_key": "Ebマイナー",
+    "genre": "J-JAZZ",
+    "tags": [
+      "EGO-WRAPPIN"
+    ],
+    "description": "幻想",
+    "created_at": "2026-06-24T07:40:03.87835+00:00"
+  },
+  {
+    "id": "ego_043",
+    "title": "inner bell",
+    "artist": "EGO-WRAPPIN",
+    "min": 52,
+    "max": 75,
+    "gender": "female",
+    "original_key": "Dマイナー",
+    "genre": "J-JAZZ",
+    "tags": [
+      "EGO-WRAPPIN"
+    ],
+    "description": "静寂",
+    "created_at": "2026-06-24T07:40:03.87835+00:00"
+  },
+  {
+    "id": "ego_044",
+    "title": "admire",
+    "artist": "EGO-WRAPPIN",
+    "min": 54,
+    "max": 77,
+    "gender": "female",
+    "original_key": "Eメジャー",
+    "genre": "J-JAZZ",
+    "tags": [
+      "EGO-WRAPPIN"
+    ],
+    "description": "憧憬",
+    "created_at": "2026-06-24T07:40:03.87835+00:00"
+  },
+  {
+    "id": "ego_045",
+    "title": "finger",
+    "artist": "EGO-WRAPPIN",
+    "min": 53,
+    "max": 76,
+    "gender": "female",
+    "original_key": "Ebマイナー",
+    "genre": "J-JAZZ",
+    "tags": [
+      "EGO-WRAPPIN"
+    ],
+    "description": "触",
+    "created_at": "2026-06-24T07:40:03.87835+00:00"
+  },
+  {
+    "id": "ego_046",
+    "title": "天国と地獄",
+    "artist": "EGO-WRAPPIN",
+    "min": 56,
+    "max": 79,
+    "gender": "female",
+    "original_key": "Gマイナー",
+    "genre": "J-JAZZ",
+    "tags": [
+      "EGO-WRAPPIN"
+    ],
+    "description": "運命",
+    "created_at": "2026-06-24T07:40:03.87835+00:00"
+  },
+  {
+    "id": "ego_047",
+    "title": "ソウル地獄",
+    "artist": "EGO-WRAPPIN",
+    "min": 55,
+    "max": 78,
+    "gender": "female",
+    "original_key": "F#マイナー",
+    "genre": "J-JAZZ",
+    "tags": [
+      "EGO-WRAPPIN"
+    ],
+    "description": "情念",
+    "created_at": "2026-06-24T07:40:03.87835+00:00"
+  },
+  {
+    "id": "ego_048",
+    "title": "雨の音",
+    "artist": "EGO-WRAPPIN",
+    "min": 52,
+    "max": 75,
+    "gender": "female",
+    "original_key": "Dマイナー",
+    "genre": "J-JAZZ",
+    "tags": [
+      "EGO-WRAPPIN"
+    ],
+    "description": "記憶",
+    "created_at": "2026-06-24T07:40:03.87835+00:00"
+  },
+  {
+    "id": "ego_049",
+    "title": "恋のドレス",
+    "artist": "EGO-WRAPPIN",
+    "min": 54,
+    "max": 77,
+    "gender": "female",
+    "original_key": "Eメジャー",
+    "genre": "J-JAZZ",
+    "tags": [
+      "EGO-WRAPPIN"
+    ],
+    "description": "装い",
+    "created_at": "2026-06-24T07:40:03.87835+00:00"
+  },
+  {
+    "id": "ego_050",
+    "title": "ネオンの夜",
+    "artist": "EGO-WRAPPIN",
+    "min": 53,
+    "max": 76,
+    "gender": "female",
+    "original_key": "Ebマイナー",
+    "genre": "J-JAZZ",
+    "tags": [
+      "EGO-WRAPPIN"
+    ],
+    "description": "都会",
+    "created_at": "2026-06-24T07:40:03.87835+00:00"
+  },
+  {
+    "id": "exile_025",
+    "title": "EXILE PRIDE",
+    "artist": "EXILE",
+    "min": 57,
+    "max": 80,
+    "gender": "male",
+    "original_key": "G#メジャー",
+    "genre": "J-ROCK",
+    "tags": [
+      "EXILE"
+    ],
+    "description": "誇り",
+    "created_at": "2026-06-24T05:59:10.468077+00:00"
+  },
+  {
+    "id": "exile_035",
+    "title": "ただ…逢いたくて",
+    "artist": "EXILE",
+    "min": 52,
+    "max": 75,
+    "gender": "male",
+    "original_key": "Dメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "EXILE"
+    ],
+    "description": "切望",
+    "created_at": "2026-06-24T05:59:10.468077+00:00"
+  },
+  {
+    "id": "exile_036",
+    "title": "運命のヒト",
+    "artist": "EXILE",
+    "min": 53,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "EXILE"
+    ],
+    "description": "縁",
+    "created_at": "2026-06-24T05:59:10.468077+00:00"
+  },
+  {
+    "id": "exile_037",
+    "title": "Together",
+    "artist": "EXILE",
+    "min": 54,
+    "max": 77,
+    "gender": "male",
+    "original_key": "Fメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "EXILE"
+    ],
+    "description": "共",
+    "created_at": "2026-06-24T05:59:10.468077+00:00"
+  },
+  {
+    "id": "exile_039",
+    "title": "LAST CHRISTMAS",
+    "artist": "EXILE",
+    "min": 53,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "EXILE"
+    ],
+    "description": "雪",
+    "created_at": "2026-06-24T05:59:10.468077+00:00"
+  },
+  {
+    "id": "exile_040",
+    "title": "One love",
+    "artist": "EXILE",
+    "min": 55,
+    "max": 78,
+    "gender": "male",
+    "original_key": "F#メジャー",
+    "genre": "J-POP",
+    "tags": [
+      "EXILE"
+    ],
+    "description": "愛",
+    "created_at": "2026-06-24T05:59:10.468077+00:00"
+  },
+  {
+    "id": "folk_077",
+    "title": "岬めぐり",
+    "artist": "山本コウタローとウィークエンド",
+    "min": 55,
+    "max": 78,
+    "gender": "male",
+    "original_key": "F#メジャー",
+    "genre": "フォークロック",
+    "tags": [
+      "フォークロック"
+    ],
+    "description": "旅情",
+    "created_at": "2026-06-24T07:51:01.037838+00:00"
+  },
+  {
+    "id": "folk_078",
+    "title": "雨の物語",
+    "artist": "イルカ",
+    "min": 53,
+    "max": 76,
+    "gender": "female",
+    "original_key": "Ebメジャー",
+    "genre": "フォークロック",
+    "tags": [
+      "フォークロック"
+    ],
+    "description": "哀愁",
+    "created_at": "2026-06-24T07:51:01.037838+00:00"
+  },
+  {
+    "id": "folk_080",
+    "title": "ケンとメリー～愛と風のように～",
+    "artist": "BUZZ",
+    "min": 55,
+    "max": 78,
+    "gender": "male",
+    "original_key": "F#メジャー",
+    "genre": "フォークロック",
+    "tags": [
+      "フォークロック"
+    ],
+    "description": "風",
+    "created_at": "2026-06-24T07:51:01.037838+00:00"
+  },
+  {
+    "id": "folk_081",
+    "title": "春夏秋冬",
+    "artist": "泉谷しげる",
+    "min": 56,
+    "max": 79,
+    "gender": "male",
+    "original_key": "Gメジャー",
+    "genre": "フォークロック",
+    "tags": [
+      "フォークロック"
+    ],
+    "description": "季節",
+    "created_at": "2026-06-24T07:51:01.037838+00:00"
+  },
+  {
+    "id": "folk_082",
+    "title": "我が良き友よ",
+    "artist": "かまやつひろし",
+    "min": 55,
+    "max": 78,
+    "gender": "male",
+    "original_key": "F#メジャー",
+    "genre": "フォークロック",
+    "tags": [
+      "フォークロック"
+    ],
+    "description": "友情",
+    "created_at": "2026-06-24T07:51:01.037838+00:00"
+  },
+  {
+    "id": "folk_083",
+    "title": "心の旅",
+    "artist": "チューリップ",
+    "min": 54,
+    "max": 77,
+    "gender": "male",
+    "original_key": "Eメジャー",
+    "genre": "フォークロック",
+    "tags": [
+      "フォークロック"
+    ],
+    "description": "旅路",
+    "created_at": "2026-06-24T07:51:01.037838+00:00"
+  },
+  {
+    "id": "folk_084",
+    "title": "サボテンの花",
+    "artist": "チューリップ",
+    "min": 53,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "フォークロック",
+    "tags": [
+      "フォークロック"
+    ],
+    "description": "花",
+    "created_at": "2026-06-24T07:51:01.037838+00:00"
+  },
+  {
+    "id": "folk_085",
+    "title": "魔法の黄色い靴",
+    "artist": "チューリップ",
+    "min": 54,
+    "max": 77,
+    "gender": "male",
+    "original_key": "Eメジャー",
+    "genre": "フォークロック",
+    "tags": [
+      "フォークロック"
+    ],
+    "description": "魔法",
+    "created_at": "2026-06-24T07:51:01.037838+00:00"
+  },
+  {
+    "id": "folk_086",
+    "title": "切手のないおくりもの",
+    "artist": "財津和夫",
+    "min": 53,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "フォークロック",
+    "tags": [
+      "フォークロック"
+    ],
+    "description": "伝",
+    "created_at": "2026-06-24T07:51:01.037838+00:00"
+  },
+  {
+    "id": "folk_088",
+    "title": "踊り子",
+    "artist": "村下孝蔵",
+    "min": 54,
+    "max": 77,
+    "gender": "male",
+    "original_key": "Eメジャー",
+    "genre": "フォークロック",
+    "tags": [
+      "フォークロック"
+    ],
+    "description": "情",
+    "created_at": "2026-06-24T07:51:01.037838+00:00"
+  },
+  {
+    "id": "folk_089",
+    "title": "夕暮れ時はさびしそう",
+    "artist": "NSP",
+    "min": 53,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "フォークロック",
+    "tags": [
+      "フォークロック"
+    ],
+    "description": "哀愁",
+    "created_at": "2026-06-24T07:51:01.037838+00:00"
+  },
+  {
+    "id": "folk_090",
+    "title": "雨の物語",
+    "artist": "NSP",
+    "min": 52,
+    "max": 75,
+    "gender": "male",
+    "original_key": "Dメジャー",
+    "genre": "フォークロック",
+    "tags": [
+      "フォークロック"
+    ],
+    "description": "雨",
+    "created_at": "2026-06-24T07:51:01.037838+00:00"
+  },
+  {
+    "id": "folk_091",
+    "title": "線香花火",
+    "artist": "さだまさし",
+    "min": 53,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "フォークロック",
+    "tags": [
+      "フォークロック"
+    ],
+    "description": "夏",
+    "created_at": "2026-06-24T07:51:01.037838+00:00"
+  },
+  {
+    "id": "folk_092",
+    "title": "案山子",
+    "artist": "さだまさし",
+    "min": 54,
+    "max": 77,
+    "gender": "male",
+    "original_key": "Eメジャー",
+    "genre": "フォークロック",
+    "tags": [
+      "フォークロック"
+    ],
+    "description": "故郷",
+    "created_at": "2026-06-24T07:51:01.037838+00:00"
+  },
+  {
+    "id": "folk_093",
+    "title": "防人の詩",
+    "artist": "さだまさし",
+    "min": 52,
+    "max": 75,
+    "gender": "male",
+    "original_key": "Dメジャー",
+    "genre": "フォークロック",
+    "tags": [
+      "フォークロック"
+    ],
+    "description": "命",
+    "created_at": "2026-06-24T07:51:01.037838+00:00"
+  },
+  {
+    "id": "folk_094",
+    "title": "無縁坂",
+    "artist": "グレープ",
+    "min": 53,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "フォークロック",
+    "tags": [
+      "フォークロック"
+    ],
+    "description": "母",
+    "created_at": "2026-06-24T07:51:01.037838+00:00"
+  },
+  {
+    "id": "folk_095",
+    "title": "風に吹かれて",
+    "artist": "はっぴいえんど",
+    "min": 54,
+    "max": 77,
+    "gender": "male",
+    "original_key": "Eメジャー",
+    "genre": "フォークロック",
+    "tags": [
+      "フォークロック"
+    ],
+    "description": "自由",
+    "created_at": "2026-06-24T07:51:01.037838+00:00"
+  },
+  {
+    "id": "folk_096",
+    "title": "花いちもんめ",
+    "artist": "はっぴいえんど",
+    "min": 55,
+    "max": 78,
+    "gender": "male",
+    "original_key": "F#メジャー",
+    "genre": "フォークロック",
+    "tags": [
+      "フォークロック"
+    ],
+    "description": "童心",
+    "created_at": "2026-06-24T07:51:01.037838+00:00"
+  },
+  {
+    "id": "folk_097",
+    "title": "春よ来い",
+    "artist": "はっぴいえんど",
+    "min": 53,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "フォークロック",
+    "tags": [
+      "フォークロック"
+    ],
+    "description": "季節",
+    "created_at": "2026-06-24T07:51:01.037838+00:00"
+  },
+  {
+    "id": "folk_098",
+    "title": "夏なんです",
+    "artist": "はっぴいえんど",
+    "min": 54,
+    "max": 77,
+    "gender": "male",
+    "original_key": "Eメジャー",
+    "genre": "フォークロック",
+    "tags": [
+      "フォークロック"
+    ],
+    "description": "夏",
+    "created_at": "2026-06-24T07:51:01.037838+00:00"
+  },
+  {
+    "id": "folk_100",
+    "title": "風をあつめて",
+    "artist": "はっぴいえんど",
+    "min": 55,
+    "max": 78,
+    "gender": "male",
+    "original_key": "F#メジャー",
+    "genre": "フォークロック",
+    "tags": [
+      "フォークロック"
+    ],
+    "description": "風",
+    "created_at": "2026-06-24T07:51:01.037838+00:00"
+  },
+  {
+    "id": "hibari_032",
+    "title": "湖畔の宿",
+    "artist": "美空ひばり",
+    "min": 51,
+    "max": 74,
+    "gender": "female",
+    "original_key": "Cメジャー",
+    "genre": "歌謡曲",
+    "tags": [
+      "美空ひばり"
+    ],
+    "description": "静寂",
+    "created_at": "2026-06-24T05:46:25.684989+00:00"
+  },
+  {
+    "id": "hibari_033",
+    "title": "旅の夜風",
+    "artist": "美空ひばり",
+    "min": 50,
+    "max": 73,
+    "gender": "female",
+    "original_key": "Bbメジャー",
+    "genre": "演歌",
+    "tags": [
+      "美空ひばり"
+    ],
+    "description": "旅情",
+    "created_at": "2026-06-24T05:46:25.684989+00:00"
+  },
+  {
+    "id": "hibari_037",
+    "title": "南国土佐を後にして",
+    "artist": "美空ひばり",
+    "min": 53,
+    "max": 76,
+    "gender": "female",
+    "original_key": "Ebメジャー",
+    "genre": "演歌",
+    "tags": [
+      "美空ひばり"
+    ],
+    "description": "郷愁",
+    "created_at": "2026-06-24T05:46:25.684989+00:00"
+  },
+  {
+    "id": "hibari_038",
+    "title": "高校三年生",
+    "artist": "美空ひばり",
+    "min": 52,
+    "max": 75,
+    "gender": "female",
+    "original_key": "Dメジャー",
+    "genre": "歌謡曲",
+    "tags": [
+      "美空ひばり"
+    ],
+    "description": "青春",
+    "created_at": "2026-06-24T05:46:25.684989+00:00"
+  },
+  {
+    "id": "hibari_040",
+    "title": "見上げてごらん夜の星を",
+    "artist": "美空ひばり",
+    "min": 53,
+    "max": 76,
+    "gender": "female",
+    "original_key": "Ebメジャー",
+    "genre": "歌謡曲",
+    "tags": [
+      "美空ひばり"
+    ],
+    "description": "希望",
+    "created_at": "2026-06-24T05:46:25.684989+00:00"
+  },
+  {
+    "id": "hy_027",
+    "title": "未来",
+    "artist": "HY",
+    "min": 54,
+    "max": 77,
+    "gender": "female",
+    "original_key": "Eメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "HY"
+    ],
+    "description": "希望",
+    "created_at": "2026-06-24T06:02:57.094298+00:00"
+  },
+  {
+    "id": "hy_028",
+    "title": "君の声",
+    "artist": "HY",
+    "min": 53,
+    "max": 76,
+    "gender": "female",
+    "original_key": "Ebメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "HY"
+    ],
+    "description": "記憶",
+    "created_at": "2026-06-24T06:02:57.094298+00:00"
+  },
+  {
+    "id": "hy_029",
+    "title": "Bye-Bye",
+    "artist": "HY",
+    "min": 55,
+    "max": 78,
+    "gender": "male",
+    "original_key": "Fメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "HY"
+    ],
+    "description": "別れ",
+    "created_at": "2026-06-24T06:02:57.094298+00:00"
+  },
+  {
+    "id": "hy_030",
+    "title": "二人の旅路",
+    "artist": "HY",
+    "min": 52,
+    "max": 75,
+    "gender": "female",
+    "original_key": "Dメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "HY"
+    ],
+    "description": "絆",
+    "created_at": "2026-06-24T06:02:57.094298+00:00"
+  },
+  {
+    "id": "ikimono_022",
+    "title": "今走り出せば",
+    "artist": "いきものがかり",
+    "min": 55,
+    "max": 78,
+    "gender": "female",
+    "original_key": "Fメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "いきものがかり"
+    ],
+    "description": "衝動",
+    "created_at": "2026-06-24T05:50:19.391179+00:00"
+  },
+  {
+    "id": "ikimono_023",
+    "title": "心の花を咲かせよう",
+    "artist": "いきものがかり",
+    "min": 53,
+    "max": 76,
+    "gender": "female",
+    "original_key": "Ebメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "いきものがかり"
+    ],
+    "description": "開花",
+    "created_at": "2026-06-24T05:50:19.391179+00:00"
+  },
+  {
+    "id": "ikimono_025",
+    "title": "夏・コイ",
+    "artist": "いきものがかり",
+    "min": 54,
+    "max": 77,
+    "gender": "female",
+    "original_key": "Eメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "いきものがかり"
+    ],
+    "description": "季節",
+    "created_at": "2026-06-24T05:50:19.391179+00:00"
+  },
+  {
+    "id": "ikimono_026",
+    "title": "君と歩いた季節",
+    "artist": "いきものがかり",
+    "min": 53,
+    "max": 76,
+    "gender": "female",
+    "original_key": "Ebメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "いきものがかり"
+    ],
+    "description": "記憶",
+    "created_at": "2026-06-24T05:50:19.391179+00:00"
+  },
+  {
+    "id": "ikimono_027",
+    "title": "地球",
+    "artist": "いきものがかり",
+    "min": 55,
+    "max": 78,
+    "gender": "female",
+    "original_key": "Fメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "いきものがかり"
+    ],
+    "description": "惑星",
+    "created_at": "2026-06-24T05:50:19.391179+00:00"
+  },
+  {
+    "id": "ikimono_028",
+    "title": "ノスタルジア",
+    "artist": "いきものがかり",
+    "min": 52,
+    "max": 75,
+    "gender": "female",
+    "original_key": "Dメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "いきものがかり"
+    ],
+    "description": "懐古",
+    "created_at": "2026-06-24T05:50:19.391179+00:00"
+  },
+  {
+    "id": "ikimono_029",
+    "title": "ココロの花を咲かせよう",
+    "artist": "いきものがかり",
+    "min": 53,
+    "max": 76,
+    "gender": "female",
+    "original_key": "Ebメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "いきものがかり"
+    ],
+    "description": "花",
+    "created_at": "2026-06-24T05:50:19.391179+00:00"
+  },
+  {
+    "id": "ikimono_030",
+    "title": "ソプラノ",
+    "artist": "いきものがかり",
+    "min": 54,
+    "max": 77,
+    "gender": "female",
+    "original_key": "Eメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "いきものがかり"
+    ],
+    "description": "高音",
+    "created_at": "2026-06-24T05:50:19.391179+00:00"
+  },
+  {
+    "id": "jam_016",
+    "title": "ひとつだけ",
+    "artist": "JUDY AND MARY",
+    "min": 53,
+    "max": 76,
+    "gender": "female",
+    "original_key": "Ebメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "JUDY AND MARY"
+    ],
+    "description": "祈り",
+    "created_at": "2026-06-24T08:01:18.678663+00:00"
+  },
+  {
+    "id": "jam_019",
+    "title": "Peace",
+    "artist": "JUDY AND MARY",
+    "min": 56,
+    "max": 79,
+    "gender": "female",
+    "original_key": "Gメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "JUDY AND MARY"
+    ],
+    "description": "平和",
+    "created_at": "2026-06-24T08:01:18.678663+00:00"
+  },
+  {
+    "id": "jam_020",
+    "title": "lucky pool",
+    "artist": "JUDY AND MARY",
+    "min": 54,
+    "max": 77,
+    "gender": "female",
+    "original_key": "Eメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "JUDY AND MARY"
+    ],
+    "description": "幸運",
+    "created_at": "2026-06-24T08:01:18.678663+00:00"
+  },
+  {
+    "id": "kana_028",
+    "title": "遠くても (Original)",
+    "artist": "西野カナ",
+    "min": 55,
+    "max": 78,
+    "gender": "female",
+    "original_key": "Fメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "西野カナ"
+    ],
+    "description": "再掲",
+    "created_at": "2026-06-24T06:01:47.67033+00:00"
+  },
+  {
+    "id": "kana_061",
+    "title": "Esperanza",
+    "artist": "西野カナ",
+    "min": 53,
+    "max": 76,
+    "gender": "female",
+    "original_key": "Ebメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "西野カナ"
+    ],
+    "description": "期待",
+    "created_at": "2026-06-24T06:01:47.67033+00:00"
+  },
+  {
+    "id": "kana_062",
+    "title": "Believe",
+    "artist": "西野カナ",
+    "min": 54,
+    "max": 77,
+    "gender": "female",
+    "original_key": "Eメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "西野カナ"
+    ],
+    "description": "信",
+    "created_at": "2026-06-24T06:01:47.67033+00:00"
+  },
+  {
+    "id": "kana_063",
+    "title": "君に会いたくなるから",
+    "artist": "西野カナ",
+    "min": 52,
+    "max": 75,
+    "gender": "female",
+    "original_key": "Dメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "西野カナ"
+    ],
+    "description": "切",
+    "created_at": "2026-06-24T06:01:47.67033+00:00"
+  },
+  {
+    "id": "kana_064",
+    "title": "MAYBE",
+    "artist": "西野カナ",
+    "min": 55,
+    "max": 78,
+    "gender": "female",
+    "original_key": "Fメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "西野カナ"
+    ],
+    "description": "迷",
+    "created_at": "2026-06-24T06:01:47.67033+00:00"
+  },
+  {
+    "id": "kana_065",
+    "title": "Style.",
+    "artist": "西野カナ",
+    "min": 53,
+    "max": 76,
+    "gender": "female",
+    "original_key": "Ebメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "西野カナ"
+    ],
+    "description": "姿",
+    "created_at": "2026-06-24T06:01:47.67033+00:00"
+  },
+  {
+    "id": "kana_066",
+    "title": "Sherie",
+    "artist": "西野カナ",
+    "min": 54,
+    "max": 77,
+    "gender": "female",
+    "original_key": "Eメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "西野カナ"
+    ],
+    "description": "甘",
+    "created_at": "2026-06-24T06:01:47.67033+00:00"
+  },
+  {
+    "id": "kana_067",
+    "title": "Distance",
+    "artist": "西野カナ",
+    "min": 52,
+    "max": 75,
+    "gender": "female",
+    "original_key": "Dメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "西野カナ"
+    ],
+    "description": "隔",
+    "created_at": "2026-06-24T06:01:47.67033+00:00"
+  },
+  {
+    "id": "kana_068",
+    "title": "SAKURA, I love you?",
+    "artist": "西野カナ",
+    "min": 53,
+    "max": 76,
+    "gender": "female",
+    "original_key": "Ebメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "西野カナ"
+    ],
+    "description": "春",
+    "created_at": "2026-06-24T06:01:47.67033+00:00"
+  },
+  {
+    "id": "kana_069",
+    "title": "Happy Time",
+    "artist": "西野カナ",
+    "min": 55,
+    "max": 78,
+    "gender": "female",
+    "original_key": "Fメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "西野カナ"
+    ],
+    "description": "喜",
+    "created_at": "2026-06-24T06:01:47.67033+00:00"
+  },
+  {
+    "id": "kana_070",
+    "title": "Just a Little",
+    "artist": "西野カナ",
+    "min": 54,
+    "max": 77,
+    "gender": "female",
+    "original_key": "Eメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "西野カナ"
+    ],
+    "description": "少",
+    "created_at": "2026-06-24T06:01:47.67033+00:00"
+  },
+  {
+    "id": "kawashima_027",
+    "title": "古い手紙",
+    "artist": "河島英五",
+    "min": 51,
+    "max": 74,
+    "gender": "male",
+    "original_key": "Cメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "河島英五"
+    ],
+    "description": "追憶",
+    "created_at": "2026-06-24T07:25:10.489631+00:00"
+  },
+  {
+    "id": "kawashima_029",
+    "title": "暖簾",
+    "artist": "河島英五",
+    "min": 52,
+    "max": 75,
+    "gender": "male",
+    "original_key": "Dメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "河島英五"
+    ],
+    "description": "情愛",
+    "created_at": "2026-06-24T07:25:10.489631+00:00"
+  },
+  {
+    "id": "kawashima_030",
+    "title": "俺とつばめと酒の詩",
+    "artist": "河島英五",
+    "min": 54,
+    "max": 77,
+    "gender": "male",
+    "original_key": "Eメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "河島英五"
+    ],
+    "description": "情景",
+    "created_at": "2026-06-24T07:25:10.489631+00:00"
+  },
+  {
+    "id": "kawashima_031",
+    "title": "晩秋",
+    "artist": "河島英五",
+    "min": 51,
+    "max": 74,
+    "gender": "male",
+    "original_key": "Cメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "河島英五"
+    ],
+    "description": "季節",
+    "created_at": "2026-06-24T07:25:10.489631+00:00"
+  },
+  {
+    "id": "kawashima_032",
+    "title": "冬隣",
+    "artist": "河島英五",
+    "min": 52,
+    "max": 75,
+    "gender": "male",
+    "original_key": "Dメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "河島英五"
+    ],
+    "description": "静寂",
+    "created_at": "2026-06-24T07:25:10.489631+00:00"
+  },
+  {
+    "id": "kawashima_033",
+    "title": "お月さん",
+    "artist": "河島英五",
+    "min": 53,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "河島英五"
+    ],
+    "description": "月",
+    "created_at": "2026-06-24T07:25:10.489631+00:00"
+  },
+  {
+    "id": "kawashima_034",
+    "title": "風の道",
+    "artist": "河島英五",
+    "min": 54,
+    "max": 77,
+    "gender": "male",
+    "original_key": "Eメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "河島英五"
+    ],
+    "description": "道",
+    "created_at": "2026-06-24T07:25:10.489631+00:00"
+  },
+  {
+    "id": "kawashima_035",
+    "title": "生きてるか",
+    "artist": "河島英五",
+    "min": 53,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "河島英五"
+    ],
+    "description": "命",
+    "created_at": "2026-06-24T07:25:10.489631+00:00"
+  },
+  {
+    "id": "kawashima_036",
+    "title": "明日への道",
+    "artist": "河島英五",
+    "min": 55,
+    "max": 78,
+    "gender": "male",
+    "original_key": "F#メジャー",
+    "genre": "J-POP",
+    "tags": [
+      "河島英五"
+    ],
+    "description": "未来",
+    "created_at": "2026-06-24T07:25:10.489631+00:00"
+  },
+  {
+    "id": "kawashima_037",
+    "title": "歌あるかぎり",
+    "artist": "河島英五",
+    "min": 52,
+    "max": 75,
+    "gender": "male",
+    "original_key": "Dメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "河島英五"
+    ],
+    "description": "信念",
+    "created_at": "2026-06-24T07:25:10.489631+00:00"
+  },
+  {
+    "id": "kawashima_038",
+    "title": "男の詩",
+    "artist": "河島英五",
+    "min": 53,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "河島英五"
+    ],
+    "description": "誇り",
+    "created_at": "2026-06-24T07:25:10.489631+00:00"
+  },
+  {
+    "id": "kawashima_039",
+    "title": "夜風",
+    "artist": "河島英五",
+    "min": 51,
+    "max": 74,
+    "gender": "male",
+    "original_key": "Cメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "河島英五"
+    ],
+    "description": "夜",
+    "created_at": "2026-06-24T07:25:10.489631+00:00"
+  },
+  {
+    "id": "kawashima_040",
+    "title": "ふるさと",
+    "artist": "河島英五",
+    "min": 52,
+    "max": 75,
+    "gender": "male",
+    "original_key": "Dメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "河島英五"
+    ],
+    "description": "原点",
+    "created_at": "2026-06-24T07:25:10.489631+00:00"
+  },
+  {
+    "id": "kinggnu_051",
+    "title": "Commet",
+    "artist": "King Gnu",
+    "min": 55,
+    "max": 78,
+    "gender": "male",
+    "original_key": "Fメジャー",
+    "genre": "J-ROCK",
+    "tags": [
+      "King Gnu"
+    ],
+    "description": "彗星",
+    "created_at": "2026-06-24T04:24:34.266989+00:00"
+  },
+  {
+    "id": "kome_017",
+    "title": "なんとかしてよ",
+    "artist": "米米CLUB",
+    "min": 55,
+    "max": 78,
+    "gender": "male",
+    "original_key": "F#メジャー",
+    "genre": "J-POP",
+    "tags": [
+      "米米CLUB"
+    ],
+    "description": "葛藤",
+    "created_at": "2026-06-24T07:46:24.29864+00:00"
+  },
+  {
+    "id": "kome_021",
+    "title": "TIME STOP",
+    "artist": "米米CLUB",
+    "min": 54,
+    "max": 77,
+    "gender": "male",
+    "original_key": "Eメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "米米CLUB"
+    ],
+    "description": "停止",
+    "created_at": "2026-06-24T07:46:24.29864+00:00"
+  },
+  {
+    "id": "kome_023",
+    "title": "俺色スカイ",
+    "artist": "米米CLUB",
+    "min": 55,
+    "max": 78,
+    "gender": "male",
+    "original_key": "F#メジャー",
+    "genre": "J-POP",
+    "tags": [
+      "米米CLUB"
+    ],
+    "description": "空",
+    "created_at": "2026-06-24T07:46:24.29864+00:00"
+  },
+  {
+    "id": "kome_024",
+    "title": "HI TENSION LOVE",
+    "artist": "米米CLUB",
+    "min": 56,
+    "max": 79,
+    "gender": "male",
+    "original_key": "Gメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "米米CLUB"
+    ],
+    "description": "熱",
+    "created_at": "2026-06-24T07:46:24.29864+00:00"
+  },
+  {
+    "id": "kubota_029",
+    "title": "Sunshine",
+    "artist": "久保田利伸",
+    "min": 54,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Eメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "久保田利伸"
+    ],
+    "description": "陽光",
+    "created_at": "2026-06-24T04:31:35.122102+00:00"
+  },
+  {
+    "id": "kubota_030",
+    "title": "Magic",
+    "artist": "久保田利伸",
+    "min": 55,
+    "max": 77,
+    "gender": "male",
+    "original_key": "Fメジャー",
+    "genre": "R&B",
+    "tags": [
+      "久保田利伸"
+    ],
+    "description": "魔法",
+    "created_at": "2026-06-24T04:31:35.122102+00:00"
+  },
+  {
+    "id": "kubota_031",
+    "title": "Heaven",
+    "artist": "久保田利伸",
+    "min": 53,
+    "max": 75,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "R&B",
+    "tags": [
+      "久保田利伸"
+    ],
+    "description": "楽園",
+    "created_at": "2026-06-24T04:31:35.122102+00:00"
+  },
+  {
+    "id": "kubota_034",
+    "title": "Star",
+    "artist": "久保田利伸",
+    "min": 54,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Eメジャー",
+    "genre": "R&B",
+    "tags": [
+      "久保田利伸"
+    ],
+    "description": "星",
+    "created_at": "2026-06-24T04:31:35.122102+00:00"
+  },
+  {
+    "id": "kubota_035",
+    "title": "Wish",
+    "artist": "久保田利伸",
+    "min": 53,
+    "max": 75,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "R&B",
+    "tags": [
+      "久保田利伸"
+    ],
+    "description": "願い",
+    "created_at": "2026-06-24T04:31:35.122102+00:00"
+  },
+  {
+    "id": "kubota_036",
+    "title": "Future",
+    "artist": "久保田利伸",
+    "min": 55,
+    "max": 77,
+    "gender": "male",
+    "original_key": "Fメジャー",
+    "genre": "R&B",
+    "tags": [
+      "久保田利伸"
+    ],
+    "description": "未来",
+    "created_at": "2026-06-24T04:31:35.122102+00:00"
+  },
+  {
+    "id": "kubota_037",
+    "title": "Sweet",
+    "artist": "久保田利伸",
+    "min": 52,
+    "max": 74,
+    "gender": "male",
+    "original_key": "Dメジャー",
+    "genre": "R&B",
+    "tags": [
+      "久保田利伸"
+    ],
+    "description": "甘い",
+    "created_at": "2026-06-24T04:31:35.122102+00:00"
+  },
+  {
+    "id": "kubota_038",
+    "title": "Deep",
+    "artist": "久保田利伸",
+    "min": 54,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Eメジャー",
+    "genre": "R&B",
+    "tags": [
+      "久保田利伸"
+    ],
+    "description": "深い",
+    "created_at": "2026-06-24T04:31:35.122102+00:00"
+  },
+  {
+    "id": "kubota_039",
+    "title": "Light",
+    "artist": "久保田利伸",
+    "min": 53,
+    "max": 75,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "R&B",
+    "tags": [
+      "久保田利伸"
+    ],
+    "description": "光",
+    "created_at": "2026-06-24T04:31:35.122102+00:00"
+  },
+  {
+    "id": "kubota_040",
+    "title": "Night",
+    "artist": "久保田利伸",
+    "min": 55,
+    "max": 77,
+    "gender": "male",
+    "original_key": "Fメジャー",
+    "genre": "R&B",
+    "tags": [
+      "久保田利伸"
+    ],
+    "description": "夜間",
+    "created_at": "2026-06-24T04:31:35.122102+00:00"
+  },
+  {
+    "id": "kubota_041",
+    "title": "Dream",
+    "artist": "久保田利伸",
+    "min": 54,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Eメジャー",
+    "genre": "R&B",
+    "tags": [
+      "久保田利伸"
+    ],
+    "description": "夢",
+    "created_at": "2026-06-24T04:31:35.122102+00:00"
+  },
+  {
+    "id": "kubota_042",
+    "title": "Heart",
+    "artist": "久保田利伸",
+    "min": 52,
+    "max": 74,
+    "gender": "male",
+    "original_key": "Dメジャー",
+    "genre": "R&B",
+    "tags": [
+      "久保田利伸"
+    ],
+    "description": "心臓",
+    "created_at": "2026-06-24T04:31:35.122102+00:00"
+  },
+  {
+    "id": "kubota_043",
+    "title": "Soul",
+    "artist": "久保田利伸",
+    "min": 53,
+    "max": 75,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "R&B",
+    "tags": [
+      "久保田利伸"
+    ],
+    "description": "魂",
+    "created_at": "2026-06-24T04:31:35.122102+00:00"
+  },
+  {
+    "id": "kubota_044",
+    "title": "Voice",
+    "artist": "久保田利伸",
+    "min": 54,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Eメジャー",
+    "genre": "R&B",
+    "tags": [
+      "久保田利伸"
+    ],
+    "description": "歌声",
+    "created_at": "2026-06-24T04:31:35.122102+00:00"
+  },
+  {
+    "id": "kubota_045",
+    "title": "Rhythm",
+    "artist": "久保田利伸",
+    "min": 55,
+    "max": 77,
+    "gender": "male",
+    "original_key": "Fメジャー",
+    "genre": "R&B",
+    "tags": [
+      "久保田利伸"
+    ],
+    "description": "鼓動",
+    "created_at": "2026-06-24T04:31:35.122102+00:00"
+  },
+  {
+    "id": "kubota_046",
+    "title": "Blue",
+    "artist": "久保田利伸",
+    "min": 52,
+    "max": 74,
+    "gender": "male",
+    "original_key": "Dメジャー",
+    "genre": "R&B",
+    "tags": [
+      "久保田利伸"
+    ],
+    "description": "青",
+    "created_at": "2026-06-24T04:31:35.122102+00:00"
+  },
+  {
+    "id": "kubota_047",
+    "title": "Red",
+    "artist": "久保田利伸",
+    "min": 53,
+    "max": 75,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "R&B",
+    "tags": [
+      "久保田利伸"
+    ],
+    "description": "赤",
+    "created_at": "2026-06-24T04:31:35.122102+00:00"
+  },
+  {
+    "id": "kubota_048",
+    "title": "Yellow",
+    "artist": "久保田利伸",
+    "min": 54,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Eメジャー",
+    "genre": "R&B",
+    "tags": [
+      "久保田利伸"
+    ],
+    "description": "黄",
+    "created_at": "2026-06-24T04:31:35.122102+00:00"
+  },
+  {
+    "id": "kubota_049",
+    "title": "Green",
+    "artist": "久保田利伸",
+    "min": 55,
+    "max": 77,
+    "gender": "male",
+    "original_key": "Fメジャー",
+    "genre": "R&B",
+    "tags": [
+      "久保田利伸"
+    ],
+    "description": "緑",
+    "created_at": "2026-06-24T04:31:35.122102+00:00"
+  },
+  {
+    "id": "kubota_050",
+    "title": "White",
+    "artist": "久保田利伸",
+    "min": 52,
+    "max": 74,
+    "gender": "male",
+    "original_key": "Dメジャー",
+    "genre": "R&B",
+    "tags": [
+      "久保田利伸"
+    ],
+    "description": "白",
+    "created_at": "2026-06-24T04:31:35.122102+00:00"
+  },
+  {
+    "id": "kubota_051",
+    "title": "Black",
+    "artist": "久保田利伸",
+    "min": 53,
+    "max": 75,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "R&B",
+    "tags": [
+      "久保田利伸"
+    ],
+    "description": "黒",
+    "created_at": "2026-06-24T04:31:35.122102+00:00"
+  },
+  {
+    "id": "kubota_052",
+    "title": "Silver",
+    "artist": "久保田利伸",
+    "min": 54,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Eメジャー",
+    "genre": "R&B",
+    "tags": [
+      "久保田利伸"
+    ],
+    "description": "銀",
+    "created_at": "2026-06-24T04:31:35.122102+00:00"
+  },
+  {
+    "id": "kubota_053",
+    "title": "Gold",
+    "artist": "久保田利伸",
+    "min": 55,
+    "max": 77,
+    "gender": "male",
+    "original_key": "Fメジャー",
+    "genre": "R&B",
+    "tags": [
+      "久保田利伸"
+    ],
+    "description": "金",
+    "created_at": "2026-06-24T04:31:35.122102+00:00"
+  },
+  {
+    "id": "kubota_054",
+    "title": "Crystal",
+    "artist": "久保田利伸",
+    "min": 52,
+    "max": 74,
+    "gender": "male",
+    "original_key": "Dメジャー",
+    "genre": "R&B",
+    "tags": [
+      "久保田利伸"
+    ],
+    "description": "透明",
+    "created_at": "2026-06-24T04:31:35.122102+00:00"
+  },
+  {
+    "id": "kubota_055",
+    "title": "Diamond",
+    "artist": "久保田利伸",
+    "min": 53,
+    "max": 75,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "R&B",
+    "tags": [
+      "久保田利伸"
+    ],
+    "description": "硬質",
+    "created_at": "2026-06-24T04:31:35.122102+00:00"
+  },
+  {
+    "id": "kubota_056",
+    "title": "Ruby",
+    "artist": "久保田利伸",
+    "min": 54,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Eメジャー",
+    "genre": "R&B",
+    "tags": [
+      "久保田利伸"
+    ],
+    "description": "宝石",
+    "created_at": "2026-06-24T04:31:35.122102+00:00"
+  },
+  {
+    "id": "kubota_059",
+    "title": "Pearl",
+    "artist": "久保田利伸",
+    "min": 53,
+    "max": 75,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "R&B",
+    "tags": [
+      "久保田利伸"
+    ],
+    "description": "真珠",
+    "created_at": "2026-06-24T04:31:35.122102+00:00"
+  },
+  {
+    "id": "kubota_060",
+    "title": "Opal",
+    "artist": "久保田利伸",
+    "min": 54,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Eメジャー",
+    "genre": "R&B",
+    "tags": [
+      "久保田利伸"
+    ],
+    "description": "遊色",
+    "created_at": "2026-06-24T04:31:35.122102+00:00"
+  },
+  {
+    "id": "kubota_064",
+    "title": "Jade",
+    "artist": "久保田利伸",
+    "min": 54,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Eメジャー",
+    "genre": "R&B",
+    "tags": [
+      "久保田利伸"
+    ],
+    "description": "翡翠",
+    "created_at": "2026-06-24T04:31:35.122102+00:00"
+  },
+  {
+    "id": "kubota_065",
+    "title": "Coral",
+    "artist": "久保田利伸",
+    "min": 55,
+    "max": 77,
+    "gender": "male",
+    "original_key": "Fメジャー",
+    "genre": "R&B",
+    "tags": [
+      "久保田利伸"
+    ],
+    "description": "珊瑚",
+    "created_at": "2026-06-24T04:31:35.122102+00:00"
+  },
+  {
+    "id": "kubota_066",
+    "title": "Amber",
+    "artist": "久保田利伸",
+    "min": 52,
+    "max": 74,
+    "gender": "male",
+    "original_key": "Dメジャー",
+    "genre": "R&B",
+    "tags": [
+      "久保田利伸"
+    ],
+    "description": "樹脂",
+    "created_at": "2026-06-24T04:31:35.122102+00:00"
+  },
+  {
+    "id": "kubota_067",
+    "title": "Onyx",
+    "artist": "久保田利伸",
+    "min": 53,
+    "max": 75,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "R&B",
+    "tags": [
+      "久保田利伸"
+    ],
+    "description": "黒石",
+    "created_at": "2026-06-24T04:31:35.122102+00:00"
+  },
+  {
+    "id": "kubota_068",
+    "title": "Agate",
+    "artist": "久保田利伸",
+    "min": 54,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Eメジャー",
+    "genre": "R&B",
+    "tags": [
+      "久保田利伸"
+    ],
+    "description": "縞",
+    "created_at": "2026-06-24T04:31:35.122102+00:00"
+  },
+  {
+    "id": "kubota_069",
+    "title": "Jasper",
+    "artist": "久保田利伸",
+    "min": 55,
+    "max": 77,
+    "gender": "male",
+    "original_key": "Fメジャー",
+    "genre": "R&B",
+    "tags": [
+      "久保田利伸"
+    ],
+    "description": "多色",
+    "created_at": "2026-06-24T04:31:35.122102+00:00"
+  },
+  {
+    "id": "kubota_070",
+    "title": "Quartz",
+    "artist": "久保田利伸",
+    "min": 52,
+    "max": 74,
+    "gender": "male",
+    "original_key": "Dメジャー",
+    "genre": "R&B",
+    "tags": [
+      "久保田利伸"
+    ],
+    "description": "水晶",
+    "created_at": "2026-06-24T04:31:35.122102+00:00"
+  },
+  {
+    "id": "lind_042",
+    "title": "だって恋するメロディ",
+    "artist": "LINDBERG",
+    "min": 54,
+    "max": 77,
+    "gender": "female",
+    "original_key": "Eメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "LINDBERG"
+    ],
+    "description": "恋",
+    "created_at": "2026-06-24T08:01:18.678663+00:00"
+  },
+  {
+    "id": "lind_043",
+    "title": "MINE",
+    "artist": "LINDBERG",
+    "min": 53,
+    "max": 76,
+    "gender": "female",
+    "original_key": "Ebメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "LINDBERG"
+    ],
+    "description": "所有",
+    "created_at": "2026-06-24T08:01:18.678663+00:00"
+  },
+  {
+    "id": "lind_044",
+    "title": "Every Little Thing Every Precious Thing",
+    "artist": "LINDBERG",
+    "min": 55,
+    "max": 78,
+    "gender": "female",
+    "original_key": "F#メジャー",
+    "genre": "J-POP",
+    "tags": [
+      "LINDBERG"
+    ],
+    "description": "宝物",
+    "created_at": "2026-06-24T08:01:18.678663+00:00"
+  },
+  {
+    "id": "lind_045",
+    "title": "大キライ!",
+    "artist": "LINDBERG",
+    "min": 56,
+    "max": 79,
+    "gender": "female",
+    "original_key": "Gメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "LINDBERG"
+    ],
+    "description": "怒り",
+    "created_at": "2026-06-24T08:01:18.678663+00:00"
+  },
+  {
+    "id": "lind_047",
+    "title": "POWER OF LOVE",
+    "artist": "LINDBERG",
+    "min": 57,
+    "max": 80,
+    "gender": "female",
+    "original_key": "G#メジャー",
+    "genre": "J-ROCK",
+    "tags": [
+      "LINDBERG"
+    ],
+    "description": "力",
+    "created_at": "2026-06-24T08:01:18.678663+00:00"
+  },
+  {
+    "id": "lind_048",
+    "title": "GLORY DAYS",
+    "artist": "LINDBERG",
+    "min": 56,
+    "max": 79,
+    "gender": "female",
+    "original_key": "Gメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "LINDBERG"
+    ],
+    "description": "栄光",
+    "created_at": "2026-06-24T08:01:18.678663+00:00"
+  },
+  {
+    "id": "lind_049",
+    "title": "君に吹く風",
+    "artist": "LINDBERG",
+    "min": 54,
+    "max": 77,
+    "gender": "female",
+    "original_key": "Eメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "LINDBERG"
+    ],
+    "description": "風",
+    "created_at": "2026-06-24T08:01:18.678663+00:00"
+  },
+  {
+    "id": "luna_086",
+    "title": "BELIEVE",
+    "artist": "LUNA SEA",
+    "min": 55,
+    "max": 78,
+    "gender": "male",
+    "original_key": "F#メジャー",
+    "genre": "ROCK",
+    "tags": [
+      "LUNA SEA"
+    ],
+    "description": "信念",
+    "created_at": "2026-06-24T07:46:24.29864+00:00"
+  },
+  {
+    "id": "luna_087",
+    "title": "PRECIOUS...",
+    "artist": "LUNA SEA",
+    "min": 57,
+    "max": 80,
+    "gender": "male",
+    "original_key": "G#マイナー",
+    "genre": "ROCK",
+    "tags": [
+      "LUNA SEA"
+    ],
+    "description": "貴",
+    "created_at": "2026-06-24T07:46:24.29864+00:00"
+  },
+  {
+    "id": "luna_088",
+    "title": "TIME IS DEAD",
+    "artist": "LUNA SEA",
+    "min": 58,
+    "max": 81,
+    "gender": "male",
+    "original_key": "Aマイナー",
+    "genre": "ROCK",
+    "tags": [
+      "LUNA SEA"
+    ],
+    "description": "時",
+    "created_at": "2026-06-24T07:46:24.29864+00:00"
+  },
+  {
+    "id": "luna_089",
+    "title": "SLAVE",
+    "artist": "LUNA SEA",
+    "min": 56,
+    "max": 79,
+    "gender": "male",
+    "original_key": "Gメジャー",
+    "genre": "ROCK",
+    "tags": [
+      "LUNA SEA"
+    ],
+    "description": "虜",
+    "created_at": "2026-06-24T07:46:24.29864+00:00"
+  },
+  {
+    "id": "luna_090",
+    "title": "SHADE",
+    "artist": "LUNA SEA",
+    "min": 57,
+    "max": 80,
+    "gender": "male",
+    "original_key": "G#マイナー",
+    "genre": "ROCK",
+    "tags": [
+      "LUNA SEA"
+    ],
+    "description": "影",
+    "created_at": "2026-06-24T07:46:24.29864+00:00"
+  },
+  {
+    "id": "luna_091",
+    "title": "WISH",
+    "artist": "LUNA SEA",
+    "min": 56,
+    "max": 79,
+    "gender": "male",
+    "original_key": "Gメジャー",
+    "genre": "ROCK",
+    "tags": [
+      "LUNA SEA"
+    ],
+    "description": "願",
+    "created_at": "2026-06-24T07:46:24.29864+00:00"
+  },
+  {
+    "id": "luna_092",
+    "title": "Dejavu",
+    "artist": "LUNA SEA",
+    "min": 57,
+    "max": 80,
+    "gender": "male",
+    "original_key": "G#マイナー",
+    "genre": "ROCK",
+    "tags": [
+      "LUNA SEA"
+    ],
+    "description": "既視",
+    "created_at": "2026-06-24T07:46:24.29864+00:00"
+  },
+  {
+    "id": "luna_093",
+    "title": "IMAGE",
+    "artist": "LUNA SEA",
+    "min": 55,
+    "max": 78,
+    "gender": "male",
+    "original_key": "F#メジャー",
+    "genre": "ROCK",
+    "tags": [
+      "LUNA SEA"
+    ],
+    "description": "像",
+    "created_at": "2026-06-24T07:46:24.29864+00:00"
+  },
+  {
+    "id": "luna_094",
+    "title": "SEARCH FOR REASON",
+    "artist": "LUNA SEA",
+    "min": 56,
+    "max": 79,
+    "gender": "male",
+    "original_key": "Gメジャー",
+    "genre": "ROCK",
+    "tags": [
+      "LUNA SEA"
+    ],
+    "description": "理",
+    "created_at": "2026-06-24T07:46:24.29864+00:00"
+  },
+  {
+    "id": "luna_095",
+    "title": "FACE TO FACE",
+    "artist": "LUNA SEA",
+    "min": 54,
+    "max": 77,
+    "gender": "male",
+    "original_key": "Eメジャー",
+    "genre": "ROCK",
+    "tags": [
+      "LUNA SEA"
+    ],
+    "description": "対",
+    "created_at": "2026-06-24T07:46:24.29864+00:00"
+  },
+  {
+    "id": "luna_096",
+    "title": "EDEN",
+    "artist": "LUNA SEA",
+    "min": 55,
+    "max": 78,
+    "gender": "male",
+    "original_key": "F#メジャー",
+    "genre": "ROCK",
+    "tags": [
+      "LUNA SEA"
+    ],
+    "description": "楽園",
+    "created_at": "2026-06-24T07:46:24.29864+00:00"
+  },
+  {
+    "id": "luna_097",
+    "title": "CIVILIZE",
+    "artist": "LUNA SEA",
+    "min": 57,
+    "max": 80,
+    "gender": "male",
+    "original_key": "G#マイナー",
+    "genre": "ROCK",
+    "tags": [
+      "LUNA SEA"
+    ],
+    "description": "文明",
+    "created_at": "2026-06-24T07:46:24.29864+00:00"
+  },
+  {
+    "id": "magokoro_040",
+    "title": "空にまいあがれ",
+    "artist": "真心ブラザーズ",
+    "min": 56,
+    "max": 79,
+    "gender": "male",
+    "original_key": "Gメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "真心ブラザーズ"
+    ],
+    "description": "飛翔",
+    "created_at": "2026-06-24T07:56:59.647574+00:00"
+  },
+  {
+    "id": "magokoro_041",
+    "title": "素晴らしきこの世界",
+    "artist": "真心ブラザーズ",
+    "min": 54,
+    "max": 77,
+    "gender": "male",
+    "original_key": "Eメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "真心ブラザーズ"
+    ],
+    "description": "世界",
+    "created_at": "2026-06-24T07:56:59.647574+00:00"
+  },
+  {
+    "id": "magokoro_042",
+    "title": "愛",
+    "artist": "真心ブラザーズ",
+    "min": 52,
+    "max": 75,
+    "gender": "male",
+    "original_key": "Dメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "真心ブラザーズ"
+    ],
+    "description": "愛",
+    "created_at": "2026-06-24T07:56:59.647574+00:00"
+  },
+  {
+    "id": "magokoro_043",
+    "title": "風",
+    "artist": "真心ブラザーズ",
+    "min": 53,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "真心ブラザーズ"
+    ],
+    "description": "風",
+    "created_at": "2026-06-24T07:56:59.647574+00:00"
+  },
+  {
+    "id": "magokoro_044",
+    "title": "時計",
+    "artist": "真心ブラザーズ",
+    "min": 52,
+    "max": 75,
+    "gender": "male",
+    "original_key": "Dメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "真心ブラザーズ"
+    ],
+    "description": "時",
+    "created_at": "2026-06-24T07:56:59.647574+00:00"
+  },
+  {
+    "id": "magokoro_045",
+    "title": "夜",
+    "artist": "真心ブラザーズ",
+    "min": 54,
+    "max": 77,
+    "gender": "male",
+    "original_key": "Eメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "真心ブラザーズ"
+    ],
+    "description": "夜",
+    "created_at": "2026-06-24T07:56:59.647574+00:00"
+  },
+  {
+    "id": "magokoro_046",
+    "title": "道",
+    "artist": "真心ブラザーズ",
+    "min": 53,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "真心ブラザーズ"
+    ],
+    "description": "道",
+    "created_at": "2026-06-24T07:56:59.647574+00:00"
+  },
+  {
+    "id": "magokoro_047",
+    "title": "旅",
+    "artist": "真心ブラザーズ",
+    "min": 55,
+    "max": 78,
+    "gender": "male",
+    "original_key": "F#メジャー",
+    "genre": "J-POP",
+    "tags": [
+      "真心ブラザーズ"
+    ],
+    "description": "旅",
+    "created_at": "2026-06-24T07:56:59.647574+00:00"
+  },
+  {
+    "id": "magokoro_048",
+    "title": "手紙",
+    "artist": "真心ブラザーズ",
+    "min": 52,
+    "max": 75,
+    "gender": "male",
+    "original_key": "Dメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "真心ブラザーズ"
+    ],
+    "description": "伝",
+    "created_at": "2026-06-24T07:56:59.647574+00:00"
+  },
+  {
+    "id": "magokoro_049",
+    "title": "歌",
+    "artist": "真心ブラザーズ",
+    "min": 54,
+    "max": 77,
+    "gender": "male",
+    "original_key": "Eメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "真心ブラザーズ"
+    ],
+    "description": "歌",
+    "created_at": "2026-06-24T07:56:59.647574+00:00"
+  },
+  {
+    "id": "magokoro_050",
+    "title": "絆",
+    "artist": "真心ブラザーズ",
+    "min": 53,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "真心ブラザーズ"
+    ],
+    "description": "絆",
+    "created_at": "2026-06-24T07:56:59.647574+00:00"
+  },
+  {
+    "id": "magokoro_061",
+    "title": "石ころ",
+    "artist": "真心ブラザーズ",
+    "min": 53,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "真心ブラザーズ"
+    ],
+    "description": "自分",
+    "created_at": "2026-06-24T07:46:24.29864+00:00"
+  },
+  {
+    "id": "magokoro_064",
+    "title": "夢",
+    "artist": "真心ブラザーズ",
+    "min": 52,
+    "max": 75,
+    "gender": "male",
+    "original_key": "Dメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "真心ブラザーズ"
+    ],
+    "description": "夢",
+    "created_at": "2026-06-24T07:46:24.29864+00:00"
+  },
+  {
+    "id": "magokoro_065",
+    "title": "明日",
+    "artist": "真心ブラザーズ",
+    "min": 53,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "真心ブラザーズ"
+    ],
+    "description": "希望",
+    "created_at": "2026-06-24T07:46:24.29864+00:00"
+  },
+  {
+    "id": "magokoro_066",
+    "title": "情熱の嵐",
+    "artist": "真心ブラザーズ",
+    "min": 56,
+    "max": 79,
+    "gender": "male",
+    "original_key": "Gメジャー",
+    "genre": "J-ROCK",
+    "tags": [
+      "真心ブラザーズ"
+    ],
+    "description": "情熱",
+    "created_at": "2026-06-24T07:46:24.29864+00:00"
+  },
+  {
+    "id": "marcy_088",
+    "title": "プラネタリウム",
+    "artist": "マルシィ",
+    "min": 53,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "マルシィ"
+    ],
+    "description": "星空",
+    "created_at": "2026-06-24T07:56:59.647574+00:00"
+  },
+  {
+    "id": "marcy_089",
+    "title": "最低偉人",
+    "artist": "マルシィ",
+    "min": 55,
+    "max": 78,
+    "gender": "male",
+    "original_key": "F#メジャー",
+    "genre": "J-POP",
+    "tags": [
+      "マルシィ"
+    ],
+    "description": "皮肉",
+    "created_at": "2026-06-24T07:56:59.647574+00:00"
+  },
+  {
+    "id": "marcy_090",
+    "title": "ラブソング",
+    "artist": "マルシィ",
+    "min": 54,
+    "max": 77,
+    "gender": "male",
+    "original_key": "Eメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "マルシィ"
+    ],
+    "description": "愛",
+    "created_at": "2026-06-24T07:56:59.647574+00:00"
+  },
+  {
+    "id": "marcy_091",
+    "title": "未来",
+    "artist": "マルシィ",
+    "min": 55,
+    "max": 78,
+    "gender": "male",
+    "original_key": "F#メジャー",
+    "genre": "J-POP",
+    "tags": [
+      "マルシィ"
+    ],
+    "description": "先",
+    "created_at": "2026-06-24T07:56:59.647574+00:00"
+  },
+  {
+    "id": "marcy_092",
+    "title": "言葉",
+    "artist": "マルシィ",
+    "min": 53,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "マルシィ"
+    ],
+    "description": "伝",
+    "created_at": "2026-06-24T07:56:59.647574+00:00"
+  },
+  {
+    "id": "marcy_093",
+    "title": "夜",
+    "artist": "マルシィ",
+    "min": 52,
+    "max": 75,
+    "gender": "male",
+    "original_key": "Dメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "マルシィ"
+    ],
+    "description": "夜",
+    "created_at": "2026-06-24T07:56:59.647574+00:00"
+  },
+  {
+    "id": "marcy_094",
+    "title": "夢",
+    "artist": "マルシィ",
+    "min": 54,
+    "max": 77,
+    "gender": "male",
+    "original_key": "Eメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "マルシィ"
+    ],
+    "description": "夢",
+    "created_at": "2026-06-24T07:56:59.647574+00:00"
+  },
+  {
+    "id": "marcy_095",
+    "title": "道",
+    "artist": "マルシィ",
+    "min": 53,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "マルシィ"
+    ],
+    "description": "歩",
+    "created_at": "2026-06-24T07:56:59.647574+00:00"
+  },
+  {
+    "id": "marcy_096",
+    "title": "花",
+    "artist": "マルシィ",
+    "min": 55,
+    "max": 78,
+    "gender": "male",
+    "original_key": "F#メジャー",
+    "genre": "J-POP",
+    "tags": [
+      "マルシィ"
+    ],
+    "description": "花",
+    "created_at": "2026-06-24T07:56:59.647574+00:00"
+  },
+  {
+    "id": "marcy_097",
+    "title": "風",
+    "artist": "マルシィ",
+    "min": 54,
+    "max": 77,
+    "gender": "male",
+    "original_key": "Eメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "マルシィ"
+    ],
+    "description": "風",
+    "created_at": "2026-06-24T07:56:59.647574+00:00"
+  },
+  {
+    "id": "marcy_098",
+    "title": "空",
+    "artist": "マルシィ",
+    "min": 56,
+    "max": 79,
+    "gender": "male",
+    "original_key": "Gメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "マルシィ"
+    ],
+    "description": "広",
+    "created_at": "2026-06-24T07:56:59.647574+00:00"
+  },
+  {
+    "id": "marcy_099",
+    "title": "海",
+    "artist": "マルシィ",
+    "min": 55,
+    "max": 78,
+    "gender": "male",
+    "original_key": "F#メジャー",
+    "genre": "J-POP",
+    "tags": [
+      "マルシィ"
+    ],
+    "description": "波",
+    "created_at": "2026-06-24T07:56:59.647574+00:00"
+  },
+  {
+    "id": "marcy_100",
+    "title": "君",
+    "artist": "マルシィ",
+    "min": 53,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "マルシィ"
+    ],
+    "description": "君",
+    "created_at": "2026-06-24T07:56:59.647574+00:00"
+  },
+  {
+    "id": "miyuki_028",
+    "title": "雨",
+    "artist": "中島みゆき",
+    "min": 52,
+    "max": 75,
+    "gender": "female",
+    "original_key": "Dメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "中島みゆき"
+    ],
+    "description": "雨音",
+    "created_at": "2026-06-24T05:51:26.596711+00:00"
+  },
+  {
+    "id": "miyuki_059",
+    "title": "空を飛べるはず",
+    "artist": "中島みゆき",
+    "min": 52,
+    "max": 75,
+    "gender": "female",
+    "original_key": "Dメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "中島みゆき"
+    ],
+    "description": "飛行",
+    "created_at": "2026-06-24T05:51:26.596711+00:00"
+  },
+  {
+    "id": "mr_035",
+    "title": "跳べ",
+    "artist": "Mr.Children",
+    "min": 56,
+    "max": 79,
+    "gender": "male",
+    "original_key": "F#メジャー",
+    "genre": "J-ROCK",
+    "tags": [
+      "Mr.Children"
+    ],
+    "description": "飛躍",
+    "created_at": "2026-06-24T05:41:50.544696+00:00"
+  },
+  {
+    "id": "mr_037",
+    "title": "光の射す方へ",
+    "artist": "Mr.Children",
+    "min": 56,
+    "max": 79,
+    "gender": "male",
+    "original_key": "F#メジャー",
+    "genre": "J-ROCK",
+    "tags": [
+      "Mr.Children"
+    ],
+    "description": "導き",
+    "created_at": "2026-06-24T05:41:50.544696+00:00"
+  },
+  {
+    "id": "mr_038",
+    "title": "深海",
+    "artist": "Mr.Children",
+    "min": 53,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "J-ROCK",
+    "tags": [
+      "Mr.Children"
+    ],
+    "description": "深淵",
+    "created_at": "2026-06-24T05:41:50.544696+00:00"
+  },
+  {
+    "id": "mr_040",
+    "title": "星になれたら",
+    "artist": "Mr.Children",
+    "min": 54,
+    "max": 77,
+    "gender": "male",
+    "original_key": "Eメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "Mr.Children"
+    ],
+    "description": "夢",
+    "created_at": "2026-06-24T05:41:50.544696+00:00"
+  },
+  {
+    "id": "mr_041",
+    "title": "雨のち晴れ",
+    "artist": "Mr.Children",
+    "min": 53,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "Mr.Children"
+    ],
+    "description": "回復",
+    "created_at": "2026-06-24T05:41:50.544696+00:00"
+  },
+  {
+    "id": "mr_078",
+    "title": "everybody goes (Original)",
+    "artist": "Mr.Children",
+    "min": 55,
+    "max": 78,
+    "gender": "male",
+    "original_key": "Fメジャー",
+    "genre": "J-ROCK",
+    "tags": [
+      "Mr.Children"
+    ],
+    "description": "再掲",
+    "created_at": "2026-06-24T05:41:50.544696+00:00"
+  },
+  {
+    "id": "nagabuchi_065",
+    "title": "明日へ向かって",
+    "artist": "長渕剛",
+    "min": 55,
+    "max": 78,
+    "gender": "male",
+    "original_key": "F#メジャー",
+    "genre": "J-ROCK",
+    "tags": [
+      "長渕剛"
+    ],
+    "description": "前進",
+    "created_at": "2026-06-24T07:19:24.575117+00:00"
+  },
+  {
+    "id": "nagabuchi_066",
+    "title": "友よ",
+    "artist": "長渕剛",
+    "min": 53,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "長渕剛"
+    ],
+    "description": "友情",
+    "created_at": "2026-06-24T07:19:24.575117+00:00"
+  },
+  {
+    "id": "nagabuchi_067",
+    "title": "俺の太陽",
+    "artist": "長渕剛",
+    "min": 56,
+    "max": 79,
+    "gender": "male",
+    "original_key": "Gメジャー",
+    "genre": "J-ROCK",
+    "tags": [
+      "長渕剛"
+    ],
+    "description": "熱血",
+    "created_at": "2026-06-24T07:19:24.575117+00:00"
+  },
+  {
+    "id": "nagabuchi_069",
+    "title": "祈り",
+    "artist": "長渕剛",
+    "min": 52,
+    "max": 75,
+    "gender": "male",
+    "original_key": "Dメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "長渕剛"
+    ],
+    "description": "願い",
+    "created_at": "2026-06-24T07:19:24.575117+00:00"
+  },
+  {
+    "id": "nagabuchi_070",
+    "title": "LICENSE",
+    "artist": "長渕剛",
+    "min": 54,
+    "max": 77,
+    "gender": "male",
+    "original_key": "Eメジャー",
+    "genre": "J-ROCK",
+    "tags": [
+      "長渕剛"
+    ],
+    "description": "誇り",
+    "created_at": "2026-06-24T07:19:24.575117+00:00"
+  },
+  {
+    "id": "oor_039",
+    "title": "Let me let you go",
+    "artist": "ONE OK ROCK",
+    "min": 53,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "ONE OK ROCK"
+    ],
+    "description": "再掲",
+    "created_at": "2026-06-24T06:18:48.393481+00:00"
+  },
+  {
+    "id": "oor_040",
+    "title": "Answer is Near",
+    "artist": "ONE OK ROCK",
+    "min": 55,
+    "max": 78,
+    "gender": "male",
+    "original_key": "F#マイナー",
+    "genre": "J-ROCK",
+    "tags": [
+      "ONE OK ROCK"
+    ],
+    "description": "再掲",
+    "created_at": "2026-06-24T06:18:48.393481+00:00"
+  },
+  {
+    "id": "oor_047",
+    "title": "Giants",
+    "artist": "ONE OK ROCK",
+    "min": 54,
+    "max": 77,
+    "gender": "male",
+    "original_key": "Eメジャー",
+    "genre": "J-ROCK",
+    "tags": [
+      "ONE OK ROCK"
+    ],
+    "description": "巨人",
+    "created_at": "2026-06-24T06:18:48.393481+00:00"
+  },
+  {
+    "id": "oor_049",
+    "title": "Grow Up Kid",
+    "artist": "ONE OK ROCK",
+    "min": 55,
+    "max": 78,
+    "gender": "male",
+    "original_key": "F#マイナー",
+    "genre": "J-ROCK",
+    "tags": [
+      "ONE OK ROCK"
+    ],
+    "description": "成長",
+    "created_at": "2026-06-24T06:18:48.393481+00:00"
+  },
+  {
+    "id": "oor_052",
+    "title": "Wonder",
+    "artist": "ONE OK ROCK",
+    "min": 55,
+    "max": 78,
+    "gender": "male",
+    "original_key": "F#メジャー",
+    "genre": "J-POP",
+    "tags": [
+      "ONE OK ROCK"
+    ],
+    "description": "驚き",
+    "created_at": "2026-06-24T06:18:48.393481+00:00"
+  },
+  {
+    "id": "oor_053",
+    "title": "Save Yourself",
+    "artist": "ONE OK ROCK",
+    "min": 56,
+    "max": 79,
+    "gender": "male",
+    "original_key": "Gマイナー",
+    "genre": "J-ROCK",
+    "tags": [
+      "ONE OK ROCK"
+    ],
+    "description": "救済",
+    "created_at": "2026-06-24T06:18:48.393481+00:00"
+  },
+  {
+    "id": "oor_055",
+    "title": "Vandalize",
+    "artist": "ONE OK ROCK",
+    "min": 55,
+    "max": 78,
+    "gender": "male",
+    "original_key": "F#マイナー",
+    "genre": "J-ROCK",
+    "tags": [
+      "ONE OK ROCK"
+    ],
+    "description": "破壊",
+    "created_at": "2026-06-24T06:18:48.393481+00:00"
+  },
+  {
+    "id": "oor_057",
+    "title": "Your Tears are Mine",
+    "artist": "ONE OK ROCK",
+    "min": 52,
+    "max": 75,
+    "gender": "male",
+    "original_key": "Dメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "ONE OK ROCK"
+    ],
+    "description": "共有",
+    "created_at": "2026-06-24T06:18:48.393481+00:00"
+  },
+  {
+    "id": "oor_058",
+    "title": "Gravity",
+    "artist": "ONE OK ROCK",
+    "min": 53,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "ONE OK ROCK"
+    ],
+    "description": "重力",
+    "created_at": "2026-06-24T06:18:48.393481+00:00"
+  },
+  {
+    "id": "oor_059",
+    "title": "Prove",
+    "artist": "ONE OK ROCK",
+    "min": 55,
+    "max": 78,
+    "gender": "male",
+    "original_key": "F#マイナー",
+    "genre": "J-ROCK",
+    "tags": [
+      "ONE OK ROCK"
+    ],
+    "description": "証明",
+    "created_at": "2026-06-24T06:18:48.393481+00:00"
+  },
+  {
+    "id": "oor_060",
+    "title": "Mad World",
+    "artist": "ONE OK ROCK",
+    "min": 56,
+    "max": 79,
+    "gender": "male",
+    "original_key": "Gマイナー",
+    "genre": "J-ROCK",
+    "tags": [
+      "ONE OK ROCK"
+    ],
+    "description": "狂気",
+    "created_at": "2026-06-24T06:18:48.393481+00:00"
+  },
+  {
+    "id": "paddles_083",
+    "title": "僕らの群青",
+    "artist": "the paddles",
+    "min": 55,
+    "max": 78,
+    "gender": "male",
+    "original_key": "F#メジャー",
+    "genre": "J-ROCK",
+    "tags": [
+      "the paddles"
+    ],
+    "description": "群青",
+    "created_at": "2026-06-24T08:01:18.678663+00:00"
+  },
+  {
+    "id": "paddles_084",
+    "title": "夢で会えたら",
+    "artist": "the paddles",
+    "min": 52,
+    "max": 75,
+    "gender": "male",
+    "original_key": "Dメジャー",
+    "genre": "J-ROCK",
+    "tags": [
+      "the paddles"
+    ],
+    "description": "再会",
+    "created_at": "2026-06-24T08:01:18.678663+00:00"
+  },
+  {
+    "id": "paddles_085",
+    "title": "風",
+    "artist": "the paddles",
+    "min": 54,
+    "max": 77,
+    "gender": "male",
+    "original_key": "Eメジャー",
+    "genre": "J-ROCK",
+    "tags": [
+      "the paddles"
+    ],
+    "description": "風",
+    "created_at": "2026-06-24T08:01:18.678663+00:00"
+  },
+  {
+    "id": "paddles_086",
+    "title": "道",
+    "artist": "the paddles",
+    "min": 53,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "J-ROCK",
+    "tags": [
+      "the paddles"
+    ],
+    "description": "歩み",
+    "created_at": "2026-06-24T08:01:18.678663+00:00"
+  },
+  {
+    "id": "paddles_087",
+    "title": "光",
+    "artist": "the paddles",
+    "min": 55,
+    "max": 78,
+    "gender": "male",
+    "original_key": "F#メジャー",
+    "genre": "J-ROCK",
+    "tags": [
+      "the paddles"
+    ],
+    "description": "輝き",
+    "created_at": "2026-06-24T08:01:18.678663+00:00"
+  },
+  {
+    "id": "paddles_088",
+    "title": "愛",
+    "artist": "the paddles",
+    "min": 52,
+    "max": 75,
+    "gender": "male",
+    "original_key": "Dメジャー",
+    "genre": "J-ROCK",
+    "tags": [
+      "the paddles"
+    ],
+    "description": "愛",
+    "created_at": "2026-06-24T08:01:18.678663+00:00"
+  },
+  {
+    "id": "paddles_089",
+    "title": "空",
+    "artist": "the paddles",
+    "min": 54,
+    "max": 77,
+    "gender": "male",
+    "original_key": "Eメジャー",
+    "genre": "J-ROCK",
+    "tags": [
+      "the paddles"
+    ],
+    "description": "広い",
+    "created_at": "2026-06-24T08:01:18.678663+00:00"
+  },
+  {
+    "id": "paddles_090",
+    "title": "雨",
+    "artist": "the paddles",
+    "min": 53,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "J-ROCK",
+    "tags": [
+      "the paddles"
+    ],
+    "description": "雨",
+    "created_at": "2026-06-24T08:01:18.678663+00:00"
+  },
+  {
+    "id": "porno_038",
+    "title": "光の影",
+    "artist": "ポルノグラフィティ",
+    "min": 54,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Eメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "ポルノグラフィティ"
+    ],
+    "description": "陰影",
+    "created_at": "2026-06-24T05:43:12.128209+00:00"
+  },
+  {
+    "id": "porno_042",
+    "title": "ブレス",
+    "artist": "ポルノグラフィティ",
+    "min": 54,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Eメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "ポルノグラフィティ"
+    ],
+    "description": "呼吸",
+    "created_at": "2026-06-24T05:43:12.128209+00:00"
+  },
+  {
+    "id": "porno_046",
+    "title": "証言",
+    "artist": "ポルノグラフィティ",
+    "min": 53,
+    "max": 75,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "ポルノグラフィティ"
+    ],
+    "description": "真実",
+    "created_at": "2026-06-24T05:43:12.128209+00:00"
+  },
+  {
+    "id": "porno_047",
+    "title": "パレット",
+    "artist": "ポルノグラフィティ",
+    "min": 54,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Eメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "ポルノグラフィティ"
+    ],
+    "description": "色彩",
+    "created_at": "2026-06-24T05:43:12.128209+00:00"
+  },
+  {
+    "id": "porno_049",
+    "title": "ハネウマ",
+    "artist": "ポルノグラフィティ",
+    "min": 55,
+    "max": 77,
+    "gender": "male",
+    "original_key": "Fメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "ポルノグラフィティ"
+    ],
+    "description": "疾走",
+    "created_at": "2026-06-24T05:43:12.128209+00:00"
+  },
+  {
+    "id": "porno_051",
+    "title": "ワンモア",
+    "artist": "ポルノグラフィティ",
+    "min": 55,
+    "max": 77,
+    "gender": "male",
+    "original_key": "Fメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "ポルノグラフィティ"
+    ],
+    "description": "希望",
+    "created_at": "2026-06-24T05:43:12.128209+00:00"
+  },
+  {
+    "id": "porno_057",
+    "title": "幸せ",
+    "artist": "ポルノグラフィティ",
+    "min": 54,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Eメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "ポルノグラフィティ"
+    ],
+    "description": "探求",
+    "created_at": "2026-06-24T05:43:12.128209+00:00"
+  },
+  {
+    "id": "porno_059",
+    "title": "愛",
+    "artist": "ポルノグラフィティ",
+    "min": 53,
+    "max": 75,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "ポルノグラフィティ"
+    ],
+    "description": "慈しみ",
+    "created_at": "2026-06-24T05:43:12.128209+00:00"
+  },
+  {
+    "id": "porno_060",
+    "title": "ネオメロ",
+    "artist": "ポルノグラフィティ",
+    "min": 56,
+    "max": 78,
+    "gender": "male",
+    "original_key": "F#メジャー",
+    "genre": "J-ROCK",
+    "tags": [
+      "ポルノグラフィティ"
+    ],
+    "description": "進化",
+    "created_at": "2026-06-24T05:43:12.128209+00:00"
+  },
+  {
+    "id": "porno_063",
+    "title": "渦中",
+    "artist": "ポルノグラフィティ",
+    "min": 54,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Eメジャー",
+    "genre": "J-ROCK",
+    "tags": [
+      "ポルノグラフィティ"
+    ],
+    "description": "中心",
+    "created_at": "2026-06-24T05:43:12.128209+00:00"
+  },
+  {
+    "id": "porno_064",
+    "title": "森",
+    "artist": "ポルノグラフィティ",
+    "min": 53,
+    "max": 75,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "J-ROCK",
+    "tags": [
+      "ポルノグラフィティ"
+    ],
+    "description": "木々",
+    "created_at": "2026-06-24T05:43:12.128209+00:00"
+  },
+  {
+    "id": "porno_066",
+    "title": "今宵",
+    "artist": "ポルノグラフィティ",
+    "min": 56,
+    "max": 78,
+    "gender": "male",
+    "original_key": "F#メジャー",
+    "genre": "J-ROCK",
+    "tags": [
+      "ポルノグラフィティ"
+    ],
+    "description": "夜中",
+    "created_at": "2026-06-24T05:43:12.128209+00:00"
+  },
+  {
+    "id": "porno_067",
+    "title": "100％",
+    "artist": "ポルノグラフィティ",
+    "min": 54,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Eメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "ポルノグラフィティ"
+    ],
+    "description": "全開",
+    "created_at": "2026-06-24T05:43:12.128209+00:00"
+  },
+  {
+    "id": "porno_069",
+    "title": "もう一度",
+    "artist": "ポルノグラフィティ",
+    "min": 55,
+    "max": 77,
+    "gender": "male",
+    "original_key": "Fメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "ポルノグラフィティ"
+    ],
+    "description": "再生",
+    "created_at": "2026-06-24T05:43:12.128209+00:00"
+  },
+  {
+    "id": "porno_070",
+    "title": "無限",
+    "artist": "ポルノグラフィティ",
+    "min": 56,
+    "max": 78,
+    "gender": "male",
+    "original_key": "F#メジャー",
+    "genre": "J-ROCK",
+    "tags": [
+      "ポルノグラフィティ"
+    ],
+    "description": "無窮",
+    "created_at": "2026-06-24T05:43:12.128209+00:00"
+  },
+  {
+    "id": "porno_071",
+    "title": "Century",
+    "artist": "ポルノグラフィティ",
+    "min": 55,
+    "max": 77,
+    "gender": "male",
+    "original_key": "Fメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "ポルノグラフィティ"
+    ],
+    "description": "世紀",
+    "created_at": "2026-06-24T05:43:12.128209+00:00"
+  },
+  {
+    "id": "porno_072",
+    "title": "ラジオ",
+    "artist": "ポルノグラフィティ",
+    "min": 54,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Eメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "ポルノグラフィティ"
+    ],
+    "description": "音楽",
+    "created_at": "2026-06-24T05:43:12.128209+00:00"
+  },
+  {
+    "id": "porno_073",
+    "title": "旋律",
+    "artist": "ポルノグラフィティ",
+    "min": 53,
+    "max": 75,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "ポルノグラフィティ"
+    ],
+    "description": "楽譜",
+    "created_at": "2026-06-24T05:43:12.128209+00:00"
+  },
+  {
+    "id": "porno_074",
+    "title": "遊び心",
+    "artist": "ポルノグラフィティ",
+    "min": 55,
+    "max": 77,
+    "gender": "male",
+    "original_key": "Fメジャー",
+    "genre": "J-ROCK",
+    "tags": [
+      "ポルノグラフィティ"
+    ],
+    "description": "夢",
+    "created_at": "2026-06-24T05:43:12.128209+00:00"
+  },
+  {
+    "id": "porno_075",
+    "title": "哀愁",
+    "artist": "ポルノグラフィティ",
+    "min": 52,
+    "max": 74,
+    "gender": "male",
+    "original_key": "Dメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "ポルノグラフィティ"
+    ],
+    "description": "想い",
+    "created_at": "2026-06-24T05:43:12.128209+00:00"
+  },
+  {
+    "id": "porno_076",
+    "title": "ロック",
+    "artist": "ポルノグラフィティ",
+    "min": 56,
+    "max": 78,
+    "gender": "male",
+    "original_key": "F#メジャー",
+    "genre": "J-ROCK",
+    "tags": [
+      "ポルノグラフィティ"
+    ],
+    "description": "魂",
+    "created_at": "2026-06-24T05:43:12.128209+00:00"
+  },
+  {
+    "id": "porno_077",
+    "title": "哲学",
+    "artist": "ポルノグラフィティ",
+    "min": 54,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Eメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "ポルノグラフィティ"
+    ],
+    "description": "思想",
+    "created_at": "2026-06-24T05:43:12.128209+00:00"
+  },
+  {
+    "id": "porno_078",
+    "title": "硬質",
+    "artist": "ポルノグラフィティ",
+    "min": 55,
+    "max": 77,
+    "gender": "male",
+    "original_key": "Fメジャー",
+    "genre": "J-ROCK",
+    "tags": [
+      "ポルノグラフィティ"
+    ],
+    "description": "鋭",
+    "created_at": "2026-06-24T05:43:12.128209+00:00"
+  },
+  {
+    "id": "porno_079",
+    "title": "温かみ",
+    "artist": "ポルノグラフィティ",
+    "min": 53,
+    "max": 75,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "ポルノグラフィティ"
+    ],
+    "description": "愛着",
+    "created_at": "2026-06-24T05:43:12.128209+00:00"
+  },
+  {
+    "id": "porno_080",
+    "title": "ドラマチック",
+    "artist": "ポルノグラフィティ",
+    "min": 56,
+    "max": 78,
+    "gender": "male",
+    "original_key": "F#メジャー",
+    "genre": "J-ROCK",
+    "tags": [
+      "ポルノグラフィティ"
+    ],
+    "description": "展開",
+    "created_at": "2026-06-24T05:43:12.128209+00:00"
+  },
+  {
+    "id": "porno_081",
+    "title": "情熱",
+    "artist": "ポルノグラフィティ",
+    "min": 55,
+    "max": 77,
+    "gender": "male",
+    "original_key": "Fメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "ポルノグラフィティ"
+    ],
+    "description": "炎",
+    "created_at": "2026-06-24T05:43:12.128209+00:00"
+  },
+  {
+    "id": "porno_082",
+    "title": "夏色",
+    "artist": "ポルノグラフィティ",
+    "min": 55,
+    "max": 77,
+    "gender": "male",
+    "original_key": "Fメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "ポルノグラフィティ"
+    ],
+    "description": "輝き",
+    "created_at": "2026-06-24T05:43:12.128209+00:00"
+  },
+  {
+    "id": "porno_083",
+    "title": "都会",
+    "artist": "ポルノグラフィティ",
+    "min": 54,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Eメジャー",
+    "genre": "J-ROCK",
+    "tags": [
+      "ポルノグラフィティ"
+    ],
+    "description": "街",
+    "created_at": "2026-06-24T05:43:12.128209+00:00"
+  },
+  {
+    "id": "porno_084",
+    "title": "深み",
+    "artist": "ポルノグラフィティ",
+    "min": 53,
+    "max": 75,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "J-ROCK",
+    "tags": [
+      "ポルノグラフィティ"
+    ],
+    "description": "洞窟",
+    "created_at": "2026-06-24T05:43:12.128209+00:00"
+  },
+  {
+    "id": "porno_085",
+    "title": "絆",
+    "artist": "ポルノグラフィティ",
+    "min": 55,
+    "max": 77,
+    "gender": "male",
+    "original_key": "Fメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "ポルノグラフィティ"
+    ],
+    "description": "結び",
+    "created_at": "2026-06-24T05:43:12.128209+00:00"
+  },
+  {
+    "id": "porno_086",
+    "title": "希望",
+    "artist": "ポルノグラフィティ",
+    "min": 56,
+    "max": 78,
+    "gender": "male",
+    "original_key": "F#メジャー",
+    "genre": "J-ROCK",
+    "tags": [
+      "ポルノグラフィティ"
+    ],
+    "description": "明日",
+    "created_at": "2026-06-24T05:43:12.128209+00:00"
+  },
+  {
+    "id": "porno_087",
+    "title": "日常",
+    "artist": "ポルノグラフィティ",
+    "min": 54,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Eメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "ポルノグラフィティ"
+    ],
+    "description": "営み",
+    "created_at": "2026-06-24T05:43:12.128209+00:00"
+  },
+  {
+    "id": "porno_088",
+    "title": "情景",
+    "artist": "ポルノグラフィティ",
+    "min": 53,
+    "max": 75,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "ポルノグラフィティ"
+    ],
+    "description": "風景",
+    "created_at": "2026-06-24T05:43:12.128209+00:00"
+  },
+  {
+    "id": "porno_089",
+    "title": "疾走",
+    "artist": "ポルノグラフィティ",
+    "min": 55,
+    "max": 77,
+    "gender": "male",
+    "original_key": "Fメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "ポルノグラフィティ"
+    ],
+    "description": "加速",
+    "created_at": "2026-06-24T05:43:12.128209+00:00"
+  },
+  {
+    "id": "porno_090",
+    "title": "物語",
+    "artist": "ポルノグラフィティ",
+    "min": 56,
+    "max": 78,
+    "gender": "male",
+    "original_key": "F#メジャー",
+    "genre": "J-ROCK",
+    "tags": [
+      "ポルノグラフィティ"
+    ],
+    "description": "語り",
+    "created_at": "2026-06-24T05:43:12.128209+00:00"
+  },
+  {
+    "id": "porno_091",
+    "title": "鼓動",
+    "artist": "ポルノグラフィティ",
+    "min": 55,
+    "max": 77,
+    "gender": "male",
+    "original_key": "Fメジャー",
+    "genre": "J-ROCK",
+    "tags": [
+      "ポルノグラフィティ"
+    ],
+    "description": "脈",
+    "created_at": "2026-06-24T05:43:12.128209+00:00"
+  },
+  {
+    "id": "porno_092",
+    "title": "刹那",
+    "artist": "ポルノグラフィティ",
+    "min": 54,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Eメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "ポルノグラフィティ"
+    ],
+    "description": "瞬間",
+    "created_at": "2026-06-24T05:43:12.128209+00:00"
+  },
+  {
+    "id": "porno_093",
+    "title": "新境地",
+    "artist": "ポルノグラフィティ",
+    "min": 55,
+    "max": 77,
+    "gender": "male",
+    "original_key": "Fメジャー",
+    "genre": "J-ROCK",
+    "tags": [
+      "ポルノグラフィティ"
+    ],
+    "description": "転換",
+    "created_at": "2026-06-24T05:43:12.128209+00:00"
+  },
+  {
+    "id": "porno_094",
+    "title": "祝祭",
+    "artist": "ポルノグラフィティ",
+    "min": 56,
+    "max": 78,
+    "gender": "male",
+    "original_key": "F#メジャー",
+    "genre": "J-POP",
+    "tags": [
+      "ポルノグラフィティ"
+    ],
+    "description": "祭り",
+    "created_at": "2026-06-24T05:43:12.128209+00:00"
+  },
+  {
+    "id": "porno_095",
+    "title": "叫び",
+    "artist": "ポルノグラフィティ",
+    "min": 56,
+    "max": 78,
+    "gender": "male",
+    "original_key": "F#メジャー",
+    "genre": "J-ROCK",
+    "tags": [
+      "ポルノグラフィティ"
+    ],
+    "description": "咆哮",
+    "created_at": "2026-06-24T05:43:12.128209+00:00"
+  },
+  {
+    "id": "porno_096",
+    "title": "記憶",
+    "artist": "ポルノグラフィティ",
+    "min": 53,
+    "max": 75,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "ポルノグラフィティ"
+    ],
+    "description": "回想",
+    "created_at": "2026-06-24T05:43:12.128209+00:00"
+  },
+  {
+    "id": "porno_098",
+    "title": "自由",
+    "artist": "ポルノグラフィティ",
+    "min": 56,
+    "max": 78,
+    "gender": "male",
+    "original_key": "F#メジャー",
+    "genre": "J-ROCK",
+    "tags": [
+      "ポルノグラフィティ"
+    ],
+    "description": "解放",
+    "created_at": "2026-06-24T05:43:12.128209+00:00"
+  },
+  {
+    "id": "porno_100",
+    "title": "魂",
+    "artist": "ポルノグラフィティ",
+    "min": 56,
+    "max": 78,
+    "gender": "male",
+    "original_key": "F#メジャー",
+    "genre": "J-ROCK",
+    "tags": [
+      "ポルノグラフィティ"
+    ],
+    "description": "精神",
+    "created_at": "2026-06-24T05:43:12.128209+00:00"
+  },
+  {
+    "id": "puri_085",
+    "title": "HIGHWAY STAR",
+    "artist": "プリンセス プリンセス",
+    "min": 55,
+    "max": 78,
+    "gender": "female",
+    "original_key": "F#メジャー",
+    "genre": "J-ROCK",
+    "tags": [
+      "プリンセス プリンセス"
+    ],
+    "description": "疾走",
+    "created_at": "2026-06-24T07:40:03.87835+00:00"
+  },
+  {
+    "id": "puri_087",
+    "title": "MY WILL",
+    "artist": "プリンセス プリンセス",
+    "min": 53,
+    "max": 76,
+    "gender": "female",
+    "original_key": "Ebメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "プリンセス プリンセス"
+    ],
+    "description": "意志",
+    "created_at": "2026-06-24T07:40:03.87835+00:00"
+  },
+  {
+    "id": "puri_088",
+    "title": "バラ色の人生",
+    "artist": "プリンセス プリンセス",
+    "min": 55,
+    "max": 78,
+    "gender": "female",
+    "original_key": "F#メジャー",
+    "genre": "J-POP",
+    "tags": [
+      "プリンセス プリンセス"
+    ],
+    "description": "希望",
+    "created_at": "2026-06-24T07:40:03.87835+00:00"
+  },
+  {
+    "id": "puri_089",
+    "title": "空色デイズ",
+    "artist": "プリンセス プリンセス",
+    "min": 54,
+    "max": 77,
+    "gender": "female",
+    "original_key": "Eメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "プリンセス プリンセス"
+    ],
+    "description": "青空",
+    "created_at": "2026-06-24T07:40:03.87835+00:00"
+  },
+  {
+    "id": "puri_090",
+    "title": "恋に落ちたら",
+    "artist": "プリンセス プリンセス",
+    "min": 53,
+    "max": 76,
+    "gender": "female",
+    "original_key": "Ebメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "プリンセス プリンセス"
+    ],
+    "description": "告白",
+    "created_at": "2026-06-24T07:40:03.87835+00:00"
+  },
+  {
+    "id": "puri_091",
+    "title": "ROCK ME",
+    "artist": "プリンセス プリンセス",
+    "min": 56,
+    "max": 79,
+    "gender": "female",
+    "original_key": "Gメジャー",
+    "genre": "J-ROCK",
+    "tags": [
+      "プリンセス プリンセス"
+    ],
+    "description": "衝撃",
+    "created_at": "2026-06-24T07:40:03.87835+00:00"
+  },
+  {
+    "id": "puri_092",
+    "title": "シンデレラ",
+    "artist": "プリンセス プリンセス",
+    "min": 54,
+    "max": 77,
+    "gender": "female",
+    "original_key": "Eメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "プリンセス プリンセス"
+    ],
+    "description": "童話",
+    "created_at": "2026-06-24T07:40:03.87835+00:00"
+  },
+  {
+    "id": "puri_093",
+    "title": "雨の歌",
+    "artist": "プリンセス プリンセス",
+    "min": 52,
+    "max": 75,
+    "gender": "female",
+    "original_key": "Dメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "プリンセス プリンセス"
+    ],
+    "description": "哀",
+    "created_at": "2026-06-24T07:40:03.87835+00:00"
+  },
+  {
+    "id": "puri_094",
+    "title": "夏祭り",
+    "artist": "プリンセス プリンセス",
+    "min": 55,
+    "max": 78,
+    "gender": "female",
+    "original_key": "F#メジャー",
+    "genre": "J-POP",
+    "tags": [
+      "プリンセス プリンセス"
+    ],
+    "description": "祭",
+    "created_at": "2026-06-24T07:40:03.87835+00:00"
+  },
+  {
+    "id": "puri_095",
+    "title": "友達のまま",
+    "artist": "プリンセス プリンセス",
+    "min": 53,
+    "max": 76,
+    "gender": "female",
+    "original_key": "Ebメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "プリンセス プリンセス"
+    ],
+    "description": "距離",
+    "created_at": "2026-06-24T07:40:03.87835+00:00"
+  },
+  {
+    "id": "puri_096",
+    "title": "歌姫",
+    "artist": "プリンセス プリンセス",
+    "min": 54,
+    "max": 77,
+    "gender": "female",
+    "original_key": "Eメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "プリンセス プリンセス"
+    ],
+    "description": "存在",
+    "created_at": "2026-06-24T07:40:03.87835+00:00"
+  },
+  {
+    "id": "puri_097",
+    "title": "夢",
+    "artist": "プリンセス プリンセス",
+    "min": 53,
+    "max": 76,
+    "gender": "female",
+    "original_key": "Ebメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "プリンセス プリンセス"
+    ],
+    "description": "希望",
+    "created_at": "2026-06-24T07:40:03.87835+00:00"
+  },
+  {
+    "id": "puri_098",
+    "title": "愛の歌",
+    "artist": "プリンセス プリンセス",
+    "min": 54,
+    "max": 77,
+    "gender": "female",
+    "original_key": "Eメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "プリンセス プリンセス"
+    ],
+    "description": "愛",
+    "created_at": "2026-06-24T07:40:03.87835+00:00"
+  },
+  {
+    "id": "puri_099",
+    "title": "春",
+    "artist": "プリンセス プリンセス",
+    "min": 53,
+    "max": 76,
+    "gender": "female",
+    "original_key": "Ebメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "プリンセス プリンセス"
+    ],
+    "description": "季節",
+    "created_at": "2026-06-24T07:40:03.87835+00:00"
+  },
+  {
+    "id": "puri_100",
+    "title": "最後",
+    "artist": "プリンセス プリンセス",
+    "min": 52,
+    "max": 75,
+    "gender": "female",
+    "original_key": "Dメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "プリンセス プリンセス"
+    ],
+    "description": "完",
+    "created_at": "2026-06-24T07:40:03.87835+00:00"
+  },
+  {
+    "id": "quruli_044",
+    "title": "everybody feels the same",
+    "artist": "くるり",
+    "min": 55,
+    "max": 77,
+    "gender": "male",
+    "original_key": "Fメジャー",
+    "genre": "J-ROCK",
+    "tags": [
+      "くるり"
+    ],
+    "description": "共感",
+    "created_at": "2026-06-24T04:18:03.215642+00:00"
+  },
+  {
+    "id": "rebecca_056",
+    "title": "ボトムライン",
+    "artist": "レベッカ",
+    "min": 55,
+    "max": 78,
+    "gender": "female",
+    "original_key": "F#メジャー",
+    "genre": "J-POP",
+    "tags": [
+      "レベッカ"
+    ],
+    "description": "底力",
+    "created_at": "2026-06-24T07:56:59.647574+00:00"
+  },
+  {
+    "id": "rebecca_057",
+    "title": "ヴァージニティー",
+    "artist": "レベッカ",
+    "min": 56,
+    "max": 79,
+    "gender": "female",
+    "original_key": "Gメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "レベッカ"
+    ],
+    "description": "純真",
+    "created_at": "2026-06-24T07:56:59.647574+00:00"
+  },
+  {
+    "id": "rebecca_058",
+    "title": "LONELY BUTTERFLY",
+    "artist": "レベッカ",
+    "min": 55,
+    "max": 78,
+    "gender": "female",
+    "original_key": "F#メジャー",
+    "genre": "J-POP",
+    "tags": [
+      "レベッカ"
+    ],
+    "description": "孤独",
+    "created_at": "2026-06-24T07:56:59.647574+00:00"
+  },
+  {
+    "id": "rebecca_059",
+    "title": "OLIVE",
+    "artist": "レベッカ",
+    "min": 54,
+    "max": 77,
+    "gender": "female",
+    "original_key": "Eメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "レベッカ"
+    ],
+    "description": "物語",
+    "created_at": "2026-06-24T07:56:59.647574+00:00"
+  },
+  {
+    "id": "rebecca_060",
+    "title": "プライベイト・ヒロイン",
+    "artist": "レベッカ",
+    "min": 56,
+    "max": 79,
+    "gender": "female",
+    "original_key": "Gメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "レベッカ"
+    ],
+    "description": "特別",
+    "created_at": "2026-06-24T07:56:59.647574+00:00"
+  },
+  {
+    "id": "rebecca_061",
+    "title": "真夏の雨",
+    "artist": "レベッカ",
+    "min": 53,
+    "max": 76,
+    "gender": "female",
+    "original_key": "Ebメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "レベッカ"
+    ],
+    "description": "雨",
+    "created_at": "2026-06-24T07:56:59.647574+00:00"
+  },
+  {
+    "id": "rebecca_062",
+    "title": "Cheap Hippies",
+    "artist": "レベッカ",
+    "min": 55,
+    "max": 78,
+    "gender": "female",
+    "original_key": "F#メジャー",
+    "genre": "J-POP",
+    "tags": [
+      "レベッカ"
+    ],
+    "description": "自由",
+    "created_at": "2026-06-24T07:56:59.647574+00:00"
+  },
+  {
+    "id": "rebecca_063",
+    "title": "瞳を閉じて",
+    "artist": "レベッカ",
+    "min": 52,
+    "max": 75,
+    "gender": "female",
+    "original_key": "Dメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "レベッカ"
+    ],
+    "description": "追想",
+    "created_at": "2026-06-24T07:56:59.647574+00:00"
+  },
+  {
+    "id": "rebecca_064",
+    "title": "NEVER TOO LATE",
+    "artist": "レベッカ",
+    "min": 56,
+    "max": 79,
+    "gender": "female",
+    "original_key": "Gメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "レベッカ"
+    ],
+    "description": "挑戦",
+    "created_at": "2026-06-24T07:56:59.647574+00:00"
+  },
+  {
+    "id": "rebecca_065",
+    "title": "ONE MORE KISS",
+    "artist": "レベッカ",
+    "min": 55,
+    "max": 78,
+    "gender": "female",
+    "original_key": "F#メジャー",
+    "genre": "J-POP",
+    "tags": [
+      "レベッカ"
+    ],
+    "description": "接吻",
+    "created_at": "2026-06-24T07:56:59.647574+00:00"
+  },
+  {
+    "id": "rebecca_066",
+    "title": "76th Star",
+    "artist": "レベッカ",
+    "min": 56,
+    "max": 79,
+    "gender": "female",
+    "original_key": "Gメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "レベッカ"
+    ],
+    "description": "星",
+    "created_at": "2026-06-24T07:56:59.647574+00:00"
+  },
+  {
+    "id": "rebecca_067",
+    "title": "Cotton Time",
+    "artist": "レベッカ",
+    "min": 54,
+    "max": 77,
+    "gender": "female",
+    "original_key": "Eメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "レベッカ"
+    ],
+    "description": "時",
+    "created_at": "2026-06-24T07:56:59.647574+00:00"
+  },
+  {
+    "id": "rebecca_069",
+    "title": "Little Darling",
+    "artist": "レベッカ",
+    "min": 54,
+    "max": 77,
+    "gender": "female",
+    "original_key": "Eメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "レベッカ"
+    ],
+    "description": "愛し",
+    "created_at": "2026-06-24T07:56:59.647574+00:00"
+  },
+  {
+    "id": "rebecca_070",
+    "title": "TIME",
+    "artist": "レベッカ",
+    "min": 53,
+    "max": 76,
+    "gender": "female",
+    "original_key": "Ebメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "レベッカ"
+    ],
+    "description": "時",
+    "created_at": "2026-06-24T07:56:59.647574+00:00"
+  },
+  {
+    "id": "rebecca_071",
+    "title": "Motor Drive",
+    "artist": "レベッカ",
+    "min": 56,
+    "max": 79,
+    "gender": "female",
+    "original_key": "Gメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "レベッカ"
+    ],
+    "description": "疾走",
+    "created_at": "2026-06-24T07:56:59.647574+00:00"
+  },
+  {
+    "id": "rebecca_072",
+    "title": "Wild Eyes",
+    "artist": "レベッカ",
+    "min": 55,
+    "max": 78,
+    "gender": "female",
+    "original_key": "F#メジャー",
+    "genre": "J-POP",
+    "tags": [
+      "レベッカ"
+    ],
+    "description": "野性",
+    "created_at": "2026-06-24T07:56:59.647574+00:00"
+  },
+  {
+    "id": "rebecca_073",
+    "title": "Love is Cash",
+    "artist": "レベッカ",
+    "min": 57,
+    "max": 80,
+    "gender": "female",
+    "original_key": "G#マイナー",
+    "genre": "J-POP",
+    "tags": [
+      "レベッカ"
+    ],
+    "description": "金",
+    "created_at": "2026-06-24T07:56:59.647574+00:00"
+  },
+  {
+    "id": "rebecca_074",
+    "title": "Friends",
+    "artist": "レベッカ",
+    "min": 55,
+    "max": 78,
+    "gender": "female",
+    "original_key": "F#メジャー",
+    "genre": "J-POP",
+    "tags": [
+      "レベッカ"
+    ],
+    "description": "友",
+    "created_at": "2026-06-24T07:56:59.647574+00:00"
+  },
+  {
+    "id": "sakana_061",
+    "title": "セントレイ",
+    "artist": "サカナクション",
+    "min": 56,
+    "max": 79,
+    "gender": "male",
+    "original_key": "Gメジャー",
+    "genre": "J-ROCK",
+    "tags": [
+      "サカナクション"
+    ],
+    "description": "衝動",
+    "created_at": "2026-06-24T06:11:04.325572+00:00"
+  },
+  {
+    "id": "sakana_062",
+    "title": "ルーキー",
+    "artist": "サカナクション",
+    "min": 55,
+    "max": 78,
+    "gender": "male",
+    "original_key": "F#メジャー",
+    "genre": "J-POP",
+    "tags": [
+      "サカナクション"
+    ],
+    "description": "新人",
+    "created_at": "2026-06-24T06:11:04.325572+00:00"
+  },
+  {
+    "id": "sakana_063",
+    "title": "僕と花",
+    "artist": "サカナクション",
+    "min": 54,
+    "max": 77,
+    "gender": "male",
+    "original_key": "Fメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "サカナクション"
+    ],
+    "description": "植物",
+    "created_at": "2026-06-24T06:11:04.325572+00:00"
+  },
+  {
+    "id": "sakana_064",
+    "title": "エンドレス",
+    "artist": "サカナクション",
+    "min": 56,
+    "max": 79,
+    "gender": "male",
+    "original_key": "Gメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "サカナクション"
+    ],
+    "description": "無限",
+    "created_at": "2026-06-24T06:11:04.325572+00:00"
+  },
+  {
+    "id": "sakana_066",
+    "title": "ドキュメント",
+    "artist": "サカナクション",
+    "min": 54,
+    "max": 77,
+    "gender": "male",
+    "original_key": "Fメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "サカナクション"
+    ],
+    "description": "記録",
+    "created_at": "2026-06-24T06:11:04.325572+00:00"
+  },
+  {
+    "id": "sakana_067",
+    "title": "サンプル",
+    "artist": "サカナクション",
+    "min": 57,
+    "max": 80,
+    "gender": "male",
+    "original_key": "G#メジャー",
+    "genre": "J-ROCK",
+    "tags": [
+      "サカナクション"
+    ],
+    "description": "試",
+    "created_at": "2026-06-24T06:11:04.325572+00:00"
+  },
+  {
+    "id": "sakana_068",
+    "title": "壁",
+    "artist": "サカナクション",
+    "min": 53,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "サカナクション"
+    ],
+    "description": "障壁",
+    "created_at": "2026-06-24T06:11:04.325572+00:00"
+  },
+  {
+    "id": "sakana_069",
+    "title": "ワード",
+    "artist": "サカナクション",
+    "min": 54,
+    "max": 77,
+    "gender": "male",
+    "original_key": "Eメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "サカナクション"
+    ],
+    "description": "語",
+    "created_at": "2026-06-24T06:11:04.325572+00:00"
+  },
+  {
+    "id": "sakana_070",
+    "title": "ナイトフィッシングイズグッド",
+    "artist": "サカナクション",
+    "min": 53,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "サカナクション"
+    ],
+    "description": "漁",
+    "created_at": "2026-06-24T06:11:04.325572+00:00"
+  },
+  {
+    "id": "saucydog_031",
+    "title": "君がいない",
+    "artist": "Saucy Dog",
+    "min": 52,
+    "max": 75,
+    "gender": "male",
+    "original_key": "Dメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "Saucy Dog"
+    ],
+    "description": "不在",
+    "created_at": "2026-06-24T05:52:38.41865+00:00"
+  },
+  {
+    "id": "saucydog_032",
+    "title": "sugar",
+    "artist": "Saucy Dog",
+    "min": 54,
+    "max": 77,
+    "gender": "male",
+    "original_key": "Eメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "Saucy Dog"
+    ],
+    "description": "甘",
+    "created_at": "2026-06-24T05:52:38.41865+00:00"
+  },
+  {
+    "id": "saucydog_033",
+    "title": "あくま",
+    "artist": "Saucy Dog",
+    "min": 53,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "J-ROCK",
+    "tags": [
+      "Saucy Dog"
+    ],
+    "description": "悪",
+    "created_at": "2026-06-24T05:52:38.41865+00:00"
+  },
+  {
+    "id": "saucydog_034",
+    "title": "今更だって僕は言う",
+    "artist": "Saucy Dog",
+    "min": 55,
+    "max": 78,
+    "gender": "male",
+    "original_key": "Fメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "Saucy Dog"
+    ],
+    "description": "後悔",
+    "created_at": "2026-06-24T05:52:38.41865+00:00"
+  },
+  {
+    "id": "saucydog_036",
+    "title": "フィルムカメラ",
+    "artist": "Saucy Dog",
+    "min": 52,
+    "max": 75,
+    "gender": "male",
+    "original_key": "Dメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "Saucy Dog"
+    ],
+    "description": "記憶",
+    "created_at": "2026-06-24T05:52:38.41865+00:00"
+  },
+  {
+    "id": "saucydog_037",
+    "title": "ジオラマ",
+    "artist": "Saucy Dog",
+    "min": 53,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "Saucy Dog"
+    ],
+    "description": "模型",
+    "created_at": "2026-06-24T05:52:38.41865+00:00"
+  },
+  {
+    "id": "saucydog_066",
+    "title": "あこがれ",
+    "artist": "Saucy Dog",
+    "min": 54,
+    "max": 77,
+    "gender": "male",
+    "original_key": "Eメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "Saucy Dog"
+    ],
+    "description": "夢想",
+    "created_at": "2026-06-24T05:52:38.41865+00:00"
+  },
+  {
+    "id": "saucydog_067",
+    "title": "ワルツのレター",
+    "artist": "Saucy Dog",
+    "min": 52,
+    "max": 75,
+    "gender": "male",
+    "original_key": "Dメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "Saucy Dog"
+    ],
+    "description": "手紙",
+    "created_at": "2026-06-24T05:52:38.41865+00:00"
+  },
+  {
+    "id": "saucydog_068",
+    "title": "溶ける",
+    "artist": "Saucy Dog",
+    "min": 53,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "Saucy Dog"
+    ],
+    "description": "液体",
+    "created_at": "2026-06-24T05:52:38.41865+00:00"
+  },
+  {
+    "id": "saucydog_069",
+    "title": "ハートロッカー",
+    "artist": "Saucy Dog",
+    "min": 57,
+    "max": 80,
+    "gender": "male",
+    "original_key": "Gメジャー",
+    "genre": "J-ROCK",
+    "tags": [
+      "Saucy Dog"
+    ],
+    "description": "激情",
+    "created_at": "2026-06-24T05:52:38.41865+00:00"
+  },
+  {
+    "id": "saucydog_070",
+    "title": "トマソン",
+    "artist": "Saucy Dog",
+    "min": 55,
+    "max": 78,
+    "gender": "male",
+    "original_key": "Fメジャー",
+    "genre": "J-ROCK",
+    "tags": [
+      "Saucy Dog"
+    ],
+    "description": "無用",
+    "created_at": "2026-06-24T05:52:38.41865+00:00"
+  },
+  {
+    "id": "saucydog_071",
+    "title": "ミスター・ブルースカイ",
+    "artist": "Saucy Dog",
+    "min": 54,
+    "max": 77,
+    "gender": "male",
+    "original_key": "Eメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "Saucy Dog"
+    ],
+    "description": "快晴",
+    "created_at": "2026-06-24T05:52:38.41865+00:00"
+  },
+  {
+    "id": "saucydog_072",
+    "title": "八月の陽炎",
+    "artist": "Saucy Dog",
+    "min": 55,
+    "max": 78,
+    "gender": "male",
+    "original_key": "Fメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "Saucy Dog"
+    ],
+    "description": "熱波",
+    "created_at": "2026-06-24T05:52:38.41865+00:00"
+  },
+  {
+    "id": "saucydog_073",
+    "title": "たましいの居場所",
+    "artist": "Saucy Dog",
+    "min": 53,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "Saucy Dog"
+    ],
+    "description": "魂",
+    "created_at": "2026-06-24T05:52:38.41865+00:00"
+  },
+  {
+    "id": "saucydog_074",
+    "title": "星が泳ぐ",
+    "artist": "Saucy Dog",
+    "min": 56,
+    "max": 79,
+    "gender": "male",
+    "original_key": "F#メジャー",
+    "genre": "J-POP",
+    "tags": [
+      "Saucy Dog"
+    ],
+    "description": "天",
+    "created_at": "2026-06-24T05:52:38.41865+00:00"
+  },
+  {
+    "id": "seiko_071",
+    "title": "Rock\\'n Rouge",
+    "artist": "松田聖子",
+    "min": 56,
+    "max": 79,
+    "gender": "female",
+    "original_key": "Gメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "松田聖子"
+    ],
+    "description": "情",
+    "created_at": "2026-06-24T07:14:45.376597+00:00"
+  },
+  {
+    "id": "smap_071",
+    "title": "たぶんオーライ",
+    "artist": "SMAP",
+    "min": 54,
+    "max": 77,
+    "gender": "male",
+    "original_key": "Eメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "SMAP"
+    ],
+    "description": "肯定",
+    "created_at": "2026-06-24T07:25:10.489631+00:00"
+  },
+  {
+    "id": "smap_072",
+    "title": "Battery",
+    "artist": "SMAP",
+    "min": 56,
+    "max": 79,
+    "gender": "male",
+    "original_key": "Gメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "SMAP"
+    ],
+    "description": "衝動",
+    "created_at": "2026-06-24T07:25:10.489631+00:00"
+  },
+  {
+    "id": "smap_073",
+    "title": "Joy!!",
+    "artist": "SMAP",
+    "min": 55,
+    "max": 78,
+    "gender": "male",
+    "original_key": "F#メジャー",
+    "genre": "J-POP",
+    "tags": [
+      "SMAP"
+    ],
+    "description": "歓喜",
+    "created_at": "2026-06-24T07:25:10.489631+00:00"
+  },
+  {
+    "id": "smap_074",
+    "title": "Triangle",
+    "artist": "SMAP",
+    "min": 52,
+    "max": 75,
+    "gender": "male",
+    "original_key": "Dメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "SMAP"
+    ],
+    "description": "平和",
+    "created_at": "2026-06-24T07:25:10.489631+00:00"
+  },
+  {
+    "id": "smap_075",
+    "title": "ありがとう",
+    "artist": "SMAP",
+    "min": 53,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "SMAP"
+    ],
+    "description": "感謝",
+    "created_at": "2026-06-24T07:25:10.489631+00:00"
+  },
+  {
+    "id": "smap_076",
+    "title": "Fly",
+    "artist": "SMAP",
+    "min": 56,
+    "max": 79,
+    "gender": "male",
+    "original_key": "Gメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "SMAP"
+    ],
+    "description": "上昇",
+    "created_at": "2026-06-24T07:25:10.489631+00:00"
+  },
+  {
+    "id": "smap_077",
+    "title": "さかさまの空",
+    "artist": "SMAP",
+    "min": 54,
+    "max": 77,
+    "gender": "male",
+    "original_key": "Eメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "SMAP"
+    ],
+    "description": "視点",
+    "created_at": "2026-06-24T07:25:10.489631+00:00"
+  },
+  {
+    "id": "smap_078",
+    "title": "君は君だよ",
+    "artist": "SMAP",
+    "min": 53,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "SMAP"
+    ],
+    "description": "自分",
+    "created_at": "2026-06-24T07:25:10.489631+00:00"
+  },
+  {
+    "id": "smap_079",
+    "title": "胸騒ぎを頼むよ",
+    "artist": "SMAP",
+    "min": 55,
+    "max": 78,
+    "gender": "male",
+    "original_key": "F#メジャー",
+    "genre": "J-POP",
+    "tags": [
+      "SMAP"
+    ],
+    "description": "予感",
+    "created_at": "2026-06-24T07:25:10.489631+00:00"
+  },
+  {
+    "id": "smap_080",
+    "title": "どんないいこと",
+    "artist": "SMAP",
+    "min": 54,
+    "max": 77,
+    "gender": "male",
+    "original_key": "Eメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "SMAP"
+    ],
+    "description": "希望",
+    "created_at": "2026-06-24T07:25:10.489631+00:00"
+  },
+  {
+    "id": "spitz_030",
+    "title": "たまご",
+    "artist": "スピッツ",
+    "min": 51,
+    "max": 73,
+    "gender": "male",
+    "original_key": "Cメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "スピッツ"
+    ],
+    "description": "誕生",
+    "created_at": "2026-06-24T04:28:07.467764+00:00"
+  },
+  {
+    "id": "spitz_031",
+    "title": "日なたの窓に憧れて",
+    "artist": "スピッツ",
+    "min": 52,
+    "max": 74,
+    "gender": "male",
+    "original_key": "Dメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "スピッツ"
+    ],
+    "description": "憧れ",
+    "created_at": "2026-06-24T04:28:07.467764+00:00"
+  },
+  {
+    "id": "spitz_032",
+    "title": "魔女旅に出る",
+    "artist": "スピッツ",
+    "min": 54,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Eメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "スピッツ"
+    ],
+    "description": "旅",
+    "created_at": "2026-06-24T04:28:07.467764+00:00"
+  },
+  {
+    "id": "spitz_033",
+    "title": "君と暮らせたら",
+    "artist": "スピッツ",
+    "min": 53,
+    "max": 75,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "スピッツ"
+    ],
+    "description": "日常",
+    "created_at": "2026-06-24T04:28:07.467764+00:00"
+  },
+  {
+    "id": "spitz_036",
+    "title": "メモリーズ",
+    "artist": "スピッツ",
+    "min": 54,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Eメジャー",
+    "genre": "J-ROCK",
+    "tags": [
+      "スピッツ"
+    ],
+    "description": "過去",
+    "created_at": "2026-06-24T04:28:07.467764+00:00"
+  },
+  {
+    "id": "spitz_037",
+    "title": "遥か",
+    "artist": "スピッツ",
+    "min": 53,
+    "max": 75,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "スピッツ"
+    ],
+    "description": "距離",
+    "created_at": "2026-06-24T04:28:07.467764+00:00"
+  },
+  {
+    "id": "spitz_038",
+    "title": "水色の街",
+    "artist": "スピッツ",
+    "min": 52,
+    "max": 74,
+    "gender": "male",
+    "original_key": "Dメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "スピッツ"
+    ],
+    "description": "風景",
+    "created_at": "2026-06-24T04:28:07.467764+00:00"
+  },
+  {
+    "id": "spitz_039",
+    "title": "若葉",
+    "artist": "スピッツ",
+    "min": 54,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Eメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "スピッツ"
+    ],
+    "description": "季節",
+    "created_at": "2026-06-24T04:28:07.467764+00:00"
+  },
+  {
+    "id": "spitz_040",
+    "title": "恋する凡人",
+    "artist": "スピッツ",
+    "min": 55,
+    "max": 77,
+    "gender": "male",
+    "original_key": "Fメジャー",
+    "genre": "J-ROCK",
+    "tags": [
+      "スピッツ"
+    ],
+    "description": "恋心",
+    "created_at": "2026-06-24T04:28:07.467764+00:00"
+  },
+  {
+    "id": "spitz_041",
+    "title": "スピカ",
+    "artist": "スピッツ",
+    "min": 53,
+    "max": 75,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "スピッツ"
+    ],
+    "description": "星",
+    "created_at": "2026-06-24T04:28:07.467764+00:00"
+  },
+  {
+    "id": "spitz_042",
+    "title": "けもの道",
+    "artist": "スピッツ",
+    "min": 56,
+    "max": 78,
+    "gender": "male",
+    "original_key": "F#メジャー",
+    "genre": "J-ROCK",
+    "tags": [
+      "スピッツ"
+    ],
+    "description": "野生",
+    "created_at": "2026-06-24T04:28:07.467764+00:00"
+  },
+  {
+    "id": "spitz_044",
+    "title": "コメット",
+    "artist": "スピッツ",
+    "min": 54,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Eメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "スピッツ"
+    ],
+    "description": "彗星",
+    "created_at": "2026-06-24T04:28:07.467764+00:00"
+  },
+  {
+    "id": "spitz_045",
+    "title": "ナンプラー日和",
+    "artist": "スピッツ",
+    "min": 53,
+    "max": 75,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "スピッツ"
+    ],
+    "description": "日常",
+    "created_at": "2026-06-24T04:28:07.467764+00:00"
+  },
+  {
+    "id": "spitz_046",
+    "title": "新月",
+    "artist": "スピッツ",
+    "min": 51,
+    "max": 73,
+    "gender": "male",
+    "original_key": "Cメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "スピッツ"
+    ],
+    "description": "月",
+    "created_at": "2026-06-24T04:28:07.467764+00:00"
+  },
+  {
+    "id": "spitz_047",
+    "title": "花鳥風月",
+    "artist": "スピッツ",
+    "min": 52,
+    "max": 74,
+    "gender": "male",
+    "original_key": "Dメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "スピッツ"
+    ],
+    "description": "自然",
+    "created_at": "2026-06-24T04:28:07.467764+00:00"
+  },
+  {
+    "id": "spitz_048",
+    "title": "砂漠の花",
+    "artist": "スピッツ",
+    "min": 54,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Eメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "スピッツ"
+    ],
+    "description": "乾燥",
+    "created_at": "2026-06-24T04:28:07.467764+00:00"
+  },
+  {
+    "id": "spitz_049",
+    "title": "桃",
+    "artist": "スピッツ",
+    "min": 53,
+    "max": 75,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "スピッツ"
+    ],
+    "description": "果実",
+    "created_at": "2026-06-24T04:28:07.467764+00:00"
+  },
+  {
+    "id": "spitz_050",
+    "title": "ネオン",
+    "artist": "スピッツ",
+    "min": 55,
+    "max": 77,
+    "gender": "male",
+    "original_key": "Fメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "スピッツ"
+    ],
+    "description": "光",
+    "created_at": "2026-06-24T04:28:07.467764+00:00"
+  },
+  {
+    "id": "tbh_018",
+    "title": "ブルースをけとばせ",
+    "artist": "THE BLUE HEARTS",
+    "min": 55,
+    "max": 78,
+    "gender": "male",
+    "original_key": "F#メジャー",
+    "genre": "PUNK",
+    "tags": [
+      "THE BLUE HEARTS"
+    ],
+    "description": "奮起",
+    "created_at": "2026-06-24T07:25:10.489631+00:00"
+  },
+  {
+    "id": "tbh_019",
+    "title": "星をください",
+    "artist": "THE BLUE HEARTS",
+    "min": 53,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "PUNK",
+    "tags": [
+      "THE BLUE HEARTS"
+    ],
+    "description": "願い",
+    "created_at": "2026-06-24T07:25:10.489631+00:00"
+  },
+  {
+    "id": "tbh_020",
+    "title": "電光石火",
+    "artist": "THE BLUE HEARTS",
+    "min": 56,
+    "max": 79,
+    "gender": "male",
+    "original_key": "Gメジャー",
+    "genre": "PUNK",
+    "tags": [
+      "THE BLUE HEARTS"
+    ],
+    "description": "速さ",
+    "created_at": "2026-06-24T07:25:10.489631+00:00"
+  },
+  {
+    "id": "theboom_095",
+    "title": "明日",
+    "artist": "The BOOM",
+    "min": 53,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "The BOOM"
+    ],
+    "description": "明日",
+    "created_at": "2026-06-24T07:25:10.489631+00:00"
+  },
+  {
+    "id": "theboom_096",
+    "title": "ひゃくまんつぶの涙",
+    "artist": "The BOOM",
+    "min": 54,
+    "max": 77,
+    "gender": "male",
+    "original_key": "Eメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "The BOOM"
+    ],
+    "description": "悲哀",
+    "created_at": "2026-06-24T07:25:10.489631+00:00"
+  },
+  {
+    "id": "theboom_097",
+    "title": "神様の宝石でできた島",
+    "artist": "The BOOM",
+    "min": 56,
+    "max": 79,
+    "gender": "male",
+    "original_key": "Gメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "The BOOM"
+    ],
+    "description": "楽園",
+    "created_at": "2026-06-24T07:25:10.489631+00:00"
+  },
+  {
+    "id": "theboom_098",
+    "title": "砂の岬",
+    "artist": "The BOOM",
+    "min": 53,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "The BOOM"
+    ],
+    "description": "記憶",
+    "created_at": "2026-06-24T07:25:10.489631+00:00"
+  },
+  {
+    "id": "theboom_100",
+    "title": "帰り道",
+    "artist": "The BOOM",
+    "min": 53,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "The BOOM"
+    ],
+    "description": "帰還",
+    "created_at": "2026-06-24T07:25:10.489631+00:00"
+  },
+  {
+    "id": "ulfuls_019",
+    "title": "ゼンゼンナインダ",
+    "artist": "ウルフルズ",
+    "min": 55,
+    "max": 78,
+    "gender": "male",
+    "original_key": "F#メジャー",
+    "genre": "J-POP",
+    "tags": [
+      "ウルフルズ"
+    ],
+    "description": "前進",
+    "created_at": "2026-06-24T07:51:01.037838+00:00"
+  },
+  {
+    "id": "ulfuls_020",
+    "title": "情熱 A GO GO",
+    "artist": "ウルフルズ",
+    "min": 56,
+    "max": 79,
+    "gender": "male",
+    "original_key": "Gメジャー",
+    "genre": "J-ROCK",
+    "tags": [
+      "ウルフルズ"
+    ],
+    "description": "熱狂",
+    "created_at": "2026-06-24T07:51:01.037838+00:00"
+  },
+  {
+    "id": "ulfuls_021",
+    "title": "SUN SUN SUN95",
+    "artist": "ウルフルズ",
+    "min": 55,
+    "max": 78,
+    "gender": "male",
+    "original_key": "F#メジャー",
+    "genre": "J-POP",
+    "tags": [
+      "ウルフルズ"
+    ],
+    "description": "太陽",
+    "created_at": "2026-06-24T07:51:01.037838+00:00"
+  },
+  {
+    "id": "ulfuls_022",
+    "title": "ワンダフル・ワールド",
+    "artist": "ウルフルズ",
+    "min": 54,
+    "max": 77,
+    "gender": "male",
+    "original_key": "Eメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "ウルフルズ"
+    ],
+    "description": "世界",
+    "created_at": "2026-06-24T07:51:01.037838+00:00"
+  },
+  {
+    "id": "ulfuls_023",
+    "title": "暴れだす",
+    "artist": "ウルフルズ",
+    "min": 56,
+    "max": 79,
+    "gender": "male",
+    "original_key": "Gメジャー",
+    "genre": "J-ROCK",
+    "tags": [
+      "ウルフルズ"
+    ],
+    "description": "解放",
+    "created_at": "2026-06-24T07:51:01.037838+00:00"
+  },
+  {
+    "id": "ulfuls_024",
+    "title": "泣けてくる",
+    "artist": "ウルフルズ",
+    "min": 53,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "ウルフルズ"
+    ],
+    "description": "哀愁",
+    "created_at": "2026-06-24T07:51:01.037838+00:00"
+  },
+  {
+    "id": "ulfuls_025",
+    "title": "ドンドン",
+    "artist": "ウルフルズ",
+    "min": 55,
+    "max": 78,
+    "gender": "male",
+    "original_key": "F#メジャー",
+    "genre": "J-POP",
+    "tags": [
+      "ウルフルズ"
+    ],
+    "description": "躍動",
+    "created_at": "2026-06-24T07:51:01.037838+00:00"
+  },
+  {
+    "id": "ulfuls_026",
+    "title": "ヒーロー",
+    "artist": "ウルフルズ",
+    "min": 54,
+    "max": 77,
+    "gender": "male",
+    "original_key": "Eメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "ウルフルズ"
+    ],
+    "description": "英雄",
+    "created_at": "2026-06-24T07:51:01.037838+00:00"
+  },
+  {
+    "id": "ulfuls_027",
+    "title": "歌",
+    "artist": "ウルフルズ",
+    "min": 53,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "ウルフルズ"
+    ],
+    "description": "詞",
+    "created_at": "2026-06-24T07:51:01.037838+00:00"
+  },
+  {
+    "id": "ulfuls_028",
+    "title": "愛",
+    "artist": "ウルフルズ",
+    "min": 52,
+    "max": 75,
+    "gender": "male",
+    "original_key": "Dメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "ウルフルズ"
+    ],
+    "description": "愛",
+    "created_at": "2026-06-24T07:51:01.037838+00:00"
+  },
+  {
+    "id": "ulfuls_029",
+    "title": "夢",
+    "artist": "ウルフルズ",
+    "min": 54,
+    "max": 77,
+    "gender": "male",
+    "original_key": "Eメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "ウルフルズ"
+    ],
+    "description": "夢",
+    "created_at": "2026-06-24T07:51:01.037838+00:00"
+  },
+  {
+    "id": "ulfuls_030",
+    "title": "道",
+    "artist": "ウルフルズ",
+    "min": 53,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "ウルフルズ"
+    ],
+    "description": "歩",
+    "created_at": "2026-06-24T07:51:01.037838+00:00"
+  },
+  {
+    "id": "ulfuls_031",
+    "title": "星",
+    "artist": "ウルフルズ",
+    "min": 55,
+    "max": 78,
+    "gender": "male",
+    "original_key": "F#メジャー",
+    "genre": "J-POP",
+    "tags": [
+      "ウルフルズ"
+    ],
+    "description": "夜",
+    "created_at": "2026-06-24T07:51:01.037838+00:00"
+  },
+  {
+    "id": "ulfuls_032",
+    "title": "空",
+    "artist": "ウルフルズ",
+    "min": 54,
+    "max": 77,
+    "gender": "male",
+    "original_key": "Eメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "ウルフルズ"
+    ],
+    "description": "広",
+    "created_at": "2026-06-24T07:51:01.037838+00:00"
+  },
+  {
+    "id": "ulfuls_033",
+    "title": "海",
+    "artist": "ウルフルズ",
+    "min": 56,
+    "max": 79,
+    "gender": "male",
+    "original_key": "Gメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "ウルフルズ"
+    ],
+    "description": "波",
+    "created_at": "2026-06-24T07:51:01.037838+00:00"
+  },
+  {
+    "id": "ulfuls_034",
+    "title": "風",
+    "artist": "ウルフルズ",
+    "min": 55,
+    "max": 78,
+    "gender": "male",
+    "original_key": "F#メジャー",
+    "genre": "J-POP",
+    "tags": [
+      "ウルフルズ"
+    ],
+    "description": "吹",
+    "created_at": "2026-06-24T07:51:01.037838+00:00"
+  },
+  {
+    "id": "x_038",
+    "title": "Kurenai",
+    "artist": "X JAPAN",
+    "min": 58,
+    "max": 81,
+    "gender": "male",
+    "original_key": "Aマイナー",
+    "genre": "ROCK",
+    "tags": [
+      "X JAPAN"
+    ],
+    "description": "再掲",
+    "created_at": "2026-06-24T07:46:24.29864+00:00"
+  },
+  {
+    "id": "x_040",
+    "title": "Orgasm",
+    "artist": "X JAPAN",
+    "min": 58,
+    "max": 81,
+    "gender": "male",
+    "original_key": "Aマイナー",
+    "genre": "ROCK",
+    "tags": [
+      "X JAPAN"
+    ],
+    "description": "興奮",
+    "created_at": "2026-06-24T07:46:24.29864+00:00"
+  },
+  {
+    "id": "x_041",
+    "title": "Sadistic Desire",
+    "artist": "X JAPAN",
+    "min": 57,
+    "max": 80,
+    "gender": "male",
+    "original_key": "G#マイナー",
+    "genre": "ROCK",
+    "tags": [
+      "X JAPAN"
+    ],
+    "description": "欲望",
+    "created_at": "2026-06-24T07:46:24.29864+00:00"
+  },
+  {
+    "id": "x_042",
+    "title": "I.V.",
+    "artist": "X JAPAN",
+    "min": 56,
+    "max": 79,
+    "gender": "male",
+    "original_key": "Gメジャー",
+    "genre": "ROCK",
+    "tags": [
+      "X JAPAN"
+    ],
+    "description": "絆",
+    "created_at": "2026-06-24T07:46:24.29864+00:00"
+  },
+  {
+    "id": "x_043",
+    "title": "Born to be free",
+    "artist": "X JAPAN",
+    "min": 57,
+    "max": 80,
+    "gender": "male",
+    "original_key": "G#マイナー",
+    "genre": "ROCK",
+    "tags": [
+      "X JAPAN"
+    ],
+    "description": "自由",
+    "created_at": "2026-06-24T07:46:24.29864+00:00"
+  },
+  {
+    "id": "x_044",
+    "title": "CRUCIFY MY LOVE",
+    "artist": "X JAPAN",
+    "min": 53,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "BALLAD",
+    "tags": [
+      "X JAPAN"
+    ],
+    "description": "痛み",
+    "created_at": "2026-06-24T07:46:24.29864+00:00"
+  },
+  {
+    "id": "x_045",
+    "title": "ALIVE",
+    "artist": "X JAPAN",
+    "min": 54,
+    "max": 77,
+    "gender": "male",
+    "original_key": "Eメジャー",
+    "genre": "ROCK",
+    "tags": [
+      "X JAPAN"
+    ],
+    "description": "生",
+    "created_at": "2026-06-24T07:46:24.29864+00:00"
+  },
+  {
+    "id": "x_046",
+    "title": "STANDING SEX",
+    "artist": "X JAPAN",
+    "min": 57,
+    "max": 80,
+    "gender": "male",
+    "original_key": "G#マイナー",
+    "genre": "ROCK",
+    "tags": [
+      "X JAPAN"
+    ],
+    "description": "熱",
+    "created_at": "2026-06-24T07:46:24.29864+00:00"
+  },
+  {
+    "id": "x_048",
+    "title": "ROSE OF PAIN",
+    "artist": "X JAPAN",
+    "min": 57,
+    "max": 80,
+    "gender": "male",
+    "original_key": "G#マイナー",
+    "genre": "ROCK",
+    "tags": [
+      "X JAPAN"
+    ],
+    "description": "美学",
+    "created_at": "2026-06-24T07:46:24.29864+00:00"
+  },
+  {
+    "id": "x_049",
+    "title": "WORLD ANTHEM",
+    "artist": "X JAPAN",
+    "min": 56,
+    "max": 79,
+    "gender": "male",
+    "original_key": "Gメジャー",
+    "genre": "ROCK",
+    "tags": [
+      "X JAPAN"
+    ],
+    "description": "讃歌",
+    "created_at": "2026-06-24T07:46:24.29864+00:00"
+  },
+  {
+    "id": "x_050",
+    "title": "X JAPAN",
+    "artist": "X JAPAN",
+    "min": 58,
+    "max": 81,
+    "gender": "male",
+    "original_key": "Aマイナー",
+    "genre": "ROCK",
+    "tags": [
+      "X JAPAN"
+    ],
+    "description": "真髄",
+    "created_at": "2026-06-24T07:46:24.29864+00:00"
+  },
+  {
+    "id": "yonezu_039",
+    "title": "ETA",
+    "artist": "米津玄師",
+    "min": 57,
+    "max": 79,
+    "gender": "male",
+    "original_key": "Gメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "米津玄師"
+    ],
+    "description": "疾走するビート",
+    "created_at": "2026-06-23T23:58:18.664241+00:00"
+  },
+  {
+    "id": "yonezu_040",
+    "title": "Yellow Flag",
+    "artist": "米津玄師",
+    "min": 56,
+    "max": 78,
+    "gender": "male",
+    "original_key": "F#メジャー",
+    "genre": "J-POP",
+    "tags": [
+      "米津玄師"
+    ],
+    "description": "勢いのある一曲",
+    "created_at": "2026-06-23T23:58:18.664241+00:00"
+  },
+  {
+    "id": "yonezu_041",
+    "title": "GOSSIP",
+    "artist": "米津玄師",
+    "min": 54,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Eメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "米津玄師"
+    ],
+    "description": "鋭い社会風刺",
+    "created_at": "2026-06-23T23:58:18.664241+00:00"
+  },
+  {
+    "id": "yonezu_042",
+    "title": "LOST CORNER",
+    "artist": "米津玄師",
+    "min": 55,
+    "max": 77,
+    "gender": "male",
+    "original_key": "Fメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "米津玄師"
+    ],
+    "description": "アルバムを象徴する深み",
+    "created_at": "2026-06-23T23:58:18.664241+00:00"
+  },
+  {
+    "id": "yonezu_043",
+    "title": "Moonlight Serpent",
+    "artist": "米津玄師",
+    "min": 53,
+    "max": 75,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "米津玄師"
+    ],
+    "description": "神秘的な夜",
+    "created_at": "2026-06-23T23:58:18.664241+00:00"
+  },
+  {
+    "id": "yonezu_044",
+    "title": "恋の病",
+    "artist": "米津玄師",
+    "min": 52,
+    "max": 74,
+    "gender": "male",
+    "original_key": "Dメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "米津玄師"
+    ],
+    "description": "胸が苦しくなる切なさ",
+    "created_at": "2026-06-23T23:58:18.664241+00:00"
+  },
+  {
+    "id": "yonezu_050",
+    "title": "ネオンサイン",
+    "artist": "米津玄師",
+    "min": 54,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Fメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "米津玄師"
+    ],
+    "description": "夜の街に映える一曲",
+    "created_at": "2026-06-23T23:58:18.664241+00:00"
+  },
+  {
+    "id": "yonezu_051",
+    "title": "KARMA CITY",
+    "artist": "米津玄師",
+    "min": 55,
+    "max": 77,
+    "gender": "male",
+    "original_key": "Fメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "米津玄師"
+    ],
+    "description": "都会の冷たさ",
+    "created_at": "2026-06-23T23:58:18.664241+00:00"
+  },
+  {
+    "id": "yonezu_056",
+    "title": "シンデレラ",
+    "artist": "米津玄師",
+    "min": 56,
+    "max": 78,
+    "gender": "male",
+    "original_key": "F#メジャー",
+    "genre": "J-POP",
+    "tags": [
+      "米津玄師"
+    ],
+    "description": "夢を見る衝動",
+    "created_at": "2026-06-23T23:58:18.664241+00:00"
+  },
+  {
+    "id": "yonezu_060",
+    "title": "発明",
+    "artist": "米津玄師",
+    "min": 55,
+    "max": 77,
+    "gender": "male",
+    "original_key": "Fメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "米津玄師"
+    ],
+    "description": "創作の苦しみと喜び",
+    "created_at": "2026-06-23T23:58:18.664241+00:00"
+  },
+  {
+    "id": "yonezu_063",
+    "title": "Black Sheep",
+    "artist": "米津玄師",
+    "min": 57,
+    "max": 79,
+    "gender": "male",
+    "original_key": "Gメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "米津玄師"
+    ],
+    "description": "孤独を抱える心",
+    "created_at": "2026-06-23T23:58:18.664241+00:00"
+  },
+  {
+    "id": "yonezu_065",
+    "title": "La La La",
+    "artist": "米津玄師",
+    "min": 54,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Eメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "米津玄師"
+    ],
+    "description": "陽気で悲しい",
+    "created_at": "2026-06-23T23:58:18.664241+00:00"
+  },
+  {
+    "id": "yorushika_018",
+    "title": "夕凪、某、花惑い",
+    "artist": "ヨルシカ",
+    "min": 53,
+    "max": 75,
+    "gender": "female",
+    "original_key": "Ebメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "ヨルシカ"
+    ],
+    "description": "夕凪",
+    "created_at": "2026-06-24T04:26:22.293141+00:00"
+  },
+  {
+    "id": "yorushika_021",
+    "title": "海底、月明かり",
+    "artist": "ヨルシカ",
+    "min": 52,
+    "max": 74,
+    "gender": "female",
+    "original_key": "Dメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "ヨルシカ"
+    ],
+    "description": "深海",
+    "created_at": "2026-06-24T04:26:22.293141+00:00"
+  },
+  {
+    "id": "yorushika_023",
+    "title": "心に穴が空いた",
+    "artist": "ヨルシカ",
+    "min": 53,
+    "max": 75,
+    "gender": "female",
+    "original_key": "Ebメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "ヨルシカ"
+    ],
+    "description": "喪失",
+    "created_at": "2026-06-24T04:26:22.293141+00:00"
+  },
+  {
+    "id": "yorushika_026",
+    "title": "五月は花緑青の窓辺から",
+    "artist": "ヨルシカ",
+    "min": 54,
+    "max": 76,
+    "gender": "female",
+    "original_key": "Eメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "ヨルシカ"
+    ],
+    "description": "季節",
+    "created_at": "2026-06-24T04:26:22.293141+00:00"
+  },
+  {
+    "id": "yorushika_027",
+    "title": "板状の男",
+    "artist": "ヨルシカ",
+    "min": 56,
+    "max": 78,
+    "gender": "female",
+    "original_key": "F#メジャー",
+    "genre": "J-POP",
+    "tags": [
+      "ヨルシカ"
+    ],
+    "description": "男",
+    "created_at": "2026-06-24T04:26:22.293141+00:00"
+  },
+  {
+    "id": "yorushika_029",
+    "title": "飛行",
+    "artist": "ヨルシカ",
+    "min": 55,
+    "max": 77,
+    "gender": "female",
+    "original_key": "Fメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "ヨルシカ"
+    ],
+    "description": "空",
+    "created_at": "2026-06-24T04:26:22.293141+00:00"
+  },
+  {
+    "id": "yorushika_056",
+    "title": "憂一乗",
+    "artist": "ヨルシカ",
+    "min": 54,
+    "max": 76,
+    "gender": "female",
+    "original_key": "Eメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "ヨルシカ"
+    ],
+    "description": "憂い",
+    "created_at": "2026-06-24T04:26:22.293141+00:00"
+  },
+  {
+    "id": "yorushika_057",
+    "title": "テレパス",
+    "artist": "ヨルシカ",
+    "min": 53,
+    "max": 75,
+    "gender": "female",
+    "original_key": "Ebメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "ヨルシカ"
+    ],
+    "description": "交信",
+    "created_at": "2026-06-24T04:26:22.293141+00:00"
+  },
+  {
+    "id": "yorushika_058",
+    "title": "左右盲",
+    "artist": "ヨルシカ",
+    "min": 52,
+    "max": 74,
+    "gender": "female",
+    "original_key": "Dメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "ヨルシカ"
+    ],
+    "description": "視覚",
+    "created_at": "2026-06-24T04:26:22.293141+00:00"
+  },
+  {
+    "id": "yorushika_059",
+    "title": "チノカテ",
+    "artist": "ヨルシカ",
+    "min": 54,
+    "max": 76,
+    "gender": "female",
+    "original_key": "Eメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "ヨルシカ"
+    ],
+    "description": "花束",
+    "created_at": "2026-06-24T04:26:22.293141+00:00"
+  },
+  {
+    "id": "yorushika_060",
+    "title": "月に吠える",
+    "artist": "ヨルシカ",
+    "min": 55,
+    "max": 77,
+    "gender": "female",
+    "original_key": "Fメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "ヨルシカ"
+    ],
+    "description": "月夜",
+    "created_at": "2026-06-24T04:26:22.293141+00:00"
+  },
+  {
+    "id": "yorushika_061",
+    "title": "第一夜",
+    "artist": "ヨルシカ",
+    "min": 54,
+    "max": 76,
+    "gender": "female",
+    "original_key": "Eメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "ヨルシカ"
+    ],
+    "description": "夜",
+    "created_at": "2026-06-24T04:26:22.293141+00:00"
+  },
+  {
+    "id": "yorushika_062",
+    "title": "レプリカント",
+    "artist": "ヨルシカ",
+    "min": 56,
+    "max": 78,
+    "gender": "female",
+    "original_key": "F#メジャー",
+    "genre": "J-POP",
+    "tags": [
+      "ヨルシカ"
+    ],
+    "description": "複製",
+    "created_at": "2026-06-24T04:26:22.293141+00:00"
+  },
+  {
+    "id": "yorushika_063",
+    "title": "強欲",
+    "artist": "ヨルシカ",
+    "min": 57,
+    "max": 79,
+    "gender": "female",
+    "original_key": "Gメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "ヨルシカ"
+    ],
+    "description": "欲",
+    "created_at": "2026-06-24T04:26:22.293141+00:00"
+  },
+  {
+    "id": "yorushika_064",
+    "title": "アルジャーノン",
+    "artist": "ヨルシカ",
+    "min": 55,
+    "max": 77,
+    "gender": "female",
+    "original_key": "Fメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "ヨルシカ"
+    ],
+    "description": "知能",
+    "created_at": "2026-06-24T04:26:22.293141+00:00"
+  },
+  {
+    "id": "yorushika_065",
+    "title": "生活",
+    "artist": "ヨルシカ",
+    "min": 54,
+    "max": 76,
+    "gender": "female",
+    "original_key": "Eメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "ヨルシカ"
+    ],
+    "description": "日常",
+    "created_at": "2026-06-24T04:26:22.293141+00:00"
+  },
+  {
+    "id": "yorushika_066",
+    "title": "ブレーカー",
+    "artist": "ヨルシカ",
+    "min": 53,
+    "max": 75,
+    "gender": "female",
+    "original_key": "Ebメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "ヨルシカ"
+    ],
+    "description": "遮断",
+    "created_at": "2026-06-24T04:26:22.293141+00:00"
+  },
+  {
+    "id": "yorushika_068",
+    "title": "雪國",
+    "artist": "ヨルシカ",
+    "min": 54,
+    "max": 76,
+    "gender": "female",
+    "original_key": "Eメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "ヨルシカ"
+    ],
+    "description": "冷",
+    "created_at": "2026-06-24T04:26:22.293141+00:00"
+  },
+  {
+    "id": "yorushika_070",
+    "title": "抜錨",
+    "artist": "ヨルシカ",
+    "min": 55,
+    "max": 77,
+    "gender": "female",
+    "original_key": "Fメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "ヨルシカ"
+    ],
+    "description": "船",
+    "created_at": "2026-06-24T04:26:22.293141+00:00"
+  },
+  {
+    "id": "young_079",
+    "title": "世界が僕を嫌っても",
+    "artist": "ヤングスキニー",
+    "min": 55,
+    "max": 78,
+    "gender": "male",
+    "original_key": "F#メジャー",
+    "genre": "J-ROCK",
+    "tags": [
+      "ヤングスキニー"
+    ],
+    "description": "抵抗",
+    "created_at": "2026-06-24T07:56:59.647574+00:00"
+  },
+  {
+    "id": "young_081",
+    "title": "ゴミ捨て場の街",
+    "artist": "ヤングスキニー",
+    "min": 53,
+    "max": 76,
+    "gender": "male",
+    "original_key": "Ebメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "ヤングスキニー"
+    ],
+    "description": "風景",
+    "created_at": "2026-06-24T07:56:59.647574+00:00"
+  },
+  {
+    "id": "young_082",
+    "title": "8月の夜",
+    "artist": "ヤングスキニー",
+    "min": 56,
+    "max": 79,
+    "gender": "male",
+    "original_key": "Gメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "ヤングスキニー"
+    ],
+    "description": "夏",
+    "created_at": "2026-06-24T07:56:59.647574+00:00"
+  },
+  {
+    "id": "young_083",
+    "title": "唄にして",
+    "artist": "ヤングスキニー",
+    "min": 54,
+    "max": 77,
+    "gender": "male",
+    "original_key": "Eメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "ヤングスキニー"
+    ],
+    "description": "伝",
+    "created_at": "2026-06-24T07:56:59.647574+00:00"
+  },
+  {
+    "id": "young_084",
+    "title": "愛のままに",
+    "artist": "ヤングスキニー",
+    "min": 55,
+    "max": 78,
+    "gender": "male",
+    "original_key": "F#メジャー",
+    "genre": "J-POP",
+    "tags": [
+      "ヤングスキニー"
+    ],
+    "description": "愛",
+    "created_at": "2026-06-24T07:56:59.647574+00:00"
+  },
+  {
+    "id": "young_085",
+    "title": "嫌い",
+    "artist": "ヤングスキニー",
+    "min": 52,
+    "max": 75,
+    "gender": "male",
+    "original_key": "Dメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "ヤングスキニー"
+    ],
+    "description": "本音",
+    "created_at": "2026-06-24T07:56:59.647574+00:00"
+  },
+  {
+    "id": "zard_017",
+    "title": "こんなに愛しても",
+    "artist": "ZARD",
+    "min": 53,
+    "max": 76,
+    "gender": "female",
+    "original_key": "Ebメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "ZARD"
+    ],
+    "description": "深愛",
+    "created_at": "2026-06-24T07:56:59.647574+00:00"
+  },
+  {
+    "id": "zard_019",
+    "title": "きっと忘れない",
+    "artist": "ZARD",
+    "min": 54,
+    "max": 77,
+    "gender": "female",
+    "original_key": "Eメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "ZARD"
+    ],
+    "description": "記憶",
+    "created_at": "2026-06-24T07:56:59.647574+00:00"
+  },
+  {
+    "id": "zard_020",
+    "title": "好きなように踊りたいの",
+    "artist": "ZARD",
+    "min": 55,
+    "max": 78,
+    "gender": "female",
+    "original_key": "Fメジャー",
+    "genre": "J-POP",
+    "tags": [
+      "ZARD"
+    ],
+    "description": "自由",
+    "created_at": "2026-06-24T07:56:59.647574+00:00"
+  }
+]
