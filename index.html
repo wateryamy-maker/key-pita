@@ -15,11 +15,77 @@
     <meta property="og:image" content="https://key-pita.saiennavi.com/ogp-image.png" />
     <meta property="og:site_name" content="カラオケ音域検索" />
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="カラオケ音域検索 - 自分にぴったりの曲をキーピタ検索" />
+    <meta name="twitter:description" content="自分の音域に合わせて歌えるカラオケ曲を瞬時に検索・キー調整シミュレーション。あなたにぴったりのキーがすぐに見つかります！" />
+    <meta name="twitter:image" content="https://key-pita.saiennavi.com/ogp-image.png" />
 
     <!-- Canonical URL -->
     <link rel="canonical" href="https://key-pita.saiennavi.com/" />
+
+    <!-- Structured Data (JSON-LD) for WebApplication SEO -->
+    <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "カラオケ音域検索",
+        "alternateName": "キーピタ検索＆キー調整シミュレーター",
+        "description": "自分の音域に合わせて歌えるカラオケ曲を瞬時に検索・キー調整シミュレーションできるWebアプリケーション。あなたにぴったりのキーがすぐに見つかります！",
+        "url": "https://key-pita.saiennavi.com/",
+        "applicationCategory": "EntertainmentApplication",
+        "operatingSystem": "All",
+        "browserRequirements": "Requires JavaScript. Requires HTML5.",
+        "genre": "Karaoke / Music"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "カラオケ音域検索（キーピタ）とは何ですか？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "ユーザー自身の「最低音」と「最高音」を設定することで、カラオケデータベースからその音域内で無理なく歌える曲を瞬時に検索し、最適なキー調整（#やbの移調値）を自動シミュレーションするWebアプリケーションです。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "自分の声の音域（最低音・最高音）が分かりません。どうすれば良いですか？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "アプリ内の簡易ピッチチェッカー（マイク入力によるリアルタイム音高検知機能）を使用するか、男性・女性の一般的な平均音域プリセットからワンタップで選択して目安を設定することができます。"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "キー調整シミュレーターではどのようなキー変更が提案されますか？",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "原曲の音域（最低音〜最高音）を、設定されたあなたの得意な音域にすっぽり収めるための「キー変更値（例：原曲キーから-3、+2など）」を自動計算して提案します。これにより、高すぎて歌えない曲や、低すぎて声が出ない曲を気持ちよく歌えるようになります。"
+            }
+          }
+        ]
+      }
+    ]
+    </script>
   </head>
   <body>
+    <noscript>
+      <div style="padding: 40px 20px; text-align: center; background-color: #0f172a; color: #f8fafc; font-family: system-ui, -apple-system, sans-serif;">
+        <h1 style="font-size: 24px; margin-bottom: 16px;">カラオケ音域検索 - キーピタ検索＆キー調整シミュレーター</h1>
+        <p style="font-size: 14px; max-width: 600px; margin: 0 auto 24px auto; color: #94a3b8; line-height: 1.6;">
+          このアプリケーションは、自分の声の得意な音域（最低音・最高音）を設定するだけで、無理なく歌えるカラオケ曲を瞬時に検索し、あなたに最適なキー調整（移調量）を自動シミュレーションするサポートツールです。
+        </p>
+        <p style="font-size: 14px; color: #f43f5e; font-weight: bold;">
+          ⚠️ 本アプリのご利用にはJavaScriptの有効化が必要です。ブラウザの設定で有効にしてから再度読み込んでください。
+        </p>
+        <hr style="border-color: #334155; margin: 32px auto; max-width: 400px;" />
+        <p style="font-size: 12px; color: #64748b;">
+          対応ジャンル: J-POP, ロック, バラード, アニソン, ボカロ / 推奨環境: Safari, Chrome, Edge 最新版
+        </p>
+      </div>
+    </noscript>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
