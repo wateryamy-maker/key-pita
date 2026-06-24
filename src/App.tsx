@@ -162,20 +162,24 @@ export default function App() {
   };
 
   // Called immediately when user completes a main range diagnosis (A/B or mic)
-  const handleDiagnosisComplete = (message: string) => {
+  const handleDiagnosisComplete = (message: string, preventTabSwitch = false) => {
     // 1. Mobile tab toggle
-    setActiveTab('songs');
+    if (!preventTabSwitch) {
+      setActiveTab('songs');
+    }
     
     // 2. Notification Toast
     showToastNotification(message);
 
     // 3. Scroll user smoothly down to the match results header
-    setTimeout(() => {
-      const el = document.getElementById('songs-list-header');
-      if (el) {
-        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
-    }, 200);
+    if (!preventTabSwitch) {
+      setTimeout(() => {
+        const el = document.getElementById('songs-list-header');
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }, 200);
+    }
   };
 
   // --- Songs Database & Synchronization (Supabase integrated) ---
@@ -198,7 +202,7 @@ export default function App() {
     rangeMode,
     setUserMin,
     setUserMax,
-    onDiagnosisComplete: (msg) => handleDiagnosisComplete(msg),
+    onDiagnosisComplete: (msg) => handleDiagnosisComplete(msg, true),
     onToast: (msg) => showToastNotification(msg),
   });
 
@@ -439,13 +443,27 @@ export default function App() {
   };
 
   const easyFilteredSongs = useMemo(() => {
-    if (!easySearchQuery.trim()) return [];
-    const query = easySearchQuery.toLowerCase();
-    return songs.filter(
-      (song) =>
-        song.title.toLowerCase().includes(query) ||
-        song.artist.toLowerCase().includes(query)
-    );
+    const trimmed = easySearchQuery.trim();
+    if (!trimmed) return [];
+    
+    // Split by spaces (handles single-width spaces and full-width Japanese spaces '　')
+    const keywords = trimmed.toLowerCase().split(/[\s　]+/).filter(k => k.length > 0);
+    if (keywords.length === 0) return [];
+
+    return songs.filter((song) => {
+      const title = song.title.toLowerCase();
+      const artist = song.artist.toLowerCase();
+      const genre = (song.genre || '').toLowerCase();
+      const tagsStr = (song.tags || []).join(' ').toLowerCase();
+
+      // All keywords must be found in at least one field (AND search)
+      return keywords.every(kw => 
+        title.includes(kw) || 
+        artist.includes(kw) || 
+        genre.includes(kw) || 
+        tagsStr.includes(kw)
+      );
+    });
   }, [easySearchQuery, songs]);
 
   // --- Microphone Real-time Pitch Detection (Mobile Compatible) ---
@@ -1103,14 +1121,35 @@ export default function App() {
               曲のオクターブ・最高曲キーデータから、あなたの歌える音域（最低音〜最高音）を自動で推定し、すぐ下のスライダー設定値へリアルタイム反映します。
             </p>
 
+            {/* 🏷️ クイックデータベース検索候補タグ */}
+            <div className="flex flex-wrap gap-1.5 mb-3.5 items-center">
+              <span className="text-[10px] text-slate-500 font-bold shrink-0">話題の検索:</span>
+              {[
+                { label: 'tuki.', query: 'tuki.' },
+                { label: 'こっちのけんと', query: 'こっちのけんと' },
+                { label: 'Omoinotake', query: 'Omoinotake' },
+                { label: 'Creepy Nuts', query: 'Creepy Nuts' },
+                { label: 'Ado', query: 'Ado' },
+                { label: 'Mrs. GREEN APPLE', query: 'Mrs. GREEN APPLE' }
+              ].map((tag) => (
+                <button
+                  key={tag.label}
+                  onClick={() => setEasySearchQuery(tag.query)}
+                  className="text-[9px] px-2 py-0.5 rounded-full bg-slate-950/80 border border-slate-800 text-slate-400 hover:text-indigo-400 hover:border-indigo-500/40 transition-all font-semibold cursor-pointer active:scale-95"
+                >
+                  #{tag.label}
+                </button>
+              ))}
+            </div>
+
             {/* 🔍 曲名・歌手名で検索できるフォーム */}
             <div className="mb-4 relative">
               <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                <Search className="h-3.5 w-3.5 text-slate-400" />
+                <Search className="h-3.5 w-3.5 text-indigo-400" />
               </div>
               <input
                 type="text"
-                placeholder="曲名、または歌手名を入力して歌える曲を検索して追加..."
+                placeholder="曲名、または歌手名を入力してデータベース全曲からリアルタイム検索..."
                 value={easySearchQuery}
                 onChange={(e) => setEasySearchQuery(e.target.value)}
                 className="w-full pl-9 pr-8 py-2 bg-slate-950 border border-slate-800 focus:border-indigo-500 rounded-xl text-[11px] text-white placeholder-slate-500 focus:outline-none focus:ring-1 focus:ring-indigo-500 transition-all shadow-inner"
@@ -1129,7 +1168,10 @@ export default function App() {
             {easySearchQuery.trim() !== '' ? (
               <div className="mb-4 space-y-2">
                 <div className="flex items-center justify-between text-[10px] text-indigo-400 font-bold uppercase tracking-wider">
-                  <span>楽曲検索結果 ({easyFilteredSongs.length}件)</span>
+                  <span className="flex items-center gap-1">
+                    <Database className="w-3 h-3 text-indigo-400 animate-pulse" />
+                    🔍 データベース同期検索 (全{songs.length}曲から {easyFilteredSongs.length}件を瞬時に抽出)
+                  </span>
                   <button 
                     onClick={() => setEasySearchQuery('')} 
                     className="text-slate-500 hover:text-slate-300 text-[10px] underline"
@@ -1138,7 +1180,7 @@ export default function App() {
                   </button>
                 </div>
                 {easyFilteredSongs.length > 0 ? (
-                  <div className="grid grid-cols-2 gap-2 max-h-[180px] overflow-y-auto pr-1">
+                  <div className="grid grid-cols-2 gap-2 max-h-[550px] overflow-y-auto pr-1">
                     {easyFilteredSongs.map((s) => {
                       const isSelected = mySingableSongs.includes(s.id);
                       return (

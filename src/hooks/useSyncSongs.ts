@@ -56,17 +56,37 @@ export function useSyncSongs(options: UseSyncSongsOptions) {
 
       try {
         setDbStatus('loading');
-        const { data, error: fetchErr } = await supabase
-          .from('songs')
-          .select('*')
-          .order('id', { ascending: true });
+        
+        let allData: any[] = [];
+        let page = 0;
+        const pageSize = 1000;
+        let hasMore = true;
 
-        if (fetchErr) {
-          throw fetchErr;
+        while (hasMore) {
+          const { data, error: fetchErr } = await supabase
+            .from('songs')
+            .select('*')
+            .order('id', { ascending: true })
+            .range(page * pageSize, (page + 1) * pageSize - 1);
+
+          if (fetchErr) {
+            throw fetchErr;
+          }
+
+          if (data && data.length > 0) {
+            allData = [...allData, ...data];
+            if (data.length < pageSize) {
+              hasMore = false;
+            } else {
+              page++;
+            }
+          } else {
+            hasMore = false;
+          }
         }
 
-        if (data && data.length > 0) {
-          const mappedSongs: Song[] = data.map((row: any) => ({
+        if (allData.length > 0) {
+          const mappedSongs: Song[] = allData.map((row: any) => ({
             id: row.id.toString(),
             title: row.title,
             artist: row.artist,
