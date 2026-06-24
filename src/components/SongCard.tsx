@@ -17,7 +17,7 @@ interface SongCardProps {
   onSetKeyShift: (shift: number) => void;
 }
 
-export function SongCard({
+export const SongCard = React.memo(function SongCard({
   song,
   isSelected,
   isFavorite,
@@ -261,4 +261,4 @@ export function SongCard({
       </div>
     </motion.div>
   );
-}
+});

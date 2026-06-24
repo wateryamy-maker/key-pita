@@ -12,6 +12,7 @@ import {
   Layers, 
   Smartphone,
   ChevronRight,
+  ChevronDown,
   Info,
   Sliders,
   Plus,
@@ -74,6 +75,12 @@ export default function App() {
   const [highlightDiagnosis, setHighlightDiagnosis] = useState<boolean>(false);
   const [sqlCopied, setSqlCopied] = useState<boolean>(false);
   const [isAdvisorOpen, setIsAdvisorOpen] = useState<boolean>(true);
+  const [visibleCount, setVisibleCount] = useState<number>(30);
+
+  // フィルターや検索、タブが変更されたら表示件数を初期値(30)にリセットし、動作を劇的に高速化する
+  useEffect(() => {
+    setVisibleCount(30);
+  }, [searchQuery, easySearchQuery, activeTab, genderFilter, selectedGenre, rangeFilter]);
 
   // --- UI Toast Notifications State ---
   const [toast, setToast] = useState<{ message: string; visible: boolean } | null>(null);
@@ -205,6 +212,17 @@ export default function App() {
     onDiagnosisComplete: (msg) => handleDiagnosisComplete(msg, true),
     onToast: (msg) => showToastNotification(msg),
   });
+
+  // --- Pre-normalize Songs Text for High Performance Matching ---
+  const songsWithNormalized = useMemo(() => {
+    return songs.map(song => ({
+      ...song,
+      titleNormalized: normalizeText(song.title),
+      artistNormalized: normalizeText(song.artist),
+      tagsNormalized: (song.tags || []).map(tag => normalizeText(tag)),
+      genreNormalized: (song.genre || '').toLowerCase(),
+    }));
+  }, [songs]);
 
   // --- データベース充実度診断 & 改善アドバイス (Enrichment Advisor) の計算 ---
   const databaseStats = useMemo(() => {
@@ -446,25 +464,20 @@ export default function App() {
     const trimmed = easySearchQuery.trim();
     if (!trimmed) return [];
     
-    // Split by spaces (handles single-width spaces and full-width Japanese spaces '　')
-    const keywords = trimmed.toLowerCase().split(/[\s　]+/).filter(k => k.length > 0);
+    // Split by spaces (handles single-width spaces and full-width Japanese spaces '　') and normalize each keyword
+    const keywords = trimmed.toLowerCase().split(/[\s　]+/).filter(k => k.length > 0).map(k => normalizeText(k));
     if (keywords.length === 0) return [];
 
-    return songs.filter((song) => {
-      const title = song.title.toLowerCase();
-      const artist = song.artist.toLowerCase();
-      const genre = (song.genre || '').toLowerCase();
-      const tagsStr = (song.tags || []).join(' ').toLowerCase();
-
+    return songsWithNormalized.filter((song) => {
       // All keywords must be found in at least one field (AND search)
       return keywords.every(kw => 
-        title.includes(kw) || 
-        artist.includes(kw) || 
-        genre.includes(kw) || 
-        tagsStr.includes(kw)
+        song.titleNormalized.includes(kw) || 
+        song.artistNormalized.includes(kw) || 
+        song.genreNormalized.includes(kw) || 
+        song.tagsNormalized.some(tag => tag.includes(kw))
       );
     });
-  }, [easySearchQuery, songs]);
+  }, [easySearchQuery, songsWithNormalized]);
 
   // --- Microphone Real-time Pitch Detection (Mobile Compatible) ---
   const {
@@ -586,7 +599,7 @@ export default function App() {
 
   // Main Calculation Engine for Karaoke Songs
   const analyzedSongs = useMemo(() => {
-    return songs.map(song => {
+    return songsWithNormalized.map(song => {
       // 1. Calculate matching for simulated key shift
       const simMin = song.min + simulatedKeyShift;
       const simMax = song.max + simulatedKeyShift;
@@ -647,7 +660,7 @@ export default function App() {
         userSpan: userMax - userMin
       };
     });
-  }, [songs, userMin, userMax, simulatedKeyShift]);
+  }, [songsWithNormalized, userMin, userMax, simulatedKeyShift]);
 
   // --- My List Estimated Range Calculation & Setter ---
   const estimatedRange = useMemo(() => {
@@ -677,6 +690,7 @@ export default function App() {
   const processedSongs = useMemo(() => {
     // 検索クエリをクリーンアップし、全角・半角・ひらがな・カタカナ・大文字・小文字・NFCの揺れを吸収する
     const queryNormalized = normalizeText(searchQuery);
+    const keywords = queryNormalized ? queryNormalized.split(" ").filter(Boolean).map(kw => normalizeText(kw)) : [];
     
     return analyzedSongs.filter(song => {
       // 1. 性別によるフィルター
@@ -698,20 +712,13 @@ export default function App() {
       }
       
       // 検索ワードが空ならここまでのフィルターのみクリアしていればマッチ
-      if (!queryNormalized) return true;
-      
-      // 3. スペース区切り複数キーワードによるAND検索
-      const keywords = queryNormalized.split(" ").filter(Boolean);
-      
-      const titleNorm = normalizeText(song.title);
-      const artistNorm = normalizeText(song.artist);
-      const tagsNorm = song.tags.map(tag => normalizeText(tag));
+      if (keywords.length === 0) return true;
       
       // 各キーワードすべてがタイトル、アーティスト、またはタグのいずれかに含まれているかを確認
       return keywords.every(kw => {
-        return titleNorm.includes(kw) || 
-               artistNorm.includes(kw) || 
-               tagsNorm.some(tag => tag.includes(kw));
+        return song.titleNormalized.includes(kw) || 
+               song.artistNormalized.includes(kw) || 
+               song.tagsNormalized.some(tag => tag.includes(kw));
       });
     });
   }, [analyzedSongs, searchQuery, genderFilter, selectedGenre, rangeFilter, mySingableSongs]);
@@ -727,6 +734,8 @@ export default function App() {
   // Counters: Calculated based on search, gender and genre, independent of rangeFilter to keep counts accurate!
   const countStats = useMemo(() => {
     const queryNormalized = normalizeText(searchQuery);
+    const keywords = queryNormalized ? queryNormalized.split(" ").filter(Boolean).map(kw => normalizeText(kw)) : [];
+
     const searchFilteredSongs = analyzedSongs.filter(song => {
       const matchesGender = genderFilter === 'all' || song.gender === genderFilter;
       if (!matchesGender) return false;
@@ -734,15 +743,11 @@ export default function App() {
       const matchesGenre = selectedGenre === 'all' || song.genre === selectedGenre;
       if (!matchesGenre) return false;
 
-      if (!queryNormalized) return true;
-      const keywords = queryNormalized.split(" ").filter(Boolean);
-      const titleNorm = normalizeText(song.title);
-      const artistNorm = normalizeText(song.artist);
-      const tagsNorm = song.tags.map(tag => normalizeText(tag));
+      if (keywords.length === 0) return true;
       return keywords.every(kw => {
-        return titleNorm.includes(kw) || 
-               artistNorm.includes(kw) || 
-               tagsNorm.some(tag => tag.includes(kw));
+        return song.titleNormalized.includes(kw) || 
+               song.artistNormalized.includes(kw) || 
+               song.tagsNormalized.some(tag => tag.includes(kw));
       });
     });
 
@@ -1965,56 +1970,73 @@ export default function App() {
                   )}
                 </motion.div>
               ) : (
-                displaySongs.map((song, index) => {
-                  const isSelected = selectedSongId === song.id;
-                  const isFavorite = mySingableSongs.includes(song.id);
-                  
-                  return (
-                    <div key={song.id} className="space-y-4">
-                      <SongCard
-                        song={song}
-                        isSelected={isSelected}
-                        isFavorite={isFavorite}
-                        userMin={userMin}
-                        userMax={userMax}
-                        simulatedKeyShift={simulatedKeyShift}
-                        onSelectSong={handleSelectSong}
-                        onToggleFavorite={toggleSingableSong}
-                        onTriggerAudioNote={triggerAudioNote}
-                        onSetKeyShift={setSimulatedKeyShift}
-                      />
+                <>
+                  {displaySongs.slice(0, visibleCount).map((song, index) => {
+                    const isSelected = selectedSongId === song.id;
+                    const isFavorite = mySingableSongs.includes(song.id);
+                    
+                    return (
+                      <div key={song.id} className="space-y-4">
+                        <SongCard
+                          song={song}
+                          isSelected={isSelected}
+                          isFavorite={isFavorite}
+                          userMin={userMin}
+                          userMax={userMax}
+                          simulatedKeyShift={simulatedKeyShift}
+                          onSelectSong={handleSelectSong}
+                          onToggleFavorite={toggleSingableSong}
+                          onTriggerAudioNote={triggerAudioNote}
+                          onSetKeyShift={setSimulatedKeyShift}
+                        />
 
-                      {index === 2 && (
-                        <div key="ad-banner-placement" className="bg-gradient-to-br from-slate-900/40 via-indigo-950/25 to-slate-900 border border-indigo-500/15 rounded-2xl p-5 flex flex-col sm:flex-row items-center justify-between gap-4 relative overflow-hidden group hover:border-indigo-500/30 transition-all mt-4 mb-4 select-none">
-                          <div className="absolute top-0 right-0 w-32 h-32 bg-indigo-500/[0.03] rounded-full blur-2xl pointer-events-none" />
-                          <div className="flex items-start gap-3.5">
-                            <div className="p-2.5 bg-indigo-500/10 text-indigo-400 rounded-xl border border-indigo-500/20 shrink-0 mt-0.5">
-                              <Sparkles className="w-5 h-5 animate-pulse text-indigo-300" />
-                            </div>
-                            <div>
-                              <div className="flex flex-wrap items-center gap-2">
-                                <span className="text-[9px] font-bold tracking-wider px-2 py-0.5 bg-indigo-500/20 text-indigo-300 rounded border border-indigo-500/30">PR 広告</span>
-                                <span className="text-white text-xs font-bold font-sans">憧れのハイトーンが出せる秘密</span>
+                        {index === 2 && (
+                          <div key="ad-banner-placement" className="bg-gradient-to-br from-slate-900/40 via-indigo-950/25 to-slate-900 border border-indigo-500/15 rounded-2xl p-5 flex flex-col sm:flex-row items-center justify-between gap-4 relative overflow-hidden group hover:border-indigo-500/30 transition-all mt-4 mb-4 select-none">
+                            <div className="absolute top-0 right-0 w-32 h-32 bg-indigo-500/[0.03] rounded-full blur-2xl pointer-events-none" />
+                            <div className="flex items-start gap-3.5">
+                              <div className="p-2.5 bg-indigo-500/10 text-indigo-400 rounded-xl border border-indigo-500/20 shrink-0 mt-0.5">
+                                <Sparkles className="w-5 h-5 animate-pulse text-indigo-300" />
                               </div>
-                              <p className="text-[11px] sm:text-xs text-slate-300 mt-1.5 leading-relaxed">
-                                「高い声が通らない」「サビで息が続かない」を完全解決！プロ講師による30分無料オンライン歌診断レッスン。あなたに「ぴたっ」な発声法がわかります。
-                              </p>
+                              <div>
+                                <div className="flex flex-wrap items-center gap-2">
+                                  <span className="text-[9px] font-bold tracking-wider px-2 py-0.5 bg-indigo-500/20 text-indigo-300 rounded border border-indigo-500/30">PR 広告</span>
+                                  <span className="text-white text-xs font-bold font-sans">憧れのハイトーンが出せる秘密</span>
+                                </div>
+                                <p className="text-[11px] sm:text-xs text-slate-300 mt-1.5 leading-relaxed">
+                                  「高い声が通らない」「サビで息が続かない」を完全解決！プロ講師による30分無料オンライン歌診断レッスン。あなたに「ぴたっ」な発声法がわかります。
+                                </p>
+                              </div>
+                            </div>
+                            <div className="shrink-0 w-full sm:w-auto">
+                              <button 
+                                onClick={() => { showToastNotification("体験レッスンのデモお申し込みをフックしました！"); }}
+                                className="w-full sm:w-auto inline-flex items-center justify-center gap-1.5 text-xs font-bold text-slate-950 bg-indigo-400 hover:bg-indigo-300 px-5 py-3 rounded-xl transition-all shadow-md shrink-0 active:scale-95 cursor-pointer"
+                              >
+                                <span>無料体験を予約</span>
+                                <ChevronRight className="w-3.5 h-3.5 font-bold" />
+                              </button>
                             </div>
                           </div>
-                          <div className="shrink-0 w-full sm:w-auto">
-                            <button 
-                              onClick={() => { showToastNotification("体験レッスンのデモお申し込みをフックしました！"); }}
-                              className="w-full sm:w-auto inline-flex items-center justify-center gap-1.5 text-xs font-bold text-slate-950 bg-indigo-400 hover:bg-indigo-300 px-5 py-3 rounded-xl transition-all shadow-md shrink-0 active:scale-95 cursor-pointer"
-                            >
-                              <span>無料体験を予約</span>
-                              <ChevronRight className="w-3.5 h-3.5 font-bold" />
-                            </button>
-                          </div>
-                        </div>
-                      )}
+                        )}
+                      </div>
+                    );
+                  })}
+
+                  {displaySongs.length > visibleCount && (
+                    <div className="pt-5 pb-8 flex flex-col items-center justify-center gap-2.5 border-t border-slate-900/60 mt-4">
+                      <p className="text-xs text-slate-400 font-medium">
+                        全 {displaySongs.length} 曲中 {Math.min(visibleCount, displaySongs.length)} 曲を表示中
+                      </p>
+                      <button
+                        onClick={() => setVisibleCount(prev => prev + 50)}
+                        className="px-6 py-3 bg-slate-900 hover:bg-slate-800 border border-slate-800 hover:border-slate-700 text-emerald-400 hover:text-emerald-300 rounded-2xl text-xs font-bold transition-all shadow-md active:scale-95 flex items-center gap-2 cursor-pointer"
+                      >
+                        <ChevronDown className="w-4 h-4" />
+                        <span>さらに 50 件の曲を表示する</span>
+                      </button>
                     </div>
-                  );
-                })
+                  )}
+                </>
               )}
             </AnimatePresence>
           </div>
