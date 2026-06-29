@@ -72,18 +72,201 @@
   </head>
   <body>
     <noscript>
-      <div style="padding: 40px 20px; text-align: center; background-color: #0f172a; color: #f8fafc; font-family: system-ui, -apple-system, sans-serif;">
-        <h1 style="font-size: 24px; margin-bottom: 16px;">カラオケ音域検索 - キーピタ検索＆キー調整シミュレーター</h1>
-        <p style="font-size: 14px; max-width: 600px; margin: 0 auto 24px auto; color: #94a3b8; line-height: 1.6;">
-          このアプリケーションは、自分の声の得意な音域（最低音・最高音）を設定するだけで、無理なく歌えるカラオケ曲を瞬時に検索し、あなたに最適なキー調整（移調量）を自動シミュレーションするサポートツールです。
-        </p>
-        <p style="font-size: 14px; color: #f43f5e; font-weight: bold;">
-          ⚠️ 本アプリのご利用にはJavaScriptの有効化が必要です。ブラウザの設定で有効にしてから再度読み込んでください。
-        </p>
-        <hr style="border-color: #334155; margin: 32px auto; max-width: 400px;" />
-        <p style="font-size: 12px; color: #64748b;">
-          対応ジャンル: J-POP, ロック, バラード, アニソン, ボカロ / 推奨環境: Safari, Chrome, Edge 最新版
-        </p>
+      <div style="padding: 50px 24px; background-color: #0b0f19; color: #f1f5f9; font-family: system-ui, -apple-system, sans-serif; max-width: 900px; margin: 0 auto; border-radius: 16px; border: 1px solid #1e293b; margin-top: 40px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+        
+        <!-- Header & Important Notice -->
+        <header style="text-align: center; margin-bottom: 40px; border-b: 1px solid #1e293b; padding-bottom: 30px;">
+          <h1 style="font-size: 28px; font-weight: 800; color: #38bdf8; margin-bottom: 12px; letter-spacing: -0.025em;">カラオケ音域検索 - キーピタ検索＆キー調整シミュレーター</h1>
+          <p style="font-size: 15px; color: #94a3b8; max-width: 700px; margin: 0 auto 24px auto; line-height: 1.7;">
+            「キーピタ」は、自分の声の音域（最低音・最高音）を入力またはマイクで自動測定するだけで、カラオケデータベースから<b>歌える曲を瞬時に検索し、最適なキー調整（#や♭の移調値）を自動的にリアルタイムシミュレーションする</b>Webアプリケーションです。
+          </p>
+          <div style="background-color: rgba(244, 63, 94, 0.1); border: 1px solid rgba(244, 63, 94, 0.2); border-radius: 12px; padding: 16px 20px; max-width: 600px; margin: 0 auto;">
+            <p style="font-size: 14px; color: #fb7185; margin: 0; font-weight: 700;">
+              ⚠️ 本アプリのすべての機能（リアルタイムシミュレーション・音高検知マイク測定・ピアノキーボード表示・曲検索）を利用するには、ブラウザ設定で JavaScript を有効にする必要があります。
+            </p>
+          </div>
+        </header>
+
+        <!-- Feature Explanations -->
+        <section style="margin-bottom: 48px;">
+          <h2 style="font-size: 20px; font-weight: 700; color: #f8fafc; border-left: 4px solid #38bdf8; padding-left: 12px; margin-bottom: 20px;">本サービスでできること（主な機能）</h2>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px;">
+            <div style="background-color: #1e293b; padding: 20px; border-radius: 12px; border: 1px solid #334155;">
+              <h3 style="font-size: 15px; font-weight: 700; color: #38bdf8; margin-top: 0; margin-bottom: 8px;">1. 音域マイク測定（リアルタイムピッチ検出）</h3>
+              <p style="font-size: 13px; color: #94a3b8; line-height: 1.6; margin: 0;">
+                マイクに向かって声を出すだけで、あなたの声の「最低音」と「最高音」を瞬時に検知。音高（ヘルツ）から自動的に音名へと変換して声域（ボーカルレンジ）を算出します。
+              </p>
+            </div>
+            <div style="background-color: #1e293b; padding: 20px; border-radius: 12px; border: 1px solid #334155;">
+              <h3 style="font-size: 15px; font-weight: 700; color: #38bdf8; margin-top: 0; margin-bottom: 8px;">2. キー調整・自動シミュレーション</h3>
+              <p style="font-size: 13px; color: #94a3b8; line-height: 1.6; margin: 0;">
+                各楽曲の原曲キーの音域を、設定したあなたの音域内にすっぽり収めるための「最適なキー変更（例: -3 や +2 など）」を瞬時にシミュレート・自動計算して一覧表示します。
+              </p>
+            </div>
+            <div style="background-color: #1e293b; padding: 20px; border-radius: 12px; border: 1px solid #334155;">
+              <h3 style="font-size: 15px; font-weight: 700; color: #38bdf8; margin-top: 0; margin-bottom: 8px;">3. マイリスト（お気に入り登録）と統計シミュレート</h3>
+              <p style="font-size: 13px; color: #94a3b8; line-height: 1.6; margin: 0;">
+                自分がいつもカラオケで歌っている曲に「歌える！登録」をするだけで、登録楽曲の共通音域から、あなたの真の声域（ボーカルレンジ）を逆算・推定シミュレートします。
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Static Database / Karaoke Songs List -->
+        <section style="margin-bottom: 48px;">
+          <h2 style="font-size: 20px; font-weight: 700; color: #f8fafc; border-left: 4px solid #38bdf8; padding-left: 12px; margin-bottom: 20px;">初期収録の代表的なカラオケ楽曲・アーティスト（音域データ付き）</h2>
+          <p style="font-size: 13px; color: #94a3b8; margin-bottom: 16px;">
+            以下は当アプリに標準搭載されている人気カラオケ曲データベース（一部抜粋）です。JavaScriptが動かない環境でも、収録曲の音域情報や原曲キーを確認できます。
+          </p>
+          <div style="overflow-x: auto;">
+            <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 13px; line-height: 1.5;">
+              <thead>
+                <tr style="border-bottom: 2px solid #334155; color: #38bdf8;">
+                  <th style="padding: 10px 8px; font-weight: bold;">曲名</th>
+                  <th style="padding: 10px 8px; font-weight: bold;">アーティスト</th>
+                  <th style="padding: 10px 8px; font-weight: bold;">ジャンル</th>
+                  <th style="padding: 10px 8px; font-weight: bold;">音域（目安）</th>
+                  <th style="padding: 10px 8px; font-weight: bold;">特徴・解説</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr style="border-bottom: 1px solid #1e293b; background-color: rgba(30, 41, 59, 0.3);">
+                  <td style="padding: 12px 8px; font-weight: bold; color: #f8fafc;">マリーゴールド</td>
+                  <td style="padding: 12px 8px; color: #cbd5e1;">あいみょん</td>
+                  <td style="padding: 12px 8px; color: #94a3b8;">J-POP / 女性</td>
+                  <td style="padding: 12px 8px; color: #34d399; font-family: monospace;">mid1G 〜 hiD</td>
+                  <td style="padding: 12px 8px; color: #94a3b8;">女性の標準的〜やや高音寄りな爽やかなナンバー。一定の息づかいで気持ちよく歌い通せます。</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #1e293b;">
+                  <td style="padding: 12px 8px; font-weight: bold; color: #f8fafc;">Lemon</td>
+                  <td style="padding: 12px 8px; color: #cbd5e1;">米津玄師</td>
+                  <td style="padding: 12px 8px; color: #94a3b8;">J-POP / 男性</td>
+                  <td style="padding: 12px 8px; color: #34d399; font-family: monospace;">mid1C 〜 mid2B</td>
+                  <td style="padding: 12px 8px; color: #94a3b8;">音域幅が非常に広く、サビ終わりの最高音付近などで安定した高音域のコントロールを要求されます。</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #1e293b; background-color: rgba(30, 41, 59, 0.3);">
+                  <td style="padding: 12px 8px; font-weight: bold; color: #f8fafc;">Pretender</td>
+                  <td style="padding: 12px 8px; color: #cbd5e1;">Official髭男dism</td>
+                  <td style="padding: 12px 8px; color: #94a3b8;">J-POP / 男性</td>
+                  <td style="padding: 12px 8px; color: #34d399; font-family: monospace;">mid1F 〜 hiG</td>
+                  <td style="padding: 12px 8px; color: #94a3b8;">サビは男声としては信じがたいハイトーンの連続。地声と裏声のスムーズな切り替えが不可欠です。</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #1e293b;">
+                  <td style="padding: 12px 8px; font-weight: bold; color: #f8fafc;">紅蓮華</td>
+                  <td style="padding: 12px 8px; color: #cbd5e1;">LiSA</td>
+                  <td style="padding: 12px 8px; color: #94a3b8;">アニソン / 女性</td>
+                  <td style="padding: 12px 8px; color: #34d399; font-family: monospace;">mid2A 〜 hiF#</td>
+                  <td style="padding: 12px 8px; color: #94a3b8;">力強い発声とブレススピードが求められる大ヒットアニソン。高音サビが非常に伸びやかです。</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #1e293b; background-color: rgba(30, 41, 59, 0.3);">
+                  <td style="padding: 12px 8px; font-weight: bold; color: #f8fafc;">ドライフラワー</td>
+                  <td style="padding: 12px 8px; color: #cbd5e1;">優里</td>
+                  <td style="padding: 12px 8px; color: #94a3b8;">J-POP / 男性</td>
+                  <td style="padding: 12px 8px; color: #34d399; font-family: monospace;">mid1F 〜 hiD</td>
+                  <td style="padding: 12px 8px; color: #94a3b8;">サビにかけて力強くエモーショナルに歌い上げる高音パートが多く、低音から高音へのステップが見事。</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #1e293b;">
+                  <td style="padding: 12px 8px; font-weight: bold; color: #f8fafc;">糸</td>
+                  <td style="padding: 12px 8px; color: #cbd5e1;">中島みゆき</td>
+                  <td style="padding: 12px 8px; color: #94a3b8;">バラード / 男女</td>
+                  <td style="padding: 12px 8px; color: #34d399; font-family: monospace;">mid1F 〜 mid2F</td>
+                  <td style="padding: 12px 8px; color: #94a3b8;">音域幅が1オクターブ強と狭めなため、性別を問わず極めて歌いやすい国民的スタンダード曲。</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #1e293b; background-color: rgba(30, 41, 59, 0.3);">
+                  <td style="padding: 12px 8px; font-weight: bold; color: #f8fafc;">丸の内サディスティック</td>
+                  <td style="padding: 12px 8px; color: #cbd5e1;">椎名林檎</td>
+                  <td style="padding: 12px 8px; color: #94a3b8;">ロック / 女性</td>
+                  <td style="padding: 12px 8px; color: #34d399; font-family: monospace;">mid1E 〜 hiE</td>
+                  <td style="padding: 12px 8px; color: #94a3b8;">独特のハネるリズムと、最高音hiEに這い上がるスピード感が必要な難易度高めのジャズテイスト。</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #1e293b;">
+                  <td style="padding: 12px 8px; font-weight: bold; color: #f8fafc;">猫</td>
+                  <td style="padding: 12px 8px; color: #cbd5e1;">DISH//</td>
+                  <td style="padding: 12px 8px; color: #94a3b8;">J-POP / 男性</td>
+                  <td style="padding: 12px 8px; color: #34d399; font-family: monospace;">mid1D 〜 mid2B</td>
+                  <td style="padding: 12px 8px; color: #94a3b8;">メロディがストレートで感情移入しやすく、中音域が主役の美しいミディアムロック。</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #1e293b; background-color: rgba(30, 41, 59, 0.3);">
+                  <td style="padding: 12px 8px; font-weight: bold; color: #f8fafc;">チェリー</td>
+                  <td style="padding: 12px 8px; color: #cbd5e1;">スピッツ</td>
+                  <td style="padding: 12px 8px; color: #94a3b8;">J-POP / 男性</td>
+                  <td style="padding: 12px 8px; color: #34d399; font-family: monospace;">mid1E 〜 mid2B</td>
+                  <td style="padding: 12px 8px; color: #94a3b8;">高難易度の声区移動がなく、初心者でも声がしっかりと当たりやすい爽快王道ソング。</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #1e293b;">
+                  <td style="padding: 12px 8px; font-weight: bold; color: #f8fafc;">ハナミズキ</td>
+                  <td style="padding: 12px 8px; color: #cbd5e1;">一青窈</td>
+                  <td style="padding: 12px 8px; color: #94a3b8;">バラード / 女性</td>
+                  <td style="padding: 12px 8px; color: #34d399; font-family: monospace;">mid1F 〜 hiC</td>
+                  <td style="padding: 12px 8px; color: #94a3b8;">ゆったりとしたテンポでロングトーンが多いため、喉をリラックスさせて響かせたい歌い手向け。</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #1e293b; background-color: rgba(30, 41, 59, 0.3);">
+                  <td style="padding: 12px 8px; font-weight: bold; color: #f8fafc;">小さな恋のうた</td>
+                  <td style="padding: 12px 8px; color: #cbd5e1;">MONGOL800</td>
+                  <td style="padding: 12px 8px; color: #94a3b8;">ロック / 男女</td>
+                  <td style="padding: 12px 8px; color: #34d399; font-family: monospace;">mid1C 〜 hiA</td>
+                  <td style="padding: 12px 8px; color: #94a3b8;">疾走感溢れるバンド・サウンド。サビの最高音が長く続くため、パワーとスタミナが求められます。</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #1e293b;">
+                  <td style="padding: 12px 8px; font-weight: bold; color: #f8fafc;">怪獣の花唄</td>
+                  <td style="padding: 12px 8px; color: #cbd5e1;">Vaundy</td>
+                  <td style="padding: 12px 8px; color: #94a3b8;">ロック / 男性</td>
+                  <td style="padding: 12px 8px; color: #34d399; font-family: monospace;">mid1D 〜 hiE</td>
+                  <td style="padding: 12px 8px; color: #94a3b8;">サビの連続する高音hiEが心地よく疾走するアップテンポなナンバー。腹式呼吸が必須です。</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #1e293b; background-color: rgba(30, 41, 59, 0.3);">
+                  <td style="padding: 12px 8px; font-weight: bold; color: #f8fafc;">新時代</td>
+                  <td style="padding: 12px 8px; color: #cbd5e1;">Ado</td>
+                  <td style="padding: 12px 8px; color: #94a3b8;">アニソン / 女性</td>
+                  <td style="padding: 12px 8px; color: #34d399; font-family: monospace;">mid1F# 〜 hiF#</td>
+                  <td style="padding: 12px 8px; color: #94a3b8;">圧倒的な声量と広い声区移動が活きる、Adoのパワフルでエレクトロニックなダンスポップ。</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #1e293b;">
+                  <td style="padding: 12px 8px; font-weight: bold; color: #f8fafc;">残酷な天使のテーゼ</td>
+                  <td style="padding: 12px 8px; color: #cbd5e1;">高橋洋子</td>
+                  <td style="padding: 12px 8px; color: #94a3b8;">アニソン / 女性</td>
+                  <td style="padding: 12px 8px; color: #34d399; font-family: monospace;">mid1G 〜 hiD</td>
+                  <td style="padding: 12px 8px; color: #94a3b8;">全世代が知っている最強アニソン。安定した中低音と適度なサビのサステインが必要。</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #1e293b; background-color: rgba(30, 41, 59, 0.3);">
+                  <td style="padding: 12px 8px; font-weight: bold; color: #f8fafc;">奏 (かなで)</td>
+                  <td style="padding: 12px 8px; color: #cbd5e1;">スキマスイッチ</td>
+                  <td style="padding: 12px 8px; color: #94a3b8;">バラード / 男性</td>
+                  <td style="padding: 12px 8px; color: #34d399; font-family: monospace;">mid1D 〜 mid2B</td>
+                  <td style="padding: 12px 8px; color: #94a3b8;">サビ前の溜めと、最高音mid2Bの美しいロングトーンが見見場の感動的ラブソング。</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #1e293b;">
+                  <td style="padding: 12px 8px; font-weight: bold; color: #f8fafc;">カブトムシ</td>
+                  <td style="padding: 12px 8px; color: #cbd5e1;">aiko</td>
+                  <td style="padding: 12px 8px; color: #94a3b8;">バラード / 女性</td>
+                  <td style="padding: 12px 8px; color: #34d399; font-family: monospace;">mid1D 〜 hiD#</td>
+                  <td style="padding: 12px 8px; color: #94a3b8;">地声からすっとファルセット（裏声）に切り替わる独特のaikoライン。サビの最高音に魅力が凝縮。</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- General Vocals/Faqs Section -->
+        <section style="margin-bottom: 30px; border-top: 1px solid #1e293b; padding-top: 30px;">
+          <h2 style="font-size: 18px; font-weight: 700; color: #f8fafc; margin-bottom: 16px;">よくあるご質問（FAQ）と音域の目安</h2>
+          <dl style="font-size: 13.5px; line-height: 1.6; color: #94a3b8;">
+            <dt style="font-weight: bold; color: #f1f5f9; margin-top: 16px;">Q. 一般的な男性・女性の平均音域はどれくらいですか？</dt>
+            <dd style="margin-left: 0; margin-top: 4px; margin-bottom: 12px; padding-left: 12px; border-left: 2px solid #334155;">
+              個人差はありますが、一般男性（平均）は mid1C 〜 mid2G、一般女性（平均）は mid1G 〜 hiD と言われています。ハイトーンが得意な男性や低音が安定している女性など、タイプに合わせて当アプリ上でプリセットを設定できます。
+            </dd>
+
+            <dt style="font-weight: bold; color: #f1f5f9; margin-top: 16px;">Q. 「キー調整」はどのように計算されていますか？</dt>
+            <dd style="margin-left: 0; margin-top: 4px; margin-bottom: 12px; padding-left: 12px; border-left: 2px solid #334155;">
+              原曲の最低音と最高音が、あなたの得意な音域（最低音〜最高音）にぴったり収まるような「移調量（キーのシフト量、±1〜±7）」を数学的に算出し、リアルタイムにシミュレートを再構成します。
+            </dd>
+          </dl>
+        </section>
+
+        <!-- Footer Credits -->
+        <footer style="text-align: center; border-top: 1px solid #1e293b; padding-top: 20px; margin-top: 30px; font-size: 11px; color: #64748b;">
+          カラオケ音域検索＆キーピタ検索＆キー調整シミュレーター © 2026 / 推奨ブラウザ環境: Safari, Chrome, Edge 最新版 (WebGL/Audio API対応)
+        </footer>
       </div>
     </noscript>
     <div id="root"></div>

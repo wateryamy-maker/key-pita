@@ -112,10 +112,10 @@ export const SongCard = React.memo(function SongCard({
                 e.stopPropagation();
                 onToggleFavorite(song.id);
               }}
-              className={`py-1 px-3 rounded-xl border transition-all active:scale-95 flex items-center justify-center gap-1.5 text-[11px] font-bold h-8 cursor-pointer shadow-sm ${
+              className={`py-1 px-3 rounded-xl border transition-all hover:-translate-y-0.5 active:translate-y-0.5 active:scale-95 flex items-center justify-center gap-1.5 text-[11px] font-bold h-8 cursor-pointer shadow-sm ${
                 isFavorite 
-                  ? 'bg-pink-500/10 text-pink-400 border-pink-550/30 hover:bg-pink-500/20' 
-                  : 'bg-slate-950 hover:bg-slate-800 text-slate-400 border-slate-800 hover:border-slate-700 hover:text-slate-200'
+                  ? 'bg-pink-500/10 text-pink-400 border-pink-550/30 hover:bg-pink-500/20 shadow-pink-500/5 hover:shadow-md hover:shadow-pink-500/15' 
+                  : 'bg-slate-950 hover:bg-slate-800 text-slate-400 border-slate-800 hover:border-slate-700 hover:text-slate-200 hover:shadow-md hover:shadow-slate-500/5'
               }`}
               title={isFavorite ? "マイリスト（歌える曲）から解除" : "歌える曲としてマイリストに登録"}
             >
@@ -182,9 +182,9 @@ export const SongCard = React.memo(function SongCard({
                   e.stopPropagation();
                   onTriggerAudioNote(song.simMin);
                 }}
-                className="px-2.5 py-1 text-[10px] font-mono bg-slate-900 hover:bg-slate-800 text-slate-300 rounded border border-slate-800 flex items-center gap-1 hover:text-emerald-400 transition-colors"
+                className="px-2.5 py-1 text-[10px] font-mono bg-slate-900 hover:bg-slate-850 text-slate-300 rounded border border-slate-800 flex items-center gap-1 hover:text-emerald-450 hover:-translate-y-0.5 active:translate-y-0.5 active:scale-95 transition-all shadow-sm hover:shadow-emerald-500/5 cursor-pointer"
               >
-                <Volume2 className="w-3 h-3 text-emerald-400/80" />
+                <Volume2 className="w-3 h-3 text-emerald-450/80" />
                 最低音を聞く
               </button>
               <button
@@ -192,7 +192,7 @@ export const SongCard = React.memo(function SongCard({
                   e.stopPropagation();
                   onTriggerAudioNote(song.simMax);
                 }}
-                className="px-2.5 py-1 text-[10px] font-mono bg-slate-900 hover:bg-slate-800 text-slate-300 rounded border border-slate-800 flex items-center gap-1 hover:text-rose-400 transition-colors shrink-0"
+                className="px-2.5 py-1 text-[10px] font-mono bg-slate-900 hover:bg-slate-850 text-slate-300 rounded border border-slate-800 flex items-center gap-1 hover:text-rose-400 hover:-translate-y-0.5 active:translate-y-0.5 active:scale-95 transition-all shadow-sm hover:shadow-rose-500/5 cursor-pointer shrink-0"
               >
                 <Volume2 className="w-3 h-3 text-rose-400/80" />
                 最高音を聞く
@@ -243,10 +243,10 @@ export const SongCard = React.memo(function SongCard({
                         e.stopPropagation();
                         onSetKeyShift(offset);
                       }}
-                      className={`text-[9px] font-mono font-bold px-1.5 py-0.5 rounded transition-all cursor-pointer ${
+                      className={`text-[9px] font-mono font-bold px-1.5 py-0.5 rounded transition-all hover:-translate-y-0.5 active:translate-y-0.5 active:scale-95 cursor-pointer ${
                         simulatedKeyShift === offset
-                          ? 'bg-emerald-400 text-slate-950 border border-emerald-300'
-                          : 'bg-slate-900 hover:bg-slate-800 text-slate-400 border border-slate-850'
+                          ? 'bg-gradient-to-b from-emerald-400 to-emerald-550 text-slate-950 border border-emerald-350 shadow-md shadow-emerald-500/10'
+                          : 'bg-slate-900 hover:bg-slate-800 text-slate-400 border border-slate-850 hover:border-slate-700 hover:shadow-sm hover:shadow-slate-500/5'
                       }`}
                     >
                       {offset === 0 ? '原曲' : offset > 0 ? `+${offset}` : `${offset}`}

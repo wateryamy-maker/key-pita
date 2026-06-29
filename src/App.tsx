@@ -783,7 +783,7 @@ export default function App() {
               <button
                 key={index}
                 onClick={() => selectPreset(preset)}
-                className="text-[11px] sm:text-xs px-2.5 py-1.5 rounded-lg border border-slate-800 hover:border-emerald-500/40 bg-slate-900 hover:bg-slate-850 hover:text-white transition-all text-slate-300 shrink-0 flex items-center gap-1.5"
+                className="text-[11px] sm:text-xs px-2.5 py-1.5 rounded-lg border border-slate-800 hover:border-emerald-500/40 hover:text-emerald-300 hover:shadow-lg hover:shadow-emerald-500/5 hover:-translate-y-0.5 active:translate-y-0.5 active:scale-95 bg-slate-900 hover:bg-slate-855 transition-all text-slate-300 shrink-0 flex items-center gap-1.5 cursor-pointer"
                 title={`${preset.desc}`}
               >
                 <User className="w-3 h-3 text-emerald-400" />
@@ -922,10 +922,10 @@ export default function App() {
               {/* Lower Pitch Button */}
               <button
                 onClick={() => triggerAudioNote(userMin)}
-                className={`flex items-center gap-1.5 px-2.5 py-1 rounded-lg border text-left transition-all cursor-pointer select-none active:scale-95 ${
+                className={`flex items-center gap-1.5 px-2.5 py-1 rounded-lg border text-left transition-all hover:-translate-y-0.5 active:translate-y-0.5 active:scale-95 cursor-pointer select-none ${
                   currentlyPlayingMidi === userMin
-                    ? 'bg-emerald-500/20 border-emerald-400 text-emerald-300 ring-2 ring-emerald-500/30 shadow-md shadow-emerald-500/10'
-                    : 'bg-slate-950/40 hover:bg-slate-950/80 border-slate-800 text-slate-100 hover:border-slate-700'
+                    ? 'bg-emerald-500/20 border-emerald-455 text-emerald-300 ring-2 ring-emerald-500/40 shadow-lg shadow-emerald-500/15'
+                    : 'bg-slate-950/40 hover:bg-slate-950/80 border-slate-800 text-slate-100 hover:border-slate-700 hover:shadow-md hover:shadow-slate-500/5'
                 }`}
                 title="最低音を再生する"
               >
@@ -937,7 +937,7 @@ export default function App() {
                     ({formatPitch(userMin).note})
                   </span>
                 </div>
-                <Volume2 className={`w-3.5 h-3.5 ${currentlyPlayingMidi === userMin ? 'text-emerald-400 animate-bounce' : 'text-slate-500'}`} />
+                <Volume2 className={`w-3.5 h-3.5 ${currentlyPlayingMidi === userMin ? 'text-emerald-450 animate-bounce' : 'text-slate-500'}`} />
               </button>
 
               <span className="text-slate-600 text-xs font-semibold select-none">〜</span>
@@ -945,10 +945,10 @@ export default function App() {
               {/* Upper Pitch Button */}
               <button
                 onClick={() => triggerAudioNote(userMax)}
-                className={`flex items-center gap-1.5 px-2.5 py-1 rounded-lg border text-left transition-all cursor-pointer select-none active:scale-95 ${
+                className={`flex items-center gap-1.5 px-2.5 py-1 rounded-lg border text-left transition-all hover:-translate-y-0.5 active:translate-y-0.5 active:scale-95 cursor-pointer select-none ${
                   currentlyPlayingMidi === userMax
-                    ? 'bg-emerald-500/20 border-emerald-400 text-emerald-300 ring-2 ring-emerald-500/30 shadow-md shadow-emerald-500/10'
-                    : 'bg-slate-950/40 hover:bg-slate-950/80 border-slate-800 text-slate-100 hover:border-slate-700'
+                    ? 'bg-emerald-500/20 border-emerald-455 text-emerald-300 ring-2 ring-emerald-500/40 shadow-lg shadow-emerald-500/15'
+                    : 'bg-slate-950/40 hover:bg-slate-950/80 border-slate-800 text-slate-100 hover:border-slate-700 hover:shadow-md hover:shadow-slate-500/5'
                 }`}
                 title="最高音を再生する"
               >
@@ -979,7 +979,7 @@ export default function App() {
             {activeTab !== 'settings' ? (
               <button
                 onClick={() => setActiveTab('settings')}
-                className="px-2.5 py-1.5 bg-slate-950 hover:bg-slate-850 hover:text-white border border-slate-800 hover:border-slate-700 rounded-lg text-[11px] font-bold transition-all flex items-center gap-1 cursor-pointer shadow active:scale-95 text-slate-300"
+                className="px-2.5 py-1.5 bg-slate-950 hover:bg-slate-850 hover:text-white border border-slate-800 hover:border-emerald-550/30 hover:shadow-md hover:shadow-emerald-500/5 hover:-translate-y-0.5 active:translate-y-0.5 active:scale-95 rounded-lg text-[11px] font-bold transition-all flex items-center gap-1 cursor-pointer shadow text-slate-300"
               >
                 <Sliders className="w-3.5 h-3.5 text-emerald-450" />
                 <span>音域の変更・測定</span>
@@ -1386,7 +1386,7 @@ export default function App() {
                       triggerAudioNote(newVal);
                     }}
                     disabled={userMin <= 24}
-                    className="p-2 bg-slate-950 border border-slate-800 hover:border-emerald-500 rounded-xl text-slate-400 hover:text-emerald-400 disabled:opacity-40 disabled:hover:border-slate-800 active:scale-95 transition-all text-sm font-bold min-w-[38px] min-h-[38px] flex items-center justify-center shrink-0 cursor-pointer"
+                    className="p-2 bg-slate-950 border border-slate-800 hover:border-emerald-500 rounded-xl text-slate-400 hover:text-emerald-450 disabled:opacity-40 disabled:hover:border-slate-800 hover:-translate-y-0.5 active:translate-y-0.5 active:scale-95 transition-all text-sm font-bold min-w-[38px] min-h-[38px] flex items-center justify-center shrink-0 cursor-pointer shadow-sm hover:shadow-emerald-500/5"
                     title="最低音を1つ下げる"
                   >
                     <Minus className="w-4 h-4" />
@@ -1408,7 +1408,7 @@ export default function App() {
                       triggerAudioNote(newVal);
                     }}
                     disabled={userMin >= userMax - 1}
-                    className="p-2 bg-slate-950 border border-slate-800 hover:border-emerald-500 rounded-xl text-slate-400 hover:text-emerald-400 disabled:opacity-40 disabled:hover:border-slate-800 active:scale-95 transition-all text-sm font-bold min-w-[38px] min-h-[38px] flex items-center justify-center shrink-0 cursor-pointer"
+                    className="p-2 bg-slate-950 border border-slate-800 hover:border-emerald-500 rounded-xl text-slate-400 hover:text-emerald-450 disabled:opacity-40 disabled:hover:border-slate-800 hover:-translate-y-0.5 active:translate-y-0.5 active:scale-95 transition-all text-sm font-bold min-w-[38px] min-h-[38px] flex items-center justify-center shrink-0 cursor-pointer shadow-sm hover:shadow-emerald-500/5"
                     title="最低音を1つ上げる"
                   >
                     <Plus className="w-4 h-4" />
@@ -1431,7 +1431,7 @@ export default function App() {
                       triggerAudioNote(newVal);
                     }}
                     disabled={userMax <= userMin + 1}
-                    className="p-2 bg-slate-950 border border-slate-800 hover:border-rose-500 rounded-xl text-slate-400 hover:text-rose-400 disabled:opacity-40 disabled:hover:border-slate-800 active:scale-95 transition-all text-sm font-bold min-w-[38px] min-h-[38px] flex items-center justify-center shrink-0 cursor-pointer"
+                    className="p-2 bg-slate-950 border border-slate-800 hover:border-rose-500 rounded-xl text-slate-400 hover:text-rose-400 disabled:opacity-40 disabled:hover:border-slate-800 hover:-translate-y-0.5 active:translate-y-0.5 active:scale-95 transition-all text-sm font-bold min-w-[38px] min-h-[38px] flex items-center justify-center shrink-0 cursor-pointer shadow-sm hover:shadow-rose-500/5"
                     title="最高音を1つ下げる"
                   >
                     <Minus className="w-4 h-4" />
@@ -1453,7 +1453,7 @@ export default function App() {
                       triggerAudioNote(newVal);
                     }}
                     disabled={userMax >= 95}
-                    className="p-2 bg-slate-950 border border-slate-800 hover:border-rose-500 rounded-xl text-slate-400 hover:text-rose-400 disabled:opacity-40 disabled:hover:border-slate-800 active:scale-95 transition-all text-sm font-bold min-w-[38px] min-h-[38px] flex items-center justify-center shrink-0 cursor-pointer"
+                    className="p-2 bg-slate-950 border border-slate-800 hover:border-rose-500 rounded-xl text-slate-400 hover:text-rose-400 disabled:opacity-40 disabled:hover:border-slate-800 hover:-translate-y-0.5 active:translate-y-0.5 active:scale-95 transition-all text-sm font-bold min-w-[38px] min-h-[38px] flex items-center justify-center shrink-0 cursor-pointer shadow-sm hover:shadow-rose-500/5"
                     title="最高音を1つ上げる"
                   >
                     <Plus className="w-4 h-4" />
@@ -1498,7 +1498,7 @@ export default function App() {
                 {!isMeasuring ? (
                   <button
                     onClick={startVocalMeasurement}
-                    className="flex-1 min-w-[120px] py-2 px-3.5 bg-indigo-500 hover:bg-indigo-400 text-slate-950 text-xs font-bold rounded-xl flex items-center justify-center gap-1.5 active:scale-95 transition-all shadow-md cursor-pointer"
+                    className="flex-1 min-w-[120px] py-2 px-3.5 bg-gradient-to-b from-indigo-400 to-indigo-600 hover:from-indigo-350 hover:to-indigo-550 border-t border-indigo-300/30 text-slate-950 text-xs font-bold rounded-xl flex items-center justify-center gap-1.5 hover:-translate-y-0.5 active:translate-y-0.5 active:scale-95 transition-all shadow-md shadow-indigo-500/20 hover:shadow-lg hover:shadow-indigo-500/40 cursor-pointer"
                   >
                     <Mic className="w-3.5 h-3.5" />
                     <span>自動測定を開始する</span>
@@ -1506,7 +1506,7 @@ export default function App() {
                 ) : (
                   <button
                     onClick={stopVocalMeasurement}
-                    className="flex-1 min-w-[120px] py-2 px-3.5 bg-rose-500 hover:bg-rose-400 text-white text-xs font-bold rounded-xl flex items-center justify-center gap-1.5 active:scale-95 transition-all shadow-md animate-pulse cursor-pointer"
+                    className="flex-1 min-w-[120px] py-2 px-3.5 bg-gradient-to-b from-rose-500 to-rose-650 hover:from-rose-450 hover:to-rose-600 border-t border-rose-400/20 text-white text-xs font-bold rounded-xl flex items-center justify-center gap-1.5 hover:-translate-y-0.5 active:translate-y-0.5 active:scale-95 transition-all shadow-md shadow-rose-500/20 hover:shadow-lg hover:shadow-rose-500/40 animate-pulse cursor-pointer"
                   >
                     <MicOff className="w-3.5 h-3.5" />
                     <span>測定を終了する</span>
@@ -1516,7 +1516,7 @@ export default function App() {
                 {(measuredMin !== null || measuredMax !== null) && (
                   <button
                     onClick={applyMeasuredRange}
-                    className="py-2 px-3.5 bg-emerald-400 hover:bg-emerald-300 text-slate-950 text-xs font-bold rounded-xl flex items-center justify-center gap-1 active:scale-95 transition-all cursor-pointer"
+                    className="py-2 px-3.5 bg-gradient-to-b from-emerald-400 to-emerald-550 hover:from-emerald-350 hover:to-emerald-500 border-t border-emerald-300/30 text-slate-950 text-xs font-bold rounded-xl flex items-center justify-center gap-1 hover:-translate-y-0.5 active:translate-y-0.5 active:scale-95 transition-all shadow-md shadow-emerald-500/15 hover:shadow-lg hover:shadow-emerald-500/25 cursor-pointer"
                   >
                     <Check className="w-3.5 h-3.5" />
                     <span>結果を設定に反映</span>
@@ -1690,10 +1690,10 @@ export default function App() {
                 <button
                   key={k}
                   onClick={() => setSimulatedKeyShift(k)}
-                  className={`py-2 rounded-lg font-mono text-xs transition-all ${
+                  className={`py-2 rounded-lg font-mono text-xs transition-all hover:-translate-y-0.5 active:translate-y-0.5 active:scale-95 cursor-pointer ${
                     simulatedKeyShift === k
-                      ? 'bg-emerald-500 text-slate-950 font-bold shadow-md shadow-emerald-500/20'
-                      : 'bg-slate-950 hover:bg-slate-800 text-slate-300 border border-slate-850'
+                      ? 'bg-gradient-to-b from-emerald-400 to-emerald-600 text-slate-950 font-black border-t border-emerald-300/30 shadow-md shadow-emerald-500/30'
+                      : 'bg-slate-950 hover:bg-slate-800 text-slate-300 border border-slate-850 hover:border-slate-700 hover:shadow-md hover:shadow-slate-500/5'
                   }`}
                 >
                   {k > 0 ? `+${k}` : k}
@@ -1711,7 +1711,7 @@ export default function App() {
                 <button
                   onClick={() => setSimulatedKeyShift(prev => Math.max(-7, prev - 1))}
                   disabled={simulatedKeyShift <= -7}
-                  className="p-1 px-2.5 bg-slate-950 border border-slate-800 hover:border-indigo-500 rounded-lg text-slate-400 hover:text-indigo-400 disabled:opacity-40 disabled:hover:border-slate-800 active:scale-95 transition-all text-xs font-semibold shrink-0 min-w-[36px] min-h-[32px] flex items-center justify-center font-mono"
+                  className="p-1 px-2.5 bg-slate-950 border border-slate-800 hover:border-indigo-500 rounded-lg text-slate-400 hover:text-indigo-400 disabled:opacity-40 disabled:hover:border-slate-850 hover:-translate-y-0.5 active:translate-y-0.5 active:scale-95 transition-all text-xs font-semibold shrink-0 min-w-[36px] min-h-[32px] flex items-center justify-center font-mono shadow-sm hover:shadow-indigo-500/5 cursor-pointer"
                   title="キーを1段階下げる"
                 >
                   -1
@@ -1727,7 +1727,7 @@ export default function App() {
                 <button
                   onClick={() => setSimulatedKeyShift(prev => Math.min(7, prev + 1))}
                   disabled={simulatedKeyShift >= 7}
-                  className="p-1 px-2.5 bg-slate-950 border border-slate-800 hover:border-indigo-500 rounded-lg text-slate-400 hover:text-indigo-400 disabled:opacity-40 disabled:hover:border-slate-800 active:scale-95 transition-all text-xs font-semibold shrink-0 min-w-[36px] min-h-[32px] flex items-center justify-center font-mono"
+                  className="p-1 px-2.5 bg-slate-950 border border-slate-800 hover:border-indigo-500 rounded-lg text-slate-400 hover:text-indigo-400 disabled:opacity-40 disabled:hover:border-slate-850 hover:-translate-y-0.5 active:translate-y-0.5 active:scale-95 transition-all text-xs font-semibold shrink-0 min-w-[36px] min-h-[32px] flex items-center justify-center font-mono shadow-sm hover:shadow-indigo-500/5 cursor-pointer"
                   title="キーを1段階上げる"
                 >
                   +1
